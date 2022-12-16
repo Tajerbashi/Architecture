@@ -1,0 +1,18 @@
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+header{
+}
+header ,#side-left{
+    box-shadow: 0 0 10px 0 #000;
+}
+#side-left{
+    z-index: -5;
+}
+.b-top{
+    border-top: 1px solid rgb(255, 187, 0) !important;
+    color: rgb(255, 153, 0);
+}

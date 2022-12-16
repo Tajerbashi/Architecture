@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W3.CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .btn{
+            padding: 0.5rem 1rem;
+            background: rgb(0, 68, 255);
+            border: 1px solid #eee;
+            color: #eee;
+            cursor: pointer;
+            border-radius: 0.5rem;
+        }
+        .btn:hover{
+            background: rgb(0, 30, 114);
+        }
+        .d-block{
+            display: block !important;
+        }
+        #modal-shadow{
+            display: none;
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.562);
+            margin-top: -100px;
+            margin-left: -10px;
+            height: 100%;
+            width: 110%;
+        }
+        #modal-tab{
+            margin: 5rem auto;
+            width: 30rem;
+            border-radius: 1rem;
+            box-shadow: 0 0 10px 0 rgb(61, 61, 61);
+            animation-name: fade;
+            animation-duration: 1s;
+        }
+        #modal-header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background: rgb(0, 43, 136);
+            color: #eee;
+            border-radius: 1rem 1rem 0 0;
+            padding: 0 1rem ;
+        }
+        #modal-body{
+            padding: 1rem;
+            background: rgb(255, 255, 255);
+
+        }
+        #modal-footer{
+            background: rgb(86, 139, 255);
+            border-radius: 0 0 1rem 1rem;
+            padding: 0.5rem 1rem;
+        }
+        #close-X{
+            font-size: 2rem;
+        }
+        #close-X:hover{
+            color: rgb(255, 0, 0);
+            cursor: pointer;
+        }
+        @keyframes fade {
+            0%{
+                margin-top: -5rem;
+            }
+            100%{
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="w3-container" >
+  <h2>W3.CSS Modal</h2>
+  <button id="openModal" class="btn">Open Modal</button>
+  <div id="modal-shadow">
+    <div id="modal-tab">
+
+        <div id="modal-header">
+            <p>Title</p>
+            <span id="close-X">&times;</span>
+        </div>
+
+        <div id="modal-body">
+            body
+        </div>
+
+        <div id="modal-footer">
+            footer
+        </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+    document.getElementById("modal-shadow").addEventListener("click",()=>{
+        console.log("Hello");
+        document.getElementById("modal-shadow").classList.remove("d-block");
+    });
+    document.getElementById("openModal").addEventListener("click",()=>{
+        document.getElementById("modal-shadow").classList.add("d-block");
+    });
+</script>
+</body>
+</html>

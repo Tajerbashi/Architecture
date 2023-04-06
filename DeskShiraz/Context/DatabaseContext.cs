@@ -9,7 +9,10 @@ namespace DeskShiraz.Context
         {
 
         }
-
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+        }
         public DbSet<Teacher> Teachers { get; set; }
     }
 }

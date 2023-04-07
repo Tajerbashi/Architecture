@@ -14,5 +14,7 @@ namespace DeskShiraz.Context
             base.OnModelCreating(modelBuilder);
         }
         public DbSet<Teacher> Teachers { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Product> Products { get; set; }
     }
 }

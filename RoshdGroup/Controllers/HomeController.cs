@@ -1,19 +1,24 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DeskShiraz;
+using Microsoft.AspNetCore.Mvc;
+using RoshdGroup.Context;
 using RoshdGroup.Models;
+using RoshdGroup.ViewModels.Teachers;
+using System;
 using System.Diagnostics;
+using System.Net.Http.Headers;
+using System.Security.Cryptography.Xml;
 
 namespace RoshdGroup.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             return View();
         }

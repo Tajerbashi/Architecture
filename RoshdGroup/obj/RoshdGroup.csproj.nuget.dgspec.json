@@ -4,14 +4,14 @@
     "C:\\Users\\Tajer\\Desktop\\Visual Studio\\ASP.NET Core\\WebAPIService\\RoshdGroup\\RoshdGroup.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tajer\\Desktop\\Visual Studio\\ASP.NET Core\\WebAPIService\\RoshdGroup\\RoshdGroup.csproj": {
+    "C:\\Users\\Tajer\\Desktop\\Visual Studio\\ASP.NET Core\\WebAPIService\\DeskShiraz\\DeskShiraz.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\ASP.NET Core\\WebAPIService\\RoshdGroup\\RoshdGroup.csproj",
-        "projectName": "RoshdGroup",
-        "projectPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\ASP.NET Core\\WebAPIService\\RoshdGroup\\RoshdGroup.csproj",
+        "projectUniqueName": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\ASP.NET Core\\WebAPIService\\DeskShiraz\\DeskShiraz.csproj",
+        "projectName": "DeskShiraz",
+        "projectPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\ASP.NET Core\\WebAPIService\\DeskShiraz\\DeskShiraz.csproj",
         "packagesPath": "C:\\Users\\Tajer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\ASP.NET Core\\WebAPIService\\RoshdGroup\\obj\\",
+        "outputPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\ASP.NET Core\\WebAPIService\\DeskShiraz\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,6 +45,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "FontAwesome": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.4, )"
@@ -68,6 +72,139 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.4, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.jQuery.Unobtrusive.Validation": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "bootstrap": {
+              "target": "Package",
+              "version": "[5.2.3, )"
+            },
+            "jQuery": {
+              "target": "Package",
+              "version": "[3.6.4, )"
+            },
+            "jQuery.Validation": {
+              "target": "Package",
+              "version": "[1.19.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Tajer\\Desktop\\Visual Studio\\ASP.NET Core\\WebAPIService\\RoshdGroup\\RoshdGroup.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\ASP.NET Core\\WebAPIService\\RoshdGroup\\RoshdGroup.csproj",
+        "projectName": "RoshdGroup",
+        "projectPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\ASP.NET Core\\WebAPIService\\RoshdGroup\\RoshdGroup.csproj",
+        "packagesPath": "C:\\Users\\Tajer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\ASP.NET Core\\WebAPIService\\RoshdGroup\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Tajer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Tajer\\Desktop\\Visual Studio\\ASP.NET Core\\WebAPIService\\DeskShiraz\\DeskShiraz.csproj": {
+                "projectPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\ASP.NET Core\\WebAPIService\\DeskShiraz\\DeskShiraz.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "FontAwesome": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.jQuery.Unobtrusive.Validation": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "bootstrap": {
+              "target": "Package",
+              "version": "[5.2.3, )"
+            },
+            "jQuery": {
+              "target": "Package",
+              "version": "[3.6.4, )"
+            },
+            "jQuery.Validation": {
+              "target": "Package",
+              "version": "[1.19.5, )"
             }
           },
           "imports": [

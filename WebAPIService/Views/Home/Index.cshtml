@@ -2,7 +2,32 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container-fluid text-center">
+    <div class="row d-flex flex-row justify-content-between" style="height:800px !important;">
+        <div class="w-25" style="height:500px">
+            <div class="bg-dark bg-gradient text-light rounded-3 shadow p-2 ">
+                <h4 class="bg-light bg-gradient text-dark rounded-3 px-3">Product</h4>
+                <div class="d-flex flex-column justify-content-around">
+                    <a href="@Url.Action("GetAllTeachers","Home")" class="btn btn-primary text-light rounded-3 shadow mt-1">GetAll Teacher</a>
+                    <a href="#" class="btn btn-primary text-light rounded-3 shadow mt-1">Get Teacher By Id</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="w-25" style="height:500px">
+            <div class="bg-dark bg-gradient text-light rounded-3 shadow p-2 ">
+                <h4 class="bg-light bg-gradient text-dark rounded-3 px-3">User</h4>
+            </div>
+        </div>
+        <div class="w-25" style="height:500px">
+            <div class="bg-dark bg-gradient text-light rounded-3 shadow p-2 ">
+                <h4 class="bg-light bg-gradient text-dark rounded-3 px-3">Teacher</h4>
+            </div>
+        </div>
+        <div class="w-25" style="height:500px">
+            <div class="bg-dark bg-gradient text-light rounded-3 shadow p-2 ">
+                <h4 class="bg-light bg-gradient text-dark rounded-3 px-3">Null</h4>
+            </div>
+        </div>
+    </div>
 </div>

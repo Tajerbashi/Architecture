@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    var response = ViewBag.response;
+}
+
+<div class="container-fluid text-center">
+
+    <div class="row d-flex flex-row justify-content-between" style="height:800px !important;">
+
+        <div class="bg-warning bg-gradient text-dark rounded-3 shadow px-2 m-2">@response.Id : @response.Name : @response.Family</div>
+
+    </div>
+
+</div>

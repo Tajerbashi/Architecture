@@ -73,3 +73,4 @@ C:\Users\Tajer\Desktop\Visual Studio\ASP.NET Core\WebAPIService\WebAPIService\ob
 C:\Users\Tajer\Desktop\Visual Studio\ASP.NET Core\WebAPIService\WebAPIService\obj\Debug\net7.0\WebAPIService.pdb
 C:\Users\Tajer\Desktop\Visual Studio\ASP.NET Core\WebAPIService\WebAPIService\obj\Debug\net7.0\WebAPIService.genruntimeconfig.cache
 C:\Users\Tajer\Desktop\Visual Studio\ASP.NET Core\WebAPIService\WebAPIService\obj\Debug\net7.0\ref\WebAPIService.dll
+C:\Users\Tajer\Desktop\Visual Studio\ASP.NET Core\WebAPIService\WebAPIService\bin\Debug\net7.0\Newtonsoft.Json.dll

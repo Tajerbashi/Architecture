@@ -27,14 +27,24 @@ namespace DeskShiraz.Controllers
             return await _context.Teachers.FindAsync(id);
         }
 
-
-
         [HttpGet]
         public IEnumerable<Teacher> GetAllTeachers()
         {
             return _context.Teachers.ToList();
         }
 
+        // POST: Teachers/Create
+        [HttpPost]
+        public bool CreateTeacher([Bind("Id,Name,Family")] Teacher teacher)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Add(teacher);
+                _context.SaveChangesAsync();
+                return true;
+            }
+            return false;
+        }
 
 
 
@@ -112,7 +122,6 @@ namespace DeskShiraz.Controllers
         {
             return View();
         }
-
         // POST: Teachers/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -128,6 +137,7 @@ namespace DeskShiraz.Controllers
             }
             return View(teacher);
         }
+
 
         // GET: Teachers/Edit/5
         [HttpGet]

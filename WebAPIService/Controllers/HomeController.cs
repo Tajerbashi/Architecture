@@ -1,8 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Diagnostics;
+using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Text;
 using System.Text.Json;
 using WebAPIService.Models;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace WebAPIService.Controllers
 {
@@ -32,19 +36,69 @@ namespace WebAPIService.Controllers
             if (!response.IsSuccessStatusCode)
             {
                 return BadRequest();
-                //Teacher teacher = await response.Content.ReadAsAsync<Teacher>();
             }
-            //IEnumerable<Teacher> teachers = await response.Content.ReadFromJsonAsync<Teacher>();
             var content = await response.Content.ReadAsStringAsync();
-            var companies = JsonSerializer.Deserialize<List<Teacher>>(content,_options);
-            ViewBag.response = companies;
+            var teachers = JsonSerializer.Deserialize<List<Teacher>>(content,_options);
+            ViewBag.response = teachers;
             return View();
         }
         public async Task<IActionResult> GetTeacherById()
         {
-
+            // New code:
+            HttpResponseMessage response = await client.GetAsync($"api/Teachers/GetTeacher/{1}");
+            if (!response.IsSuccessStatusCode)
+            {
+                return BadRequest();
+            }
+            var content = await response.Content.ReadAsStringAsync();
+            var teachers = JsonSerializer.Deserialize<Teacher>(content, _options);
+            ViewBag.response = teachers;
             return View();
         }
+
+
+        [HttpPost]
+        public async Task<IActionResult> CreateTeacher(Teacher teacher)
+        {
+            // New code:
+            var content = new Teacher
+            {
+                Name = teacher.Name,
+                Family = teacher.Family
+            };
+
+            HttpResponseMessage response = await client.PostAsJsonAsync("api/Teachers/CreateTeacher", content);
+
+            if (!response.IsSuccessStatusCode)
+            {
+                // Get the URI of the created resource.
+                return BadRequest();
+            }
+            Uri returnUrl = response.Headers.Location;
+            return RedirectToAction("Index", "Home");
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         public IActionResult Privacy()

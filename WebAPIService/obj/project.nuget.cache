@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MgLwW9GhaZLIBHzq36/eVuPd82b87bZ/Gkm4ogkdixK4KKUKb+WBKK0d7g7VOotoZr+T9ATVY3eIVLSlUSJEDw==",
+  "dgSpecHash": "X/1OObOZukKBEqLbIl0V0R22dCZrjUkTvPmt1Cxyp+S+JBk2bGpSa5RsvFwNaB5qf93GsYQQ3/21QB7xuMrZGQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\ASP.NET Core\\WebAPIService\\WebAPIService\\WebAPIService.csproj",
   "expectedPackageFiles": [
@@ -47,6 +47,7 @@
     "C:\\Users\\Tajer\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\Tajer\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\Tajer\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\Tajer\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\Tajer\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\Tajer\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\Tajer\\.nuget\\packages\\system.configuration.configurationmanager\\5.0.0\\system.configuration.configurationmanager.5.0.0.nupkg.sha512",

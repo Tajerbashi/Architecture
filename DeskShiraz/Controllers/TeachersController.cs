@@ -35,7 +35,7 @@ namespace DeskShiraz.Controllers
 
         // POST: Teachers/Create
         [HttpPost]
-        public bool CreateTeacher([Bind("Id,Name,Family")] Teacher teacher)
+        public bool CreateTeacher([Bind("Id,Name,Family,Keys")] Teacher teacher)
         {
             if (ModelState.IsValid)
             {

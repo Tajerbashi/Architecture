@@ -1,12 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Diagnostics;
-using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Text;
 using System.Text.Json;
 using WebAPIService.Models;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace WebAPIService.Controllers
 {
@@ -64,7 +60,8 @@ namespace WebAPIService.Controllers
             var content = new Teacher
             {
                 Name = teacher.Name,
-                Family = teacher.Family
+                Family = teacher.Family,
+                Keys = teacher.Keys,
             };
 
             HttpResponseMessage response = await client.PostAsJsonAsync("api/Teachers/CreateTeacher", content);

@@ -27,6 +27,11 @@ namespace DeskShiraz.Controllers
             return await _context.Teachers.FindAsync(id);
         }
 
+        [HttpPost("{name}")]
+        public async Task<Teacher> GetTeacherByName([FromBody]string name)
+        {
+            return await _context.Teachers.Where(c => c.Name == name).FirstOrDefaultAsync();
+        }
         [HttpGet]
         public IEnumerable<Teacher> GetAllTeachers()
         {

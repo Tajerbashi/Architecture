@@ -193,6 +193,22 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
+      "Id": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\ASP.NET Core\\WebAPIService\\DeskShiraz\\wwwroot\\lib\\angularjs\\angular-mocks.js",
+      "PackagePath": "staticwebassets\\lib\\angularjs\\angular-mocks.js"
+    },
+    {
+      "Id": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\ASP.NET Core\\WebAPIService\\DeskShiraz\\wwwroot\\lib\\angularjs\\angular.js",
+      "PackagePath": "staticwebassets\\lib\\angularjs\\angular.js"
+    },
+    {
+      "Id": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\ASP.NET Core\\WebAPIService\\DeskShiraz\\wwwroot\\lib\\angularjs\\angular.min.js",
+      "PackagePath": "staticwebassets\\lib\\angularjs\\angular.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\ASP.NET Core\\WebAPIService\\DeskShiraz\\wwwroot\\lib\\angularjs\\angular.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\angularjs\\angular.min.js.map"
+    },
+    {
       "Id": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\ASP.NET Core\\WebAPIService\\DeskShiraz\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },

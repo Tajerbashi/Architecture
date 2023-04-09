@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using System.Net.Http.Headers;
+using System.Text;
 using System.Text.Json;
 using WebAPIService.Models;
 
@@ -48,6 +49,21 @@ namespace WebAPIService.Controllers
             }
             var content = await response.Content.ReadAsStringAsync();
             var teachers = JsonSerializer.Deserialize<Teacher>(content, _options);
+            ViewBag.response = teachers;
+            return View();
+        }
+
+        public async Task<IActionResult> GetTeacherByName(string name)
+        {
+            // New code:
+            HttpContent content = new StringContent(name, Encoding.UTF8, "application/json");
+            HttpResponseMessage response = await client.PostAsync("api/Teachers/GetTeacherByName",content);
+            if (!response.IsSuccessStatusCode)
+            {
+                return BadRequest();
+            }
+            var ResultContent = await response.Content.ReadAsStringAsync();
+            var teachers = JsonSerializer.Deserialize<Teacher>(ResultContent, _options);
             ViewBag.response = teachers;
             return View();
         }

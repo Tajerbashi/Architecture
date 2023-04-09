@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "OxxmoN6y25Vwhu+yfFITO9OV4XhaVxFUncgTEcUF9kbEiPnEdu1sFkNs3L26B38Z32ldcqo7R45x9iuSd1s9Pw==",
+  "dgSpecHash": "AO8cPyQ6Yt3XRHteN81iIa9X1yd2yTa/LzuFfaWGUFATKeTrZR2org+jikKfSI2hnAQXYGA2NsnxIhJ+ac4Amg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\ASP.NET Core\\WebAPIService\\DeskShiraz\\DeskShiraz.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Tajer\\.nuget\\packages\\angularjs\\1.8.2\\angularjs.1.8.2.nupkg.sha512",
+    "C:\\Users\\Tajer\\.nuget\\packages\\angularjs.core\\1.8.2\\angularjs.core.1.8.2.nupkg.sha512",
     "C:\\Users\\Tajer\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Tajer\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\Tajer\\.nuget\\packages\\bootstrap\\5.2.3\\bootstrap.5.2.3.nupkg.sha512",

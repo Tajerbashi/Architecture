@@ -10,6 +10,8 @@ using DeskShiraz.Models;
 
 namespace DeskShiraz.Controllers
 {
+    [ApiController]
+    [Route("api/[controller]/[action]")]
     public class ProductsController : Controller
     {
         private readonly DatabaseContext _context;

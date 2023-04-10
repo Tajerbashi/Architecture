@@ -5,6 +5,8 @@ using System.Diagnostics;
 
 namespace DeskShiraz.Controllers
 {
+    [ApiController]
+    [Route("api/[controller]/[action]")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

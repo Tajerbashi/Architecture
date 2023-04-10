@@ -16,13 +16,15 @@ namespace DeskShiraz.Controllers
             _logger = logger;
             _context = context;
         }
-       
-        
+
+        [HttpGet]
         public IActionResult Index()
         {
             return View();
         }
 
+
+        [HttpGet]
         public IActionResult Privacy()
         {
             return View();

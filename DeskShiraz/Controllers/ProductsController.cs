@@ -22,6 +22,7 @@ namespace DeskShiraz.Controllers
         }
 
         // GET: Products
+        [HttpGet]
         public async Task<IActionResult> Index()
         {
               return _context.Products != null ? 
@@ -30,6 +31,7 @@ namespace DeskShiraz.Controllers
         }
 
         // GET: Products/Details/5
+        [HttpGet("{id}")]
         public async Task<IActionResult> Details(string id)
         {
             if (id == null || _context.Products == null)
@@ -48,6 +50,7 @@ namespace DeskShiraz.Controllers
         }
 
         // GET: Products/Create
+        [HttpGet]
         public IActionResult Create()
         {
             return View();
@@ -70,6 +73,7 @@ namespace DeskShiraz.Controllers
         }
 
         // GET: Products/Edit/5
+        [HttpGet("{id}")]
         public async Task<IActionResult> Edit(string id)
         {
             if (id == null || _context.Products == null)
@@ -121,6 +125,7 @@ namespace DeskShiraz.Controllers
         }
 
         // GET: Products/Delete/5
+        [HttpGet("{id}")]
         public async Task<IActionResult> Delete(string id)
         {
             if (id == null || _context.Products == null)
@@ -157,6 +162,7 @@ namespace DeskShiraz.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [HttpGet("{id}")]
         private bool ProductExists(string id)
         {
           return (_context.Products?.Any(e => e.Id == id)).GetValueOrDefault();

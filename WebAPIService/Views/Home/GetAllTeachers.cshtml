@@ -17,10 +17,10 @@
     app.controller('myCtrl', function ($scope, $http) {
         $scope.GetName = (name) => {
             console.log("Name : ", name);
-            //$http.get("https://localhost:7241/Home/GetTeacherByName", name)
-            //    .then(function (response) {
-            //        $scope.myWelcome = response.data;
-            //    });
+            $http.get("https://localhost:7241/Home/GetTeacherByName", name)
+                .then(function (response) {
+                    $scope.myWelcome = response.data;
+                });
         }
     });
 </script>

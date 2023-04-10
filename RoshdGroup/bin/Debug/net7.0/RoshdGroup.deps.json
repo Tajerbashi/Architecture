@@ -24,6 +24,8 @@
           "RoshdGroup.dll": {}
         }
       },
+      "angularjs/1.8.2": {},
+      "AngularJS.Core/1.8.2": {},
       "Azure.Core/1.24.0": {
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
@@ -2296,12 +2298,14 @@
       },
       "DeskShiraz/1.0.0": {
         "dependencies": {
+          "AngularJS.Core": "1.8.2",
           "FontAwesome": "4.7.0",
           "Microsoft.EntityFrameworkCore": "7.0.4",
           "Microsoft.EntityFrameworkCore.Relational": "7.0.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.4",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "7.0.5",
           "Microsoft.jQuery.Unobtrusive.Validation": "4.0.0",
+          "angularjs": "1.8.2",
           "bootstrap": "5.2.3",
           "jQuery": "3.6.4",
           "jQuery.Validation": "1.19.5"
@@ -2317,6 +2321,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "angularjs/1.8.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PNDvzvETjTfl3JqHTuPH8XbKOLQRXrHp613vGMpllUIy2YL42tK8YIdbeBaMZxK+8VlUMShuXMVkgiH95S12rQ==",
+      "path": "angularjs/1.8.2",
+      "hashPath": "angularjs.1.8.2.nupkg.sha512"
+    },
+    "AngularJS.Core/1.8.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XqWsLLPPF8KDFYbVPbtpbae1claPLcjyxZgYThdXQri3I2O8SDdMzNafnhIi9nGgg3X6zsu1W0Qj0u5p1wr5mA==",
+      "path": "angularjs.core/1.8.2",
+      "hashPath": "angularjs.core.1.8.2.nupkg.sha512"
     },
     "Azure.Core/1.24.0": {
       "type": "package",

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\GitHub\\InfrastructureService\\InfrastructureService\\InfrastructureService.csproj",
-      "projectName": "InfrastructureService",
-      "projectPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\GitHub\\InfrastructureService\\InfrastructureService\\InfrastructureService.csproj",
+      "projectUniqueName": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\GitHub\\InfrastructureService\\PersistanceLibrary\\PersistanceLibrary.csproj",
+      "projectName": "PersistanceLibrary",
+      "projectPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\GitHub\\InfrastructureService\\PersistanceLibrary\\PersistanceLibrary.csproj",
       "packagesPath": "C:\\Users\\Tajer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\GitHub\\InfrastructureService\\InfrastructureService\\obj\\",
+      "outputPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\GitHub\\InfrastructureService\\PersistanceLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -63,9 +63,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

@@ -1121,6 +1121,30 @@
           }
         }
       },
+      "ApplicationLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "DomainLibrary": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.5"
+        },
+        "compile": {
+          "bin/placeholder/ApplicationLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ApplicationLibrary.dll": {}
+        }
+      },
+      "DomainLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/DomainLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DomainLibrary.dll": {}
+        }
+      },
       "InfrastructureLibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -1138,6 +1162,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "ApplicationLibrary": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.5",
           "Microsoft.EntityFrameworkCore.Relational": "7.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5"
@@ -3443,6 +3468,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "ApplicationLibrary/1.0.0": {
+      "type": "project",
+      "path": "../ApplicationLibrary/ApplicationLibrary.csproj",
+      "msbuildProject": "../ApplicationLibrary/ApplicationLibrary.csproj"
+    },
+    "DomainLibrary/1.0.0": {
+      "type": "project",
+      "path": "../DomainLibrary/DomainLibrary.csproj",
+      "msbuildProject": "../DomainLibrary/DomainLibrary.csproj"
     },
     "InfrastructureLibrary/1.0.0": {
       "type": "project",

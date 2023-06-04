@@ -197,6 +197,16 @@
         "build": {
           "buildTransitive/net6.0/_._": {}
         }
+      },
+      "DomainLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/DomainLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DomainLibrary.dll": {}
+        }
       }
     }
   },
@@ -510,10 +520,16 @@
         "microsoft.extensions.primitives.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "DomainLibrary/1.0.0": {
+      "type": "project",
+      "path": "../DomainLibrary/DomainLibrary.csproj",
+      "msbuildProject": "../DomainLibrary/DomainLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "DomainLibrary >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.5"
     ]
   },
@@ -549,7 +565,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\GitHub\\InfrastructureService\\CleanArchitictureInfrastructure\\DomainLibrary\\DomainLibrary.csproj": {
+              "projectPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\GitHub\\InfrastructureService\\CleanArchitictureInfrastructure\\DomainLibrary\\DomainLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

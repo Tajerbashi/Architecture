@@ -1,8 +1,12 @@
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\InfrastructureService\CleanArchitictureInfrastructure\InfrastructureLibrary\bin\Debug\net7.0\InfrastructureLibrary.deps.json
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\InfrastructureService\CleanArchitictureInfrastructure\InfrastructureLibrary\bin\Debug\net7.0\InfrastructureLibrary.dll
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\InfrastructureService\CleanArchitictureInfrastructure\InfrastructureLibrary\bin\Debug\net7.0\InfrastructureLibrary.pdb
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\InfrastructureService\CleanArchitictureInfrastructure\InfrastructureLibrary\bin\Debug\net7.0\ApplicationLibrary.dll
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\InfrastructureService\CleanArchitictureInfrastructure\InfrastructureLibrary\bin\Debug\net7.0\DomainLibrary.dll
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\InfrastructureService\CleanArchitictureInfrastructure\InfrastructureLibrary\bin\Debug\net7.0\PersistanceLibrary.dll
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\InfrastructureService\CleanArchitictureInfrastructure\InfrastructureLibrary\bin\Debug\net7.0\PersistanceLibrary.pdb
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\InfrastructureService\CleanArchitictureInfrastructure\InfrastructureLibrary\bin\Debug\net7.0\ApplicationLibrary.pdb
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\InfrastructureService\CleanArchitictureInfrastructure\InfrastructureLibrary\bin\Debug\net7.0\DomainLibrary.pdb
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\InfrastructureService\CleanArchitictureInfrastructure\InfrastructureLibrary\obj\Debug\net7.0\InfrastructureLibrary.csproj.AssemblyReference.cache
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\InfrastructureService\CleanArchitictureInfrastructure\InfrastructureLibrary\obj\Debug\net7.0\InfrastructureLibrary.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\InfrastructureService\CleanArchitictureInfrastructure\InfrastructureLibrary\obj\Debug\net7.0\InfrastructureLibrary.AssemblyInfoInputs.cache

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Library.Bases
 {
-    public interface IAuditableEntity
+    public interface IAuditableEntity:IEntity
     {
     }
 }

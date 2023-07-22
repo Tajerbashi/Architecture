@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Library.Bases
 {
-    public abstract class BaseEntity:IEntity
+    public abstract class BaseEntity : IEntity
     {
         public DateTime CreateDate { get; set; }
         public long CreateBy { get; set; }

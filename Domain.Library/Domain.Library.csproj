@@ -7,7 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Entities\" />
+    <Folder Include="Entities\GEN\" />
+    <Folder Include="Entities\BES\" />
+    <Folder Include="Entities\RPT\" />
     <Folder Include="Enums\" />
   </ItemGroup>
 

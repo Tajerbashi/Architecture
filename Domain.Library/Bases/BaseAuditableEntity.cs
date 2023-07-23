@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Domain.Library.Bases
 {
-    public abstract class BaseAuditableEntity<T>:BaseEntity,IAuditableEntity
+    public abstract class BaseAuditableEntity<T> : BaseEntity, IAuditableEntity
     {
         public T ID { get; set; }
 
     }
-    public abstract class BaseAuditableEntity: BaseAuditableEntity<long>
+    public abstract class BaseAuditableEntity : BaseAuditableEntity<long>
     {
 
     }

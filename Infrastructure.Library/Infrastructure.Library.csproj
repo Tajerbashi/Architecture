@@ -9,6 +9,7 @@
   <ItemGroup>
     <Folder Include="EntityConfiguration\BES\" />
     <Folder Include="EntityConfiguration\GEN\" />
+    <Folder Include="EntityConfiguration\CNT\" />
     <Folder Include="EntityConfiguration\RPT\" />
   </ItemGroup>
 

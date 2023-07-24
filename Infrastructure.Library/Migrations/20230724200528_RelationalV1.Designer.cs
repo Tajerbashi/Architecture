@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Library.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20230723200834_Initital_Database")]
-    partial class Initital_Database
+    [Migration("20230724200528_RelationalV1")]
+    partial class RelationalV1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -33,13 +33,13 @@ namespace Infrastructure.Library.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("ID"));
 
-                    b.Property<long>("CreateBy")
-                        .HasColumnType("bigint");
-
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<long>("DeleteBy")
+                    b.Property<long>("CreatedByUserRoleID")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("DeleteByUserID")
                         .HasColumnType("bigint");
 
                     b.Property<DateTime>("DeleteDate")
@@ -51,7 +51,14 @@ namespace Infrastructure.Library.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<long>("UpdateBy")
+                    b.Property<Guid>("RowGuid")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<long>("UpdateByUserRoleID")
                         .HasColumnType("bigint");
 
                     b.Property<DateTime>("UpdateDate")
@@ -66,23 +73,26 @@ namespace Infrastructure.Library.Migrations
 
             modelBuilder.Entity("Domain.Library.Entities.GroupUserRole", b =>
                 {
-                    b.Property<long>("ID")
-                        .ValueGeneratedOnAdd()
+                    b.Property<long?>("UserRoleID")
                         .HasColumnType("bigint");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("ID"));
-
-                    b.Property<long>("CreateBy")
+                    b.Property<long?>("GroupID")
                         .HasColumnType("bigint");
 
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<long>("DeleteBy")
+                    b.Property<long>("CreatedByUserRoleID")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("DeleteByUserID")
                         .HasColumnType("bigint");
 
                     b.Property<DateTime>("DeleteDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<long>("ID")
+                        .HasColumnType("bigint");
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
@@ -90,13 +100,18 @@ namespace Infrastructure.Library.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<long>("UpdateBy")
+                    b.Property<Guid>("RowGuid")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<long>("UpdateByUserRoleID")
                         .HasColumnType("bigint");
 
                     b.Property<DateTime>("UpdateDate")
                         .HasColumnType("datetime2");
 
-                    b.HasKey("ID");
+                    b.HasKey("UserRoleID", "GroupID");
+
+                    b.HasIndex("GroupID");
 
                     b.HasIndex("ID");
 
@@ -111,17 +126,21 @@ namespace Infrastructure.Library.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("ID"));
 
-                    b.Property<long>("CreateBy")
-                        .HasColumnType("bigint");
-
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<long>("DeleteBy")
+                    b.Property<long>("CreatedByUserRoleID")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("DeleteByUserID")
                         .HasColumnType("bigint");
 
                     b.Property<DateTime>("DeleteDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
@@ -129,7 +148,14 @@ namespace Infrastructure.Library.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<long>("UpdateBy")
+                    b.Property<Guid>("RowGuid")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<long>("UpdateByUserRoleID")
                         .HasColumnType("bigint");
 
                     b.Property<DateTime>("UpdateDate")
@@ -150,17 +176,33 @@ namespace Infrastructure.Library.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("ID"));
 
-                    b.Property<long>("CreateBy")
-                        .HasColumnType("bigint");
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<long>("DeleteBy")
+                    b.Property<long>("CreatedByUserRoleID")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("DeleteByUserID")
                         .HasColumnType("bigint");
 
                     b.Property<DateTime>("DeleteDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("DisplayName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Family")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
@@ -168,7 +210,18 @@ namespace Infrastructure.Library.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<long>("UpdateBy")
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("RowGuid")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<long>("UpdateByUserRoleID")
                         .HasColumnType("bigint");
 
                     b.Property<DateTime>("UpdateDate")
@@ -183,23 +236,26 @@ namespace Infrastructure.Library.Migrations
 
             modelBuilder.Entity("Domain.Library.Entities.UserRole", b =>
                 {
-                    b.Property<long>("ID")
-                        .ValueGeneratedOnAdd()
+                    b.Property<long?>("UserID")
                         .HasColumnType("bigint");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("ID"));
-
-                    b.Property<long>("CreateBy")
+                    b.Property<long?>("RoleID")
                         .HasColumnType("bigint");
 
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<long>("DeleteBy")
+                    b.Property<long>("CreatedByUserRoleID")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("DeleteByUserID")
                         .HasColumnType("bigint");
 
                     b.Property<DateTime>("DeleteDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<long>("ID")
+                        .HasColumnType("bigint");
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
@@ -207,17 +263,81 @@ namespace Infrastructure.Library.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<long>("UpdateBy")
+                    b.Property<Guid>("RowGuid")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<long>("UpdateByUserRoleID")
                         .HasColumnType("bigint");
 
                     b.Property<DateTime>("UpdateDate")
                         .HasColumnType("datetime2");
 
-                    b.HasKey("ID");
+                    b.HasKey("UserID", "RoleID");
 
                     b.HasIndex("ID");
 
+                    b.HasIndex("RoleID");
+
                     b.ToTable("UserRoles", "SEC");
+                });
+
+            modelBuilder.Entity("Domain.Library.Entities.GroupUserRole", b =>
+                {
+                    b.HasOne("Domain.Library.Entities.Group", "Group")
+                        .WithMany("GroupUserRoles")
+                        .HasForeignKey("GroupID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Domain.Library.Entities.UserRole", "UserRole")
+                        .WithMany("GroupUserRoles")
+                        .HasForeignKey("UserRoleID")
+                        .HasPrincipalKey("ID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Group");
+
+                    b.Navigation("UserRole");
+                });
+
+            modelBuilder.Entity("Domain.Library.Entities.UserRole", b =>
+                {
+                    b.HasOne("Domain.Library.Entities.Role", "Role")
+                        .WithMany("UserRole")
+                        .HasForeignKey("RoleID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Domain.Library.Entities.User", "User")
+                        .WithMany("UserRole")
+                        .HasForeignKey("UserID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Role");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Domain.Library.Entities.Group", b =>
+                {
+                    b.Navigation("GroupUserRoles");
+                });
+
+            modelBuilder.Entity("Domain.Library.Entities.Role", b =>
+                {
+                    b.Navigation("UserRole");
+                });
+
+            modelBuilder.Entity("Domain.Library.Entities.User", b =>
+                {
+                    b.Navigation("UserRole");
+                });
+
+            modelBuilder.Entity("Domain.Library.Entities.UserRole", b =>
+                {
+                    b.Navigation("GroupUserRoles");
                 });
 #pragma warning restore 612, 618
         }

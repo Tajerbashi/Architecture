@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace Domain.Library.Bases
 {
-    public interface IEntity
+    public interface IEntity<T>
     {
+        T ID { set; get; }
+        DateTime CreateDate { set; get; }
+        T CreatedByUserRoleID { set; get; }
+        bool IsDeleted { set; get; }
+    }
+    public interface IEntity : IEntity<long>
+    {
+
     }
 }

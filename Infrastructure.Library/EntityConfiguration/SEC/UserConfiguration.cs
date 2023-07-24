@@ -15,6 +15,7 @@ namespace Infrastructure.Library.EntityConfiguration.SEC
         {
             builder.HasQueryFilter(c => !c.IsDeleted);
             builder.HasIndex(c => c.ID);
+
         }
     }
 }

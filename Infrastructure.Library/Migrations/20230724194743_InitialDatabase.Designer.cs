@@ -4,6 +4,7 @@ using Infrastructure.Library.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastructure.Library.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    partial class DatabaseContextModelSnapshot : ModelSnapshot
+    [Migration("20230724194743_InitialDatabase")]
+    partial class InitialDatabase
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -42,6 +45,9 @@ namespace Infrastructure.Library.Migrations
                     b.Property<DateTime>("DeleteDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<long>("GroupUserRoleID")
+                        .HasColumnType("bigint");
+
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
@@ -63,6 +69,8 @@ namespace Infrastructure.Library.Migrations
 
                     b.HasKey("ID");
 
+                    b.HasIndex("GroupUserRoleID");
+
                     b.HasIndex("ID");
 
                     b.ToTable("Groups", "SEC");
@@ -70,11 +78,11 @@ namespace Infrastructure.Library.Migrations
 
             modelBuilder.Entity("Domain.Library.Entities.GroupUserRole", b =>
                 {
-                    b.Property<long?>("UserRoleID")
+                    b.Property<long>("ID")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("bigint");
 
-                    b.Property<long?>("GroupID")
-                        .HasColumnType("bigint");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("ID"));
 
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
@@ -88,7 +96,7 @@ namespace Infrastructure.Library.Migrations
                     b.Property<DateTime>("DeleteDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<long>("ID")
+                    b.Property<long?>("GroupID")
                         .HasColumnType("bigint");
 
                     b.Property<bool>("IsActive")
@@ -106,9 +114,10 @@ namespace Infrastructure.Library.Migrations
                     b.Property<DateTime>("UpdateDate")
                         .HasColumnType("datetime2");
 
-                    b.HasKey("UserRoleID", "GroupID");
+                    b.Property<long?>("UserRoleID")
+                        .HasColumnType("bigint");
 
-                    b.HasIndex("GroupID");
+                    b.HasKey("ID");
 
                     b.HasIndex("ID");
 
@@ -251,6 +260,9 @@ namespace Infrastructure.Library.Migrations
                     b.Property<DateTime>("DeleteDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<long>("GroupUserRoleID")
+                        .HasColumnType("bigint");
+
                     b.Property<long>("ID")
                         .HasColumnType("bigint");
 
@@ -271,6 +283,8 @@ namespace Infrastructure.Library.Migrations
 
                     b.HasKey("UserID", "RoleID");
 
+                    b.HasIndex("GroupUserRoleID");
+
                     b.HasIndex("ID");
 
                     b.HasIndex("RoleID");
@@ -278,28 +292,25 @@ namespace Infrastructure.Library.Migrations
                     b.ToTable("UserRoles", "SEC");
                 });
 
-            modelBuilder.Entity("Domain.Library.Entities.GroupUserRole", b =>
+            modelBuilder.Entity("Domain.Library.Entities.Group", b =>
                 {
-                    b.HasOne("Domain.Library.Entities.Group", "Group")
-                        .WithMany("GroupUserRoles")
-                        .HasForeignKey("GroupID")
+                    b.HasOne("Domain.Library.Entities.GroupUserRole", "GroupUserRole")
+                        .WithMany("Groups")
+                        .HasForeignKey("GroupUserRoleID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Domain.Library.Entities.UserRole", "UserRole")
-                        .WithMany("GroupUserRoles")
-                        .HasForeignKey("UserRoleID")
-                        .HasPrincipalKey("ID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Group");
-
-                    b.Navigation("UserRole");
+                    b.Navigation("GroupUserRole");
                 });
 
             modelBuilder.Entity("Domain.Library.Entities.UserRole", b =>
                 {
+                    b.HasOne("Domain.Library.Entities.GroupUserRole", "GroupUserRole")
+                        .WithMany("UserRoles")
+                        .HasForeignKey("GroupUserRoleID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("Domain.Library.Entities.Role", "Role")
                         .WithMany("UserRole")
                         .HasForeignKey("RoleID")
@@ -312,14 +323,18 @@ namespace Infrastructure.Library.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.Navigation("GroupUserRole");
+
                     b.Navigation("Role");
 
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("Domain.Library.Entities.Group", b =>
+            modelBuilder.Entity("Domain.Library.Entities.GroupUserRole", b =>
                 {
-                    b.Navigation("GroupUserRoles");
+                    b.Navigation("Groups");
+
+                    b.Navigation("UserRoles");
                 });
 
             modelBuilder.Entity("Domain.Library.Entities.Role", b =>
@@ -330,11 +345,6 @@ namespace Infrastructure.Library.Migrations
             modelBuilder.Entity("Domain.Library.Entities.User", b =>
                 {
                     b.Navigation("UserRole");
-                });
-
-            modelBuilder.Entity("Domain.Library.Entities.UserRole", b =>
-                {
-                    b.Navigation("GroupUserRoles");
                 });
 #pragma warning restore 612, 618
         }

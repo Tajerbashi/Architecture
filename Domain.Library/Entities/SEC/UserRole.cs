@@ -6,5 +6,15 @@ namespace Domain.Library.Entities
     [Table("UserRoles", Schema = "SEC")]
     public class UserRole : BaseAuditableEntity
     {
+        public virtual ICollection<GroupUserRole> GroupUserRoles { get; set; }
+       
+        
+        public long? RoleID { get; set; }
+        public virtual Role Role { get; set; }
+
+
+        public long? UserID { get; set; }
+        public virtual User User { get; set; }
+
     }
 }

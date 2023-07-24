@@ -16,7 +16,7 @@ namespace Infrastructure.Library.EntityConfiguration.SEC
             builder.HasQueryFilter(c => !c.IsDeleted);
             builder.HasIndex(c => c.ID);
 
-            builder.HasKey(sc => new { sc.UserID, sc.RoleID });
+            builder.HasKey(sc => new { sc.ID, sc.UserID, sc.RoleID });
 
             builder.HasOne(c => c.User)
                 .WithMany(c => c.UserRole)
@@ -26,6 +26,9 @@ namespace Infrastructure.Library.EntityConfiguration.SEC
                 .WithMany(c => c.UserRole)
                 .HasForeignKey(c => c.RoleID);
 
+            builder.HasMany(c => c.GroupUserRoles)
+                .WithOne(c => c.UserRole)
+                .HasForeignKey(c => c.UserRoleID);
         }
     }
 }

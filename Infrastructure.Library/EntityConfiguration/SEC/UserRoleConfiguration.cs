@@ -26,9 +26,6 @@ namespace Infrastructure.Library.EntityConfiguration.SEC
                 .WithMany(c => c.UserRole)
                 .HasForeignKey(c => c.RoleID);
 
-            builder.HasMany(c => c.GroupUserRoles)
-                .WithOne(c => c.UserRole)
-                .HasForeignKey(c => c.UserRoleID);
         }
     }
 }

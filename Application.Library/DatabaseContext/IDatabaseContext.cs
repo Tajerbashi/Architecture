@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,8 +14,6 @@ namespace Application.Library.DatabaseContext
         DbSet<User> Users { get; set; }
         DbSet<Role> Roles { get; set; }
         DbSet<UserRole> UserRoles { get; set; }
-        DbSet<Group> Groups { get; set; }
-        DbSet<GroupUserRole> GroupUserRoles { get; set; }
 
 
 
@@ -24,5 +23,19 @@ namespace Application.Library.DatabaseContext
         int SaveChanges();
         Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess, CancellationToken cancellationToken = new CancellationToken());
         Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken());
+        DbSet<TEntity> Set<
+            [DynamicallyAccessedMembers
+                (
+                DynamicallyAccessedMemberTypes.PublicConstructors |
+                DynamicallyAccessedMemberTypes.NonPublicConstructors |
+                DynamicallyAccessedMemberTypes.PublicFields | 
+                DynamicallyAccessedMemberTypes.NonPublicFields | 
+                DynamicallyAccessedMemberTypes.PublicProperties | 
+                DynamicallyAccessedMemberTypes.NonPublicProperties | 
+                DynamicallyAccessedMemberTypes.Interfaces
+                )
+            ] 
+        TEntity>() where TEntity : class;
+
     }
 }

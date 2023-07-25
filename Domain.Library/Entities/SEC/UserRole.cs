@@ -6,9 +6,6 @@ namespace Domain.Library.Entities
     [Table("UserRoles", Schema = "SEC")]
     public class UserRole : BaseAuditableEntity
     {
-        public ICollection<GroupUserRole> GroupUserRoles { get; set; }
-       
-        
         public long? RoleID { get; set; }
         public virtual Role Role { get; set; }
 

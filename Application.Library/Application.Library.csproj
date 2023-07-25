@@ -7,12 +7,30 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="DTOs\BES\" />
+    <Folder Include="DTOs\CNT\" />
+    <Folder Include="DTOs\GEN\" />
+    <Folder Include="DTOs\RPT\" />
     <Folder Include="Entities\" />
-    <Folder Include="DTOs\" />
     <Folder Include="Enums\" />
-    <Folder Include="Validators\" />
-    <Folder Include="Services\" />
-    <Folder Include="Views\" />
+    <Folder Include="Services\BES\" />
+    <Folder Include="Services\CNT\" />
+    <Folder Include="Services\GEN\" />
+    <Folder Include="Services\Facad\" />
+    <Folder Include="Services\RPT\" />
+    <Folder Include="Services\SEC\Role\Command\Delete\" />
+    <Folder Include="Services\SEC\Role\Queries\Get\" />
+    <Folder Include="Services\SEC\Role\Queries\GetAll\" />
+    <Folder Include="Services\SEC\Role\Command\Update\" />
+    <Folder Include="Services\SEC\Role\Queries\" />
+    <Folder Include="Validators\BES\" />
+    <Folder Include="Validators\CNT\" />
+    <Folder Include="Validators\GEN\" />
+    <Folder Include="Validators\RPT\" />
+    <Folder Include="Views\BES\" />
+    <Folder Include="Views\CNT\" />
+    <Folder Include="Views\GEN\" />
+    <Folder Include="Views\RPT\" />
   </ItemGroup>
 
   <ItemGroup>

@@ -3,40 +3,18 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
+
 namespace Infrastructure.Library.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialDatabase : Migration
+    public partial class Initial_Database : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.EnsureSchema(
                 name: "SEC");
-
-            migrationBuilder.CreateTable(
-                name: "GroupUserRoles",
-                schema: "SEC",
-                columns: table => new
-                {
-                    ID = table.Column<long>(type: "bigint", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    GroupID = table.Column<long>(type: "bigint", nullable: true),
-                    UserRoleID = table.Column<long>(type: "bigint", nullable: true),
-                    CreateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
-                    CreatedByUserRoleID = table.Column<long>(type: "bigint", nullable: false),
-                    UpdateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdateByUserRoleID = table.Column<long>(type: "bigint", nullable: false),
-                    DeleteDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    DeleteByUserID = table.Column<long>(type: "bigint", nullable: false),
-                    IsActive = table.Column<bool>(type: "bit", nullable: false),
-                    RowGuid = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_GroupUserRoles", x => x.ID);
-                });
 
             migrationBuilder.CreateTable(
                 name: "Roles",
@@ -91,45 +69,13 @@ namespace Infrastructure.Library.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Groups",
-                schema: "SEC",
-                columns: table => new
-                {
-                    ID = table.Column<long>(type: "bigint", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    GroupUserRoleID = table.Column<long>(type: "bigint", nullable: false),
-                    CreateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
-                    CreatedByUserRoleID = table.Column<long>(type: "bigint", nullable: false),
-                    UpdateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdateByUserRoleID = table.Column<long>(type: "bigint", nullable: false),
-                    DeleteDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    DeleteByUserID = table.Column<long>(type: "bigint", nullable: false),
-                    IsActive = table.Column<bool>(type: "bit", nullable: false),
-                    RowGuid = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Groups", x => x.ID);
-                    table.ForeignKey(
-                        name: "FK_Groups_GroupUserRoles_GroupUserRoleID",
-                        column: x => x.GroupUserRoleID,
-                        principalSchema: "SEC",
-                        principalTable: "GroupUserRoles",
-                        principalColumn: "ID",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "UserRoles",
                 schema: "SEC",
                 columns: table => new
                 {
+                    ID = table.Column<long>(type: "bigint", nullable: false),
                     RoleID = table.Column<long>(type: "bigint", nullable: false),
                     UserID = table.Column<long>(type: "bigint", nullable: false),
-                    GroupUserRoleID = table.Column<long>(type: "bigint", nullable: false),
-                    ID = table.Column<long>(type: "bigint", nullable: false),
                     CreateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     IsDeleted = table.Column<bool>(type: "bit", nullable: false),
                     CreatedByUserRoleID = table.Column<long>(type: "bigint", nullable: false),
@@ -142,14 +88,7 @@ namespace Infrastructure.Library.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_UserRoles", x => new { x.UserID, x.RoleID });
-                    table.ForeignKey(
-                        name: "FK_UserRoles_GroupUserRoles_GroupUserRoleID",
-                        column: x => x.GroupUserRoleID,
-                        principalSchema: "SEC",
-                        principalTable: "GroupUserRoles",
-                        principalColumn: "ID",
-                        onDelete: ReferentialAction.Cascade);
+                    table.PrimaryKey("PK_UserRoles", x => new { x.ID, x.UserID, x.RoleID });
                     table.ForeignKey(
                         name: "FK_UserRoles_Roles_RoleID",
                         column: x => x.RoleID,
@@ -166,35 +105,22 @@ namespace Infrastructure.Library.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.CreateIndex(
-                name: "IX_Groups_GroupUserRoleID",
+            migrationBuilder.InsertData(
                 schema: "SEC",
-                table: "Groups",
-                column: "GroupUserRoleID");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Groups_ID",
-                schema: "SEC",
-                table: "Groups",
-                column: "ID");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_GroupUserRoles_ID",
-                schema: "SEC",
-                table: "GroupUserRoles",
-                column: "ID");
+                table: "Roles",
+                columns: new[] { "ID", "CreateDate", "CreatedByUserRoleID", "DeleteByUserID", "DeleteDate", "Description", "IsActive", "IsDeleted", "RowGuid", "Title", "UpdateByUserRoleID", "UpdateDate" },
+                values: new object[,]
+                {
+                    { 1L, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 0L, 0L, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "این نقش اولیه است", false, false, new Guid("00000000-0000-0000-0000-000000000000"), "Admin", 0L, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 2L, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 0L, 0L, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "این نقش اولیه است", false, false, new Guid("00000000-0000-0000-0000-000000000000"), "Operator", 0L, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) },
+                    { 3L, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), 0L, 0L, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "این نقش اولیه است", false, false, new Guid("00000000-0000-0000-0000-000000000000"), "User", 0L, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified) }
+                });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Roles_ID",
                 schema: "SEC",
                 table: "Roles",
                 column: "ID");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_UserRoles_GroupUserRoleID",
-                schema: "SEC",
-                table: "UserRoles",
-                column: "GroupUserRoleID");
 
             migrationBuilder.CreateIndex(
                 name: "IX_UserRoles_ID",
@@ -209,6 +135,12 @@ namespace Infrastructure.Library.Migrations
                 column: "RoleID");
 
             migrationBuilder.CreateIndex(
+                name: "IX_UserRoles_UserID",
+                schema: "SEC",
+                table: "UserRoles",
+                column: "UserID");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Users_ID",
                 schema: "SEC",
                 table: "Users",
@@ -219,15 +151,7 @@ namespace Infrastructure.Library.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Groups",
-                schema: "SEC");
-
-            migrationBuilder.DropTable(
                 name: "UserRoles",
-                schema: "SEC");
-
-            migrationBuilder.DropTable(
-                name: "GroupUserRoles",
                 schema: "SEC");
 
             migrationBuilder.DropTable(

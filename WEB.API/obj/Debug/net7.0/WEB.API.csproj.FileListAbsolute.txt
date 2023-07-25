@@ -1,3 +1,11 @@
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\Infrastructure\WEB.API\obj\Debug\net7.0\WEB.API.csproj.AssemblyReference.cache
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\Infrastructure\WEB.API\obj\Debug\net7.0\WEB.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\Infrastructure\WEB.API\obj\Debug\net7.0\WEB.API.AssemblyInfoInputs.cache
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\Infrastructure\WEB.API\obj\Debug\net7.0\WEB.API.AssemblyInfo.cs
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\Infrastructure\WEB.API\obj\Debug\net7.0\WEB.API.csproj.CoreCompileInputs.cache
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\Infrastructure\WEB.API\obj\Debug\net7.0\WEB.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\Infrastructure\WEB.API\obj\Debug\net7.0\WEB.API.RazorAssemblyInfo.cache
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\Infrastructure\WEB.API\obj\Debug\net7.0\WEB.API.RazorAssemblyInfo.cs
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\Infrastructure\WEB.API\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\Infrastructure\WEB.API\bin\Debug\net7.0\appsettings.json
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\Infrastructure\WEB.API\bin\Debug\net7.0\WEB.API.staticwebassets.runtime.json
@@ -58,15 +66,6 @@ C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\Infrastructure\WE
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\Infrastructure\WEB.API\bin\Debug\net7.0\Infrastructure.Library.pdb
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\Infrastructure\WEB.API\bin\Debug\net7.0\Application.Library.pdb
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\Infrastructure\WEB.API\bin\Debug\net7.0\Domain.Library.pdb
-C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\Infrastructure\WEB.API\obj\Debug\net7.0\WEB.API.csproj.AssemblyReference.cache
-C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\Infrastructure\WEB.API\obj\Debug\net7.0\WEB.API.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\Infrastructure\WEB.API\obj\Debug\net7.0\WEB.API.AssemblyInfoInputs.cache
-C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\Infrastructure\WEB.API\obj\Debug\net7.0\WEB.API.AssemblyInfo.cs
-C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\Infrastructure\WEB.API\obj\Debug\net7.0\WEB.API.csproj.CoreCompileInputs.cache
-C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\Infrastructure\WEB.API\obj\Debug\net7.0\WEB.API.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\Infrastructure\WEB.API\obj\Debug\net7.0\WEB.API.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\Infrastructure\WEB.API\obj\Debug\net7.0\WEB.API.RazorAssemblyInfo.cache
-C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\Infrastructure\WEB.API\obj\Debug\net7.0\WEB.API.RazorAssemblyInfo.cs
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\Infrastructure\WEB.API\obj\Debug\net7.0\staticwebassets\msbuild.WEB.API.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\Infrastructure\WEB.API\obj\Debug\net7.0\staticwebassets\msbuild.build.WEB.API.props
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\Infrastructure\WEB.API\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.WEB.API.props

@@ -16,6 +16,10 @@ namespace Infrastructure.Library.EntityConfiguration.SEC
             builder.HasQueryFilter(c => !c.IsDeleted);
             builder.HasIndex(c => c.ID);
 
+            builder.HasMany(c => c.UserRoles)
+                .WithOne(c => c.User)
+                .HasForeignKey(c => c.UserID)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

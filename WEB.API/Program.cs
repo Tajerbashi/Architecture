@@ -1,3 +1,5 @@
+using Application.Library.DatabaseContext;
+using Application.Library.Services;
 using Infrastructure.Library.Database;
 using Microsoft.EntityFrameworkCore;
 
@@ -15,6 +17,11 @@ builder.Services.AddDbContext<DatabaseContext>(
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+
+//  Injection Services
+builder.Services.AddScoped<IDatabaseContext, DatabaseContext>();
+//  Facad Injection
+builder.Services.AddScoped<IUserFacadRepository, UserFacadRepository>();
 var app = builder.Build();
 
 
@@ -36,5 +43,8 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+app.MapControllerRoute(
+    name: "router",
+    pattern: "api/{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

@@ -14,18 +14,19 @@ namespace Infrastructure.Library.EntityConfiguration.SEC
         public void Configure(EntityTypeBuilder<UserRole> builder)
         {
             builder.HasQueryFilter(c => !c.IsDeleted);
-            builder.HasIndex(c => c.ID);
+            builder.HasIndex(c => c.ID).IsUnique();
 
-            builder.HasKey(sc => new { sc.ID, sc.UserID, sc.RoleID });
+            //builder.HasKey(sc => new { sc.UserID, sc.RoleID });
 
             builder.HasOne(c => c.User)
-                .WithMany(c => c.UserRole)
-                .HasForeignKey(c => c.UserID);
+                .WithMany(c => c.UserRoles)
+                .HasForeignKey(c => c.UserID)
+                .OnDelete(DeleteBehavior.Cascade);
 
             builder.HasOne(c => c.Role)
                 .WithMany(c => c.UserRole)
-                .HasForeignKey(c => c.RoleID);
-
+                .HasForeignKey(c => c.RoleID)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

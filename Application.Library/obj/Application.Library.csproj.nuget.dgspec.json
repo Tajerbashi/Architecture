@@ -57,6 +57,10 @@
               "target": "Package",
               "version": "[11.3.0, )"
             },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.6.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.9, )"

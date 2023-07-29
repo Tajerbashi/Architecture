@@ -16,11 +16,10 @@ namespace Domain.Library.Bases
         public virtual long ID { get; set; }
 
         [Column(TypeName = "datetime2")]
-        public DateTime CreateDate { get; set; }
+        public DateTime CreateDate { get; set; } = DateTime.Now;
 
         [Required]
-        [DefaultValue(false)]
-        public bool IsDeleted { get; set; }
+        public bool IsDeleted { get; set; } = false;
 
         //[ForeignKey("CreateByUserRole")]
         public long CreatedByUserRoleID { get; set; }

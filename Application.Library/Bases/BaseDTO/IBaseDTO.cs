@@ -9,12 +9,9 @@
     }
     public abstract class BaseDTO : IBaseDTO<long>
     {
-        public DateTime CreateDate { get; set; }
-        public long CreateBy { get; set; }
-
+        public DateTime CreateDate { get; set; } = DateTime.Now;
         public DateTime DeleteDate { get; set; }
         public long DeleteBy { get; set; }
-
         public DateTime UpdateDate { get; set; }
         public long UpdateBy { get; set; }
     }

@@ -79,10 +79,10 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "FluentValidation.DependencyInjectionExtensions/11.5.1": {
+      "FluentValidation.DependencyInjectionExtensions/11.6.0": {
         "type": "package",
         "dependencies": {
-          "FluentValidation": "11.5.1",
+          "FluentValidation": "11.6.0",
           "Microsoft.Extensions.Dependencyinjection.Abstractions": "2.1.0"
         },
         "compile": {
@@ -1178,6 +1178,7 @@
           "Domain.Library": "1.0.0",
           "FluentValidation": "11.6.0",
           "FluentValidation.AspNetCore": "11.3.0",
+          "FluentValidation.DependencyInjectionExtensions": "11.6.0",
           "Microsoft.EntityFrameworkCore": "7.0.9"
         },
         "compile": {
@@ -1296,16 +1297,16 @@
         "lib/netcoreapp3.1/FluentValidation.AspNetCore.xml"
       ]
     },
-    "FluentValidation.DependencyInjectionExtensions/11.5.1": {
-      "sha512": "iWM0LS1MDYX06pcjMEQKqHirl2zkjHlNV23mEJSoR1IZI7KQmTa0RcTtGEJpj5+iHvBCfrzP2mYKM4FtRKVb+A==",
+    "FluentValidation.DependencyInjectionExtensions/11.6.0": {
+      "sha512": "3jyyy5VMzKsdGNzfBKtEYX3fd3YzSSzd7JEq7uJcqjqqkoCexT4khgTlNT8upXOeU6mT1MSW7H7OjvUG9W1bRw==",
       "type": "package",
-      "path": "fluentvalidation.dependencyinjectionextensions/11.5.1",
+      "path": "fluentvalidation.dependencyinjectionextensions/11.6.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
         "fluent-validation-icon.png",
-        "fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
+        "fluentvalidation.dependencyinjectionextensions.11.6.0.nupkg.sha512",
         "fluentvalidation.dependencyinjectionextensions.nuspec",
         "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll",
         "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.xml",

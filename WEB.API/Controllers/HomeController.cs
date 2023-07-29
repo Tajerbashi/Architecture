@@ -1,38 +1,46 @@
-﻿using Application.Library.Services;
+﻿using Application.Library.Models.DTOs.SEC;
+using Application.Library.Services;
+using Domain.Library.Entities;
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
-using WEB.API.Models;
 
 namespace WEB.API.Controllers
 {
-    public class HomeController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class HomeController : ControllerBase
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly RoleService _roleService;
-
+        private readonly IUserFacadRepository _userFacad;
         public HomeController(
             ILogger<HomeController> logger,
-            RoleService roleService
+            IUserFacadRepository userFacad
             )
         {
             _logger = logger;
-            _roleService = roleService;
+            _userFacad = userFacad;
         }
 
-        public IActionResult Index()
+        public ActionResult Index()
         {
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            
+            for (int i = 1; i < 100000; i++)
+            {
+                UserDTO userDTO = new UserDTO();
+                userDTO.RoleId = 3;
+                userDTO.Name = @$"User {i}";
+                userDTO.Family = @$"Family {i}";
+                userDTO.Age = 25;
+                userDTO.DisplayName = @$"{userDTO.Name} : {userDTO.Family}";
+                userDTO.Email = @$"User{i}@mail.com";
+                userDTO.Phone = @$"0902100100{i}";
+                userDTO.Address = @$"Address of user in street{i+10} block {i+2}";
+                 var res =_userFacad.UserCreateService.Execute(userDTO);
+                if (!res.IsSuccess)
+                {
+                    return StatusCode(StatusCodes.Status400BadRequest, res.Message);
+                }
+            }
+            return StatusCode(StatusCodes.Status200OK, "Model is valid!");
         }
     }
 }

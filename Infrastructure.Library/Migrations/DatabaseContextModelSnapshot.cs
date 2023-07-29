@@ -75,47 +75,47 @@ namespace Infrastructure.Library.Migrations
                         new
                         {
                             ID = 1L,
-                            CreateDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreateDate = new DateTime(2023, 7, 30, 1, 40, 50, 196, DateTimeKind.Local).AddTicks(6225),
                             CreatedByUserRoleID = 0L,
                             DeleteByUserID = 0L,
-                            DeleteDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            DeleteDate = new DateTime(2023, 7, 30, 1, 40, 50, 196, DateTimeKind.Local).AddTicks(6223),
                             Description = "این نقش اولیه است",
-                            IsActive = false,
+                            IsActive = true,
                             IsDeleted = false,
                             RowGuid = new Guid("00000000-0000-0000-0000-000000000000"),
                             Title = "Admin",
                             UpdateByUserRoleID = 0L,
-                            UpdateDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            UpdateDate = new DateTime(2023, 7, 30, 1, 40, 50, 196, DateTimeKind.Local).AddTicks(6209)
                         },
                         new
                         {
                             ID = 2L,
-                            CreateDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreateDate = new DateTime(2023, 7, 30, 1, 40, 50, 196, DateTimeKind.Local).AddTicks(6260),
                             CreatedByUserRoleID = 0L,
                             DeleteByUserID = 0L,
-                            DeleteDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            DeleteDate = new DateTime(2023, 7, 30, 1, 40, 50, 196, DateTimeKind.Local).AddTicks(6259),
                             Description = "این نقش اولیه است",
-                            IsActive = false,
+                            IsActive = true,
                             IsDeleted = false,
                             RowGuid = new Guid("00000000-0000-0000-0000-000000000000"),
                             Title = "Operator",
                             UpdateByUserRoleID = 0L,
-                            UpdateDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            UpdateDate = new DateTime(2023, 7, 30, 1, 40, 50, 196, DateTimeKind.Local).AddTicks(6258)
                         },
                         new
                         {
                             ID = 3L,
-                            CreateDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreateDate = new DateTime(2023, 7, 30, 1, 40, 50, 196, DateTimeKind.Local).AddTicks(6277),
                             CreatedByUserRoleID = 0L,
                             DeleteByUserID = 0L,
-                            DeleteDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            DeleteDate = new DateTime(2023, 7, 30, 1, 40, 50, 196, DateTimeKind.Local).AddTicks(6276),
                             Description = "این نقش اولیه است",
-                            IsActive = false,
+                            IsActive = true,
                             IsDeleted = false,
                             RowGuid = new Guid("00000000-0000-0000-0000-000000000000"),
                             Title = "User",
                             UpdateByUserRoleID = 0L,
-                            UpdateDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            UpdateDate = new DateTime(2023, 7, 30, 1, 40, 50, 196, DateTimeKind.Local).AddTicks(6275)
                         });
                 });
 
@@ -130,6 +130,9 @@ namespace Infrastructure.Library.Migrations
                     b.Property<string>("Address")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Age")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
@@ -188,13 +191,10 @@ namespace Infrastructure.Library.Migrations
             modelBuilder.Entity("Domain.Library.Entities.UserRole", b =>
                 {
                     b.Property<long>("ID")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("bigint");
 
-                    b.Property<long?>("UserID")
-                        .HasColumnType("bigint");
-
-                    b.Property<long?>("RoleID")
-                        .HasColumnType("bigint");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("ID"));
 
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
@@ -214,6 +214,10 @@ namespace Infrastructure.Library.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
+                    b.Property<long?>("RoleID")
+                        .IsRequired()
+                        .HasColumnType("bigint");
+
                     b.Property<Guid>("RowGuid")
                         .HasColumnType("uniqueidentifier");
 
@@ -223,9 +227,14 @@ namespace Infrastructure.Library.Migrations
                     b.Property<DateTime>("UpdateDate")
                         .HasColumnType("datetime2");
 
-                    b.HasKey("ID", "UserID", "RoleID");
+                    b.Property<long?>("UserID")
+                        .IsRequired()
+                        .HasColumnType("bigint");
 
-                    b.HasIndex("ID");
+                    b.HasKey("ID");
+
+                    b.HasIndex("ID")
+                        .IsUnique();
 
                     b.HasIndex("RoleID");
 
@@ -243,7 +252,7 @@ namespace Infrastructure.Library.Migrations
                         .IsRequired();
 
                     b.HasOne("Domain.Library.Entities.User", "User")
-                        .WithMany("UserRole")
+                        .WithMany("UserRoles")
                         .HasForeignKey("UserID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -260,7 +269,7 @@ namespace Infrastructure.Library.Migrations
 
             modelBuilder.Entity("Domain.Library.Entities.User", b =>
                 {
-                    b.Navigation("UserRole");
+                    b.Navigation("UserRoles");
                 });
 #pragma warning restore 612, 618
         }

@@ -3,6 +3,7 @@ using Application.Library.DatabaseContext;
 using Application.Library.Models.DTOs.SEC;
 using Application.Library.Validators;
 using Domain.Library.Entities;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Application.Library.Services
 {
@@ -52,6 +53,8 @@ namespace Application.Library.Services
             };
 
             _context.Users.Add(entity);
+
+
             if (model.RoleId != null)
             {
                 var Role = _context.Roles.Find(model.RoleId);
@@ -62,14 +65,20 @@ namespace Application.Library.Services
                     User = entity,
                     Role = Role
                 };
-            _context.UserRoles.Add(userRole);
+                _context.UserRoles.Add(userRole);
             }
-            
+
             _context.SaveChanges();
+
+            var ID = _context.Users
+                     .OrderByDescending(m => m.ID)
+                     .FirstOrDefault().ID;
+
+
             return new ResultView<long>()
             {
                 IsSuccess = true,
-                Data = 0,
+                Data = ID,
                 Message = new List<string>()
                 {
                     "با موفقیت ذخیره شده",

@@ -289,6 +289,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.9, )"
+            },
+            "Realm": {
+              "target": "Package",
+              "version": "[11.3.0, )"
             }
           },
           "imports": [

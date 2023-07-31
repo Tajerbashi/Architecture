@@ -9,6 +9,7 @@ namespace Application.Library.Models.DTOs.SEC
 {
     public class UserDTO : BaseDTO
     {
+        public long ID { get; set; }
         public string Name { get; set; }
         public string Family { get; set; }
         public string DisplayName { get; set; }

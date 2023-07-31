@@ -21,6 +21,7 @@ namespace Application.Library.Services
         {
             List < UserView > list = _context.Users.Where(c => c.IsDeleted == false && c.IsActive == true).Select(c => new UserView
             {
+                ID = c.ID,
                 Name = c.Name,
                 Family=c.Family,
                 Age=c.Age,

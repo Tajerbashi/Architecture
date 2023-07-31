@@ -6,7 +6,7 @@ namespace Application.Library.Services
 {
     public interface IUserDeleteService
     {
-        ResultView<UserView> Execute(long Id);
+        ResultView<long> Execute(long Id);
     }
     public class UserDeleteService : IUserDeleteService
     {
@@ -15,19 +15,26 @@ namespace Application.Library.Services
         {
             _context = context;
         }
-        public ResultView<UserView> Execute(long Id)
+        public ResultView<long> Execute(long Id)
         {
-            return new ResultView<UserView>()
+            var data = _context.Users.Find(Id);
+            var role = _context.UserRoles.FirstOrDefault(c => c.UserID == data.ID);
+
+            role.IsActive = false;
+            role.IsDeleted = true;
+            data.IsActive = false;
+            data.IsDeleted = true;
+
+            _context.Users.Update(data);
+            _context.SaveChanges();
+            return new ResultView<long>()
             {
                 IsSuccess = true,
                 Message = new List<string>()
                 {
-                    "با موفقیت ذخیره شده",
+                    "با موفقیت حذف شد",
                 },
-                Data = new UserView()
-                {
-
-                }
+                Data = Id
             };
         }
     }

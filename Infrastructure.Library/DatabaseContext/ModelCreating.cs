@@ -9,7 +9,6 @@ namespace Infrastructure.Library
         {
             modelBuilder.ApplyConfiguration(new UserConfiguration());
             modelBuilder.ApplyConfiguration(new RoleConfiguration());
-            modelBuilder.ApplyConfiguration(new UserRoleConfiguration());
         }
     }
 }

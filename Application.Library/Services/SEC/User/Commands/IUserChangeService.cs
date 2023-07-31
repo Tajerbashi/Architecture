@@ -6,7 +6,7 @@ namespace Application.Library.Services
 {
     public interface IUserChangeService
     {
-        ResultView<UserView> Execute(long Id);
+        ResultView<long> Execute(long Id);
     }
     public class UserChangeService : IUserChangeService
     {
@@ -15,22 +15,25 @@ namespace Application.Library.Services
         {
             _context = context;
         }
-        public ResultView<UserView> Execute(long Id)
+        public ResultView<long> Execute(long Id)
         {
 
+            var data = _context.Users.Find(Id);
+            var role = _context.UserRoles.FirstOrDefault(c => c.UserID == data.ID);
+           
+            role.IsActive = data.IsActive ? false : true;
+            data.IsActive = data.IsActive ? false : true;
 
-
-            return new ResultView<UserView>()
+            _context.Users.Update(data);
+            _context.SaveChanges();
+            return new ResultView<long>()
             {
                 IsSuccess = true,
                 Message = new List<string>()
                 {
-                    "با موفقیت ذخیره شده",
+                    "با موفقیت تغییر کرد",
                 },
-                Data = new UserView()
-                {
-
-                }
+                Data = Id
             };
         }
     }

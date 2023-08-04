@@ -27,13 +27,13 @@ namespace WEB.API.Controllers
             //{
             //    UserDTO userDTO = new UserDTO();
             //    userDTO.RoleId = 3;
-            //    userDTO.Name = @$"User {i}";
-            //    userDTO.Family = @$"Family {i}";
+            //    userDTO.Name = $"User {i}";
+            //    userDTO.Family = $"Family {i}";
             //    userDTO.Age = 25;
-            //    userDTO.DisplayName = @$"{userDTO.Name} : {userDTO.Family}";
-            //    userDTO.Email = @$"User{i}@mail.com";
-            //    userDTO.Phone = @$"09{i}";
-            //    userDTO.Address = @$"Address of user in street{i + 10} block {i + 2}";
+            //    userDTO.DisplayName = $"{userDTO.Name} : {userDTO.Family}";
+            //    userDTO.Email = $"User{i}@mail.com";
+            //    userDTO.Phone = $"09{i}";
+            //    userDTO.Address = $"Address of user in street{i + 10} block {i + 2}";
             //    var res =_userFacad.UserCreateService.Execute(userDTO);
             //    if (!res.IsSuccess)
             //    {
@@ -54,13 +54,14 @@ namespace WEB.API.Controllers
             UserDTO userDTO = new UserDTO();
             userDTO.ID = Id;
             userDTO.RoleId = 3;
-            userDTO.Name = @$"User {data.Data.ID}";
-            userDTO.Family = @$"Family {data.Data.ID}";
+            //userDTO.Name = new Domain.Library.ValueObjects.Name.Create(($"{data.Data.Name}" ?? ""));
+            userDTO.Name = $"Name {data.Data.Name}";
+            userDTO.Family = $"Family {data.Data.ID}";
             userDTO.Age = 25;
-            userDTO.DisplayName = @$"{data.Data.Name} : {data.Data.Family}";
-            userDTO.Email = @$"User{data.Data.ID}@mail.com";
-            userDTO.Phone = @$"09020320844";
-            userDTO.Address = @$"Address of user in street{data.Data.ID + 10} block {data.Data.ID + 2}";
+            userDTO.DisplayName = $"{data.Data.Name} : {data.Data.Family}";
+            userDTO.Email = $"User{data.Data.ID}@mail.com";
+            userDTO.Phone = $"09020320844";
+            userDTO.Address = $"Address of user in street{data.Data.ID + 10} block {data.Data.ID + 2}";
             userDTO.UpdateDate = DateTime.Now;
             userDTO.UpdateBy = 3;
             var upd =_userFacad.UserUpdateService.Execute(userDTO);

@@ -1217,6 +1217,9 @@
       "Domain.Library/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "CSharpFunctionalExtensions": "2.40.0"
+        },
         "compile": {
           "bin/placeholder/Domain.Library.dll": {}
         },

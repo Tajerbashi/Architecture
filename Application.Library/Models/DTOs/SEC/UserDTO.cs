@@ -1,9 +1,5 @@
 ﻿using Application.Library.Bases;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Domain.Library.ValueObjects;
 
 namespace Application.Library.Models.DTOs.SEC
 {
@@ -11,6 +7,7 @@ namespace Application.Library.Models.DTOs.SEC
     {
         public long ID { get; set; }
         public string Name { get; set; }
+        //public Name Name { get; set; }
         public string Family { get; set; }
         public string DisplayName { get; set; }
         public string Email { get; set; }

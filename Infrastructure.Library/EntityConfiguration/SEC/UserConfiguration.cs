@@ -20,6 +20,8 @@ namespace Infrastructure.Library.EntityConfiguration.SEC
                 .WithOne(c => c.User)
                 .HasForeignKey(c => c.UserID)
                 .OnDelete(DeleteBehavior.Cascade);
+
+            //builder.OwnsOne(x => x.Name,x => x.Property(z => z.Value));
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Domain.Library.Bases;
+using Domain.Library.ValueObjects;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Domain.Library.Entities

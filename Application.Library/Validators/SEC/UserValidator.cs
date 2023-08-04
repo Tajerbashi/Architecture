@@ -1,4 +1,5 @@
 ﻿using Application.Library.Models.DTOs.SEC;
+using Domain.Library.ValueObjects;
 using FluentValidation;
 
 namespace Application.Library.Validators
@@ -11,8 +12,8 @@ namespace Application.Library.Validators
             RuleFor(user => user.Name)//.Cascade(CascadeMode.Stop)
                 .NotEmpty().NotNull()
                 .WithMessage("نام خالی است")
-                .MaximumLength(50).WithMessage("حداکثر نام 50 حرف است")
-                .MinimumLength(3).WithMessage("حداقل نام 3 حرف است")
+                //.MaximumLength(50).WithMessage("حداکثر نام 50 حرف است")
+                //.MinimumLength(3).WithMessage("حداقل نام 3 حرف است")
                 ;
             RuleFor(user => user.Family)
                .NotEmpty().NotNull()

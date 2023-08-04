@@ -669,6 +669,9 @@
         }
       },
       "Domain.Library/1.0.0": {
+        "dependencies": {
+          "CSharpFunctionalExtensions": "2.40.0"
+        },
         "runtime": {
           "Domain.Library.dll": {}
         }

@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "Application.Library/1.0.0": {
         "dependencies": {
+          "CSharpFunctionalExtensions": "2.40.0",
           "Domain.Library": "1.0.0",
           "FluentValidation": "11.6.0",
           "FluentValidation.AspNetCore": "11.3.0",
@@ -16,6 +17,14 @@
         },
         "runtime": {
           "Application.Library.dll": {}
+        }
+      },
+      "CSharpFunctionalExtensions/2.40.0": {
+        "runtime": {
+          "lib/net6.0/CSharpFunctionalExtensions.dll": {
+            "assemblyVersion": "2.40.0.0",
+            "fileVersion": "2.40.0.0"
+          }
         }
       },
       "FluentValidation/11.6.0": {
@@ -122,6 +131,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "CSharpFunctionalExtensions/2.40.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Xo3BSUMuRCSp4/SeTn0G/ZgahCNXzrh28gprzYpqPPKisDbXqGQeDumhnrlhUSMHVyatXJniezuO7W8vPHt3Ww==",
+      "path": "csharpfunctionalextensions/2.40.0",
+      "hashPath": "csharpfunctionalextensions.2.40.0.nupkg.sha512"
     },
     "FluentValidation/11.6.0": {
       "type": "package",

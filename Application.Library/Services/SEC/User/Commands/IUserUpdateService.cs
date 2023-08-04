@@ -4,6 +4,7 @@ using Application.Library.Models.DTOs.SEC;
 using Application.Library.Models.Views.SEC;
 using Application.Library.Validators;
 using Domain.Library.Entities;
+using FluentValidation;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Application.Library.Services

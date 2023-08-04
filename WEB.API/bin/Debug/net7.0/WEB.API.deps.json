@@ -52,6 +52,14 @@
           }
         }
       },
+      "CSharpFunctionalExtensions/2.40.0": {
+        "runtime": {
+          "lib/net6.0/CSharpFunctionalExtensions.dll": {
+            "assemblyVersion": "2.40.0.0",
+            "fileVersion": "2.40.0.0"
+          }
+        }
+      },
       "FluentValidation/11.6.0": {
         "runtime": {
           "lib/net7.0/FluentValidation.dll": {
@@ -950,6 +958,7 @@
       },
       "Application.Library/1.0.0": {
         "dependencies": {
+          "CSharpFunctionalExtensions": "2.40.0",
           "Domain.Library": "1.0.0",
           "FluentValidation": "11.6.0",
           "FluentValidation.AspNetCore": "11.3.0",
@@ -997,6 +1006,13 @@
       "sha512": "sha512-EycyMsb6rD2PK9P0SyibFfEhvWWttdrYhyPF4f41uzdB/44yQlV+2Wehxyg489Rj6gbPvSPgbKq0xsHJBhipZA==",
       "path": "azure.identity/1.6.0",
       "hashPath": "azure.identity.1.6.0.nupkg.sha512"
+    },
+    "CSharpFunctionalExtensions/2.40.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Xo3BSUMuRCSp4/SeTn0G/ZgahCNXzrh28gprzYpqPPKisDbXqGQeDumhnrlhUSMHVyatXJniezuO7W8vPHt3Ww==",
+      "path": "csharpfunctionalextensions/2.40.0",
+      "hashPath": "csharpfunctionalextensions.2.40.0.nupkg.sha512"
     },
     "FluentValidation/11.6.0": {
       "type": "package",

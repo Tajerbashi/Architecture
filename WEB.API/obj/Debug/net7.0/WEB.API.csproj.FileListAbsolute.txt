@@ -111,3 +111,4 @@ C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\Infrastructure\WE
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\Infrastructure\WEB.API\bin\Debug\net7.0\runtimes\win-x86\native\realm-wrappers.dll
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\Infrastructure\WEB.API\obj\Debug\net7.0\WEB.API.csproj.Fody.CopyLocal.cache
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\Infrastructure\WEB.API\obj\Debug\net7.0\WEB.API.csproj.Fody.RuntimeCopyLocal.cache
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\GitHub\Infrastructure\WEB.API\bin\Debug\net7.0\CSharpFunctionalExtensions.dll

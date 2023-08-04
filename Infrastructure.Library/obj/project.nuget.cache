@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "d2wnt/pKDdc9y5+IaQXXHyHg4ElVvZF5F74oMAblZRC3O6+k1LkMOy+tZ96XTCoLBx86mR3v73oClSyGVhmG5g==",
+  "dgSpecHash": "HEl2CDUWFf7m07hMLuTt1LIaFQEs6rEofl62Uie4Y6EwQDqNRwPZsr4CkLi2tewvivDcGrkk1pRwg8dEKiil9Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\GitHub\\Infrastructure\\Infrastructure.Library\\Infrastructure.Library.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tajer\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Tajer\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\Tajer\\.nuget\\packages\\csharpfunctionalextensions\\2.40.0\\csharpfunctionalextensions.2.40.0.nupkg.sha512",
     "C:\\Users\\Tajer\\.nuget\\packages\\fluentvalidation\\11.6.0\\fluentvalidation.11.6.0.nupkg.sha512",
     "C:\\Users\\Tajer\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
     "C:\\Users\\Tajer\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.6.0\\fluentvalidation.dependencyinjectionextensions.11.6.0.nupkg.sha512",

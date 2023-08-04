@@ -7,7 +7,8 @@ namespace Application.Library.Validators
     {
         public UserValidator()
         {
-            RuleFor(user => user.Name)
+            CascadeMode = CascadeMode.Stop;
+            RuleFor(user => user.Name)//.Cascade(CascadeMode.Stop)
                 .NotEmpty().NotNull()
                 .WithMessage("نام خالی است")
                 .MaximumLength(50).WithMessage("حداکثر نام 50 حرف است")
@@ -38,6 +39,7 @@ namespace Application.Library.Validators
             //          + @"\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+"
             //          + @"[a-zA-Z]{2,}))$").WithMessage("فرمت ایمیل اشتباه است")
             //   ;
+
             //RuleFor(user => user.Phone)
             //   .NotEmpty().NotNull()
             //   .WithMessage("تلفن خالی است")
@@ -48,7 +50,7 @@ namespace Application.Library.Validators
                 .MaximumLength(100).When(x => x.Address != null).WithMessage("آدرس بیش از حد طولانی است")
                 .MinimumLength(5).When(x => x.Address != null).WithMessage("آدرس دقیق تر وارد کنید")
                ;
-            When(x => !string.IsNullOrEmpty(x.Phone) ,() =>
+            When(x => !string.IsNullOrEmpty(x.Phone), () =>
             {
                 RuleFor(user => user.Phone).NotEmpty().NotNull().Matches(@"^0(9\d{9})$");
                 RuleFor(x => x.Email).Null();

@@ -1,5 +1,4 @@
-﻿using Application.Library.Models.DTOs.SEC;
-using Domain.Library.ValueObjects;
+﻿using Application.Library.Models.DTOs;
 using FluentValidation;
 
 namespace Application.Library.Validators

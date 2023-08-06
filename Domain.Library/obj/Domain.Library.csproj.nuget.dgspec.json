@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\GitHub\\Infrastructure\\Domain.Library\\Domain.Library.csproj": {}
+    "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Infrastructure\\Domain.Library\\Domain.Library.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\GitHub\\Infrastructure\\Domain.Library\\Domain.Library.csproj": {
+    "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Infrastructure\\Domain.Library\\Domain.Library.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\GitHub\\Infrastructure\\Domain.Library\\Domain.Library.csproj",
+        "projectUniqueName": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Infrastructure\\Domain.Library\\Domain.Library.csproj",
         "projectName": "Domain.Library",
-        "projectPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\GitHub\\Infrastructure\\Domain.Library\\Domain.Library.csproj",
+        "projectPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Infrastructure\\Domain.Library\\Domain.Library.csproj",
         "packagesPath": "C:\\Users\\Tajer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\GitHub\\Infrastructure\\Domain.Library\\obj\\",
+        "outputPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Infrastructure\\Domain.Library\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

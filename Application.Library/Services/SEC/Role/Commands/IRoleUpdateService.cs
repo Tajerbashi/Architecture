@@ -1,7 +1,7 @@
 ﻿using Application.Library.Bases;
 using Application.Library.DatabaseContext;
-using Application.Library.Models.DTOs.SEC;
-using Application.Library.Models.Views.SEC;
+using Application.Library.Models.DTOs;
+using Application.Library.Models.Views;
 
 namespace Application.Library.Services
 {

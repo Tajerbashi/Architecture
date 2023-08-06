@@ -1,11 +1,6 @@
 ﻿using Application.Library.Bases;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Application.Library.Models.DTOs.SEC
+namespace Application.Library.Models.DTOs
 {
     public class RoleDTO : BaseDTO
     {

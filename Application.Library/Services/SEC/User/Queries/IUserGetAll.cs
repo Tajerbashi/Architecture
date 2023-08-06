@@ -1,7 +1,6 @@
 ﻿using Application.Library.Bases;
 using Application.Library.DatabaseContext;
-using Application.Library.Models.Views.SEC;
-using System.Collections.Generic;
+using Application.Library.Models.Views;
 
 namespace Application.Library.Services
 {

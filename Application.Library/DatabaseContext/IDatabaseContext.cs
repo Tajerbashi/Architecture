@@ -1,11 +1,7 @@
 ﻿using Domain.Library.Entities;
+using Domain.Library.Entities.CNT;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.Library.DatabaseContext
 {
@@ -14,6 +10,7 @@ namespace Application.Library.DatabaseContext
         DbSet<User> Users { get; set; }
         DbSet<Role> Roles { get; set; }
         DbSet<UserRole> UserRoles { get; set; }
+        DbSet<MenuLink> MenuLinks { get; set; }
 
 
 
@@ -28,13 +25,13 @@ namespace Application.Library.DatabaseContext
                 (
                 DynamicallyAccessedMemberTypes.PublicConstructors |
                 DynamicallyAccessedMemberTypes.NonPublicConstructors |
-                DynamicallyAccessedMemberTypes.PublicFields | 
-                DynamicallyAccessedMemberTypes.NonPublicFields | 
-                DynamicallyAccessedMemberTypes.PublicProperties | 
-                DynamicallyAccessedMemberTypes.NonPublicProperties | 
+                DynamicallyAccessedMemberTypes.PublicFields |
+                DynamicallyAccessedMemberTypes.NonPublicFields |
+                DynamicallyAccessedMemberTypes.PublicProperties |
+                DynamicallyAccessedMemberTypes.NonPublicProperties |
                 DynamicallyAccessedMemberTypes.Interfaces
                 )
-            ] 
+            ]
         TEntity>() where TEntity : class;
 
     }

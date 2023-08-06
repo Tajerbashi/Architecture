@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AsZI+Dfv0+CbyoPehoxFErkqkRPVa2At56vMGI2xDl8qnhbF3sU3296qhLdDR6v0d1vNgw+oqZVNone83cf61Q==",
+  "dgSpecHash": "48p/d/fO+ApCP2k+63oB13FttPAXR3c1/iMcLV8loupi+J4RC5YhoqNapgg6NptC49ly9pXPt9xv7mIxUI4ETQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\GitHub\\Infrastructure\\Domain.Library\\Domain.Library.csproj",
+  "projectFilePath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Infrastructure\\Domain.Library\\Domain.Library.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tajer\\.nuget\\packages\\csharpfunctionalextensions\\2.40.0\\csharpfunctionalextensions.2.40.0.nupkg.sha512"
   ],

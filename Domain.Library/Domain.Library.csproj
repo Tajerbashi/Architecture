@@ -9,7 +9,6 @@
   <ItemGroup>
     <Folder Include="Entities\GEN\" />
     <Folder Include="Entities\BES\" />
-    <Folder Include="Entities\CNT\" />
     <Folder Include="Entities\RPT\" />
     <Folder Include="Enums\" />
   </ItemGroup>

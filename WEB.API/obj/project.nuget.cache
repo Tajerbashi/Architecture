@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LcGKnROHKVsP3vQfnliBf08B21IxRhSL6K7X13/W4VsNi9zKNwDZXhVxIMOH4ty2A0LfOpWm5V/pt3aEd24m0Q==",
+  "dgSpecHash": "wHlEPjKpEVz/aoJvo6ujaBMk0xvoDHMQyJ8Am8cCGfo67A1Kl+ZF6DwzBCIAQ/mLek8S8eIAfmXJOEnpv7JSCQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\GitHub\\Infrastructure\\WEB.API\\WEB.API.csproj",
+  "projectFilePath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Infrastructure\\WEB.API\\WEB.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tajer\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Tajer\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

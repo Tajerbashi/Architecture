@@ -1,14 +1,9 @@
-﻿using Application.Library.Models.DTOs.SEC;
+﻿using Application.Library.Models.DTOs;
 using FluentValidation;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.Library.Validators
 {
-    public class RoleValidator: AbstractValidator<RoleDTO>
+    public class RoleValidator : AbstractValidator<RoleDTO>
     {
         public RoleValidator()
         {

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sjRTQ+Wtf7Ofga6pTKvIC9doe01H/pF5XelpsGZNQgIYTriE6p0Uo5WRPxz/uMTlOQeu1xmKb/DoWWCNrdAzpw==",
+  "dgSpecHash": "LaN0+oUaLzgCm78CLpUxOxllebVFo9chNLgvgGW2FzcODyNb+yQg/OCrC/rQblBG8lgcqOnal38eHGZE9+izdA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\GitHub\\Infrastructure\\Infrastructure.Library\\Infrastructure.Library.csproj",
+  "projectFilePath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Infrastructure\\Infrastructure.Library\\Infrastructure.Library.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tajer\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Tajer\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

@@ -1,6 +1,5 @@
 ﻿using Application.Library.Bases;
 using Application.Library.DatabaseContext;
-using Application.Library.Models.Views.SEC;
 
 namespace Application.Library.Services
 {
@@ -20,7 +19,7 @@ namespace Application.Library.Services
 
             var data = _context.Users.Find(Id);
             var role = _context.UserRoles.FirstOrDefault(c => c.UserID == data.ID);
-           
+
             role.IsActive = data.IsActive ? false : true;
             data.IsActive = data.IsActive ? false : true;
 

@@ -1,5 +1,6 @@
 ﻿using Application.Library.DatabaseContext;
 using Domain.Library.Entities;
+using Domain.Library.Entities.CNT;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Library.Database
@@ -13,6 +14,7 @@ namespace Infrastructure.Library.Database
         public DbSet<User> Users { get; set; }
         public DbSet<Role> Roles { get; set; }
         public DbSet<UserRole> UserRoles { get; set; }
+        public DbSet<MenuLink> MenuLinks { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

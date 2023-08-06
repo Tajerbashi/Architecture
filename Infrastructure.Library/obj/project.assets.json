@@ -3662,11 +3662,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\GitHub\\Infrastructure\\Infrastructure.Library\\Infrastructure.Library.csproj",
+      "projectUniqueName": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Infrastructure\\Infrastructure.Library\\Infrastructure.Library.csproj",
       "projectName": "Infrastructure.Library",
-      "projectPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\GitHub\\Infrastructure\\Infrastructure.Library\\Infrastructure.Library.csproj",
+      "projectPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Infrastructure\\Infrastructure.Library\\Infrastructure.Library.csproj",
       "packagesPath": "C:\\Users\\Tajer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\GitHub\\Infrastructure\\Infrastructure.Library\\obj\\",
+      "outputPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Infrastructure\\Infrastructure.Library\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3688,8 +3688,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\GitHub\\Infrastructure\\Application.Library\\Application.Library.csproj": {
-              "projectPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\GitHub\\Infrastructure\\Application.Library\\Application.Library.csproj"
+            "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Infrastructure\\Application.Library\\Application.Library.csproj": {
+              "projectPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Infrastructure\\Application.Library\\Application.Library.csproj"
             }
           }
         }

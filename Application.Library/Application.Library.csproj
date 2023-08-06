@@ -9,7 +9,6 @@
   <ItemGroup>
     <Folder Include="Bases\BaseService\" />
     <Folder Include="Models\DTOs\BES\" />
-    <Folder Include="Models\DTOs\CNT\" />
     <Folder Include="Models\DTOs\GEN\" />
     <Folder Include="Models\DTOs\RPT\" />
     <Folder Include="Models\Entities\" />
@@ -24,7 +23,6 @@
     <Folder Include="Validators\GEN\" />
     <Folder Include="Validators\RPT\" />
     <Folder Include="Models\Views\BES\" />
-    <Folder Include="Models\Views\CNT\" />
     <Folder Include="Models\Views\GEN\" />
     <Folder Include="Models\Views\RPT\" />
   </ItemGroup>

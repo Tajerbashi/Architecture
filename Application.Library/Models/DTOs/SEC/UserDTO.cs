@@ -1,7 +1,6 @@
 ﻿using Application.Library.Bases;
-using Domain.Library.ValueObjects;
 
-namespace Application.Library.Models.DTOs.SEC
+namespace Application.Library.Models.DTOs
 {
     public class UserDTO : BaseDTO
     {

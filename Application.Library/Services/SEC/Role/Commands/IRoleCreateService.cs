@@ -1,6 +1,6 @@
 ﻿using Application.Library.Bases;
 using Application.Library.DatabaseContext;
-using Application.Library.Models.DTOs.SEC;
+using Application.Library.Models.DTOs;
 
 namespace Application.Library.Services
 {

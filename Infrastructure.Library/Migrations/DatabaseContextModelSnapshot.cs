@@ -22,6 +22,69 @@ namespace Infrastructure.Library.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("Domain.Library.Entities.CNT.MenuLink", b =>
+                {
+                    b.Property<long>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("ID"));
+
+                    b.Property<string>("Action")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Color")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<long>("CreatedByUserRoleID")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("DeleteByUserID")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime>("DeleteDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Icon")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Link")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<long?>("ParentId")
+                        .HasColumnType("bigint");
+
+                    b.Property<Guid>("RowGuid")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<long>("UpdateByUserRoleID")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime>("UpdateDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("MenuLinks");
+                });
+
             modelBuilder.Entity("Domain.Library.Entities.Role", b =>
                 {
                     b.Property<long>("ID")
@@ -75,47 +138,47 @@ namespace Infrastructure.Library.Migrations
                         new
                         {
                             ID = 1L,
-                            CreateDate = new DateTime(2023, 8, 1, 0, 4, 39, 359, DateTimeKind.Local).AddTicks(7817),
+                            CreateDate = new DateTime(2023, 8, 6, 22, 8, 13, 240, DateTimeKind.Local).AddTicks(5467),
                             CreatedByUserRoleID = 0L,
                             DeleteByUserID = 0L,
-                            DeleteDate = new DateTime(2023, 8, 1, 0, 4, 39, 359, DateTimeKind.Local).AddTicks(7815),
+                            DeleteDate = new DateTime(2023, 8, 6, 22, 8, 13, 240, DateTimeKind.Local).AddTicks(5465),
                             Description = "این نقش اولیه است",
                             IsActive = true,
                             IsDeleted = false,
                             RowGuid = new Guid("00000000-0000-0000-0000-000000000000"),
                             Title = "Admin",
                             UpdateByUserRoleID = 0L,
-                            UpdateDate = new DateTime(2023, 8, 1, 0, 4, 39, 359, DateTimeKind.Local).AddTicks(7801)
+                            UpdateDate = new DateTime(2023, 8, 6, 22, 8, 13, 240, DateTimeKind.Local).AddTicks(5452)
                         },
                         new
                         {
                             ID = 2L,
-                            CreateDate = new DateTime(2023, 8, 1, 0, 4, 39, 359, DateTimeKind.Local).AddTicks(7854),
+                            CreateDate = new DateTime(2023, 8, 6, 22, 8, 13, 240, DateTimeKind.Local).AddTicks(5499),
                             CreatedByUserRoleID = 0L,
                             DeleteByUserID = 0L,
-                            DeleteDate = new DateTime(2023, 8, 1, 0, 4, 39, 359, DateTimeKind.Local).AddTicks(7854),
+                            DeleteDate = new DateTime(2023, 8, 6, 22, 8, 13, 240, DateTimeKind.Local).AddTicks(5498),
                             Description = "این نقش اولیه است",
                             IsActive = true,
                             IsDeleted = false,
                             RowGuid = new Guid("00000000-0000-0000-0000-000000000000"),
                             Title = "Operator",
                             UpdateByUserRoleID = 0L,
-                            UpdateDate = new DateTime(2023, 8, 1, 0, 4, 39, 359, DateTimeKind.Local).AddTicks(7853)
+                            UpdateDate = new DateTime(2023, 8, 6, 22, 8, 13, 240, DateTimeKind.Local).AddTicks(5498)
                         },
                         new
                         {
                             ID = 3L,
-                            CreateDate = new DateTime(2023, 8, 1, 0, 4, 39, 359, DateTimeKind.Local).AddTicks(7873),
+                            CreateDate = new DateTime(2023, 8, 6, 22, 8, 13, 240, DateTimeKind.Local).AddTicks(5516),
                             CreatedByUserRoleID = 0L,
                             DeleteByUserID = 0L,
-                            DeleteDate = new DateTime(2023, 8, 1, 0, 4, 39, 359, DateTimeKind.Local).AddTicks(7872),
+                            DeleteDate = new DateTime(2023, 8, 6, 22, 8, 13, 240, DateTimeKind.Local).AddTicks(5515),
                             Description = "این نقش اولیه است",
                             IsActive = true,
                             IsDeleted = false,
                             RowGuid = new Guid("00000000-0000-0000-0000-000000000000"),
                             Title = "User",
                             UpdateByUserRoleID = 0L,
-                            UpdateDate = new DateTime(2023, 8, 1, 0, 4, 39, 359, DateTimeKind.Local).AddTicks(7872)
+                            UpdateDate = new DateTime(2023, 8, 6, 22, 8, 13, 240, DateTimeKind.Local).AddTicks(5514)
                         });
                 });
 
@@ -232,9 +295,6 @@ namespace Infrastructure.Library.Migrations
                         .HasColumnType("bigint");
 
                     b.HasKey("ID");
-
-                    b.HasIndex("ID")
-                        .IsUnique();
 
                     b.HasIndex("RoleID");
 

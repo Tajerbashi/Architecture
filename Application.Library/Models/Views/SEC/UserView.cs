@@ -1,14 +1,6 @@
 ﻿using Application.Library.Bases;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
 
-namespace Application.Library.Models.Views.SEC
+namespace Application.Library.Models.Views
 {
     public class UserView : BaseView
     {

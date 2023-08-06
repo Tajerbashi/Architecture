@@ -1,8 +1,6 @@
-﻿using Application.Library.Models.DTOs.SEC;
+﻿using Application.Library.Models.DTOs;
 using Application.Library.Services;
-using Domain.Library.Entities;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Hosting.Internal;
 
 namespace WEB.API.Controllers
 {

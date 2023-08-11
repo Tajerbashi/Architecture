@@ -10,12 +10,22 @@ namespace WEB.API.Controllers
         [Route("Index")]
         public IActionResult Index()
         {
-            Buy buy = new Buy(new Mellat());
-            var item = buy.Pay();
+
+
+            //  Interface and Class is Save with this Type
+            Resolver resolver = new Resolver();
+            resolver.Register<IPayment,Mellat>();
+            resolver.Register<Buy,Buy>();
+
+            ////  With Out Resolver
+            //Buy buy = new Buy(new Mellat());
+            //var item = buy.Pay();
+            var item = resolver.Resolve<Buy>();
+            var text = item.Pay();
             var upd = new
             {
                 IsSuccess=false,
-                Message=$"Result: {item}"
+                Message=$"Result: {text}"
             };
             if (!upd.IsSuccess)
             {

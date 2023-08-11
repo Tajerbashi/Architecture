@@ -32,6 +32,10 @@
             {
                 return Activator.CreateInstance(classType);
             }
+
+
+
+            //  Make Dependencies For each instance
             List<object> parameters = new List<object> ();
             foreach (var item in ctrParametr)
             {

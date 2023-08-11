@@ -2,10 +2,9 @@ using Application.Library.DatabaseContext;
 using Application.Library.Services;
 using Infrastructure.Library.Database;
 using Microsoft.EntityFrameworkCore;
+using WEB.API.Models;
 
 var builder = WebApplication.CreateBuilder(args);
-
-
 
 //  Access To Appsetting.json
 ConfigurationManager configuration = builder.Configuration;
@@ -13,7 +12,7 @@ var ctr = configuration.GetConnectionString("DatabaseLocal");
 builder.Services.AddDbContext<DatabaseContext>(
         option => option.UseSqlServer(configuration.GetConnectionString("DatabaseLocal")));
 
-
+builder.Services.Configure<MailSetting>(configuration.GetSection("MailSetting"));
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 

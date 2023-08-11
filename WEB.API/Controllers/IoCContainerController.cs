@@ -1,5 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.Options;
+using Microsoft.Extensions.Options;
 using WEB.API.IOCContainer;
+using WEB.API.Models;
 
 namespace WEB.API.Controllers
 {
@@ -7,15 +10,21 @@ namespace WEB.API.Controllers
     [ApiController]
     public class IoCContainerController : ControllerBase
     {
+        private readonly MailSetting _mailSetting;
+
+        public IoCContainerController(IOptions<MailSetting> option)
+        {
+            _mailSetting = option.Value;
+        }
         [Route("Index")]
         public IActionResult Index()
         {
-
-
+            //  AppSetting.json
+            var mail =_mailSetting.Sender;
             //  Interface and Class is Save with this Type
             Resolver resolver = new Resolver();
-            resolver.Register<IPayment,Mellat>();
-            resolver.Register<Buy,Buy>();
+            resolver.Register<IPayment, Mellat>();
+            resolver.Register<Buy, Buy>();
 
             ////  With Out Resolver
             //Buy buy = new Buy(new Mellat());

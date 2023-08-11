@@ -300,6 +300,10 @@
               "target": "Package",
               "version": "[7.0.9, )"
             },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
             "Realm": {
               "target": "Package",
               "version": "[11.3.0, )"

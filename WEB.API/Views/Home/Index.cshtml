@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .link-controller {
+        display: flexl;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+</style>
+<div class="container">
+    <div class="row shadow">
+        <h1 class="btn btn-dark bg-gradient text-light rounded-3 shadow text-center p-2 fs-6">
+            api/controller/action
+        </h1>
+    </div>
+
+    <div class="row my-1 text-center d-flex flex-row justify-content-center align-items-center shadow">
+        <div class="bg-dark bg-gradient text-light rounded-3 shadow mb-2">Home Controller</div>
+        <div class="link-controller shadow">
+            <a class="btn btn-primary text-light m-1" href="@Url.Action("Index","Home",new {})">api/CRUD/Index</a>
+        </div>
+    </div>
+
+    <div class="row my-1 text-center d-flex flex-row justify-content-center align-items-center shadow">
+        <div class="bg-dark bg-gradient text-light rounded-3 shadow mb-2">Crud Controller</div>
+        <div class="link-controller shadow">
+            <a class="btn btn-primary text-light m-1" href="@Url.Action("Index","CRUD",new {})">api/CRUD/Index</a>
+            <a class="btn btn-primary text-light m-1" href="@Url.Action("Create","CRUD",new {})">api/CRUD/Create</a>
+            <a class="btn btn-primary text-light m-1" href="@Url.Action("Update","CRUD",new {id=15000})">api/CRUD/Update</a>
+            <a class="btn btn-primary text-light m-1" href="@Url.Action("Change","CRUD",new {id=15000})">api/CRUD/Change</a>
+            <a class="btn btn-primary text-light m-1" href="@Url.Action("Delete","CRUD",new {id=15000})">api/CRUD/Delete</a>
+            <a class="btn btn-primary text-light m-1" href="@Url.Action("GetAll","CRUD",new {})">api/CRUD/GetAll</a>
+            <a class="btn btn-primary text-light m-1" href="@Url.Action("Get","CRUD",new {id=15000})">api/CRUD/Get</a>
+        </div>
+    </div>
+
+
+    <div class="row my-1 text-center d-flex flex-row justify-content-center align-items-center shadow">
+        <div class="bg-dark bg-gradient text-light rounded-3 shadow mb-2">IocContainer Controller</div>
+        <div class="link-controller shadow">
+            <a class="btn btn-primary text-light m-1" href="@Url.Action("Index","IocContainer",new {})">api/IocContainer/Index</a>
+        </div>
+    </div>
+
+
+
+</div>

@@ -2,7 +2,9 @@ using Application.Library.DatabaseContext;
 using Application.Library.Services;
 using Infrastructure.Library.Database;
 using Microsoft.EntityFrameworkCore;
+using WEB.API.Attributes;
 using WEB.API.Models;
+using WEB.API.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +21,9 @@ builder.Services.AddControllersWithViews();
 
 //  Injection Services
 builder.Services.AddScoped<IDatabaseContext, DatabaseContext>();
+builder.Services.AddScoped<IPrivilegeService, PrivilegeService>();
+builder.Services.AddScoped<PrivilegeAttribute>();
+
 //  Facad Injection
 builder.Services.AddScoped<IUserFacadRepository, UserFacadRepository>();
 var app = builder.Build();

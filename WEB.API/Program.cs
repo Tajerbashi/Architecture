@@ -1,52 +1,55 @@
-using Application.Library.DatabaseContext;
-using Application.Library.Services;
-using Infrastructure.Library.Database;
-using Microsoft.EntityFrameworkCore;
-using WEB.API.Attributes;
-using WEB.API.Models;
-using WEB.API.Services;
+using Microsoft.OpenApi.Models;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+
 //  Access To Appsetting.json
 ConfigurationManager configuration = builder.Configuration;
-var ctr = configuration.GetConnectionString("DatabaseLocal");
-builder.Services.AddDbContext<DatabaseContext>(
-        option => option.UseSqlServer(configuration.GetConnectionString("DatabaseLocal")));
-
-builder.Services.Configure<MailSetting>(configuration.GetSection("MailSetting"));
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllers();
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "Architecture",
+        Version = "v1",
+        Description = "Clean Architecture Domain Drive Design Patter",
+        TermsOfService = new Uri("https://github.com/Tajerbashi/Architecture"),
+        Contact = new OpenApiContact
+        {
+            Name = "Kamran Tajerbashi",
+            Email = "kamrantajerbashi@gmail.com",
+            Url = new Uri("https://github.com/KTajerbashi"),
+        },
+        License = new OpenApiLicense
+        {
+            Name = "Tajerbashi Company On Git Hub",
+            Url = new Uri("https://github.com/Tajerbashi"),
+        }
+    });
+    // Set the comments path for the Swagger JSON and UI.
+    //var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    ////var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+    //c.IncludeXmlComments(xmlPath);
+});
 
-
-//  Injection Services
-builder.Services.AddScoped<IDatabaseContext, DatabaseContext>();
-builder.Services.AddScoped<IPrivilegeService, PrivilegeService>();
-builder.Services.AddScoped<PrivilegeAttribute>();
-
-//  Facad Injection
-builder.Services.AddScoped<IUserFacadRepository, UserFacadRepository>();
 var app = builder.Build();
 
-
 // Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
+    app.UseSwagger();
+    app.UseSwaggerUI();
+    app.UseStaticFiles();
 }
-
 app.UseHttpsRedirection();
-app.UseStaticFiles();
-
-app.UseRouting();
 
 app.UseAuthorization();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "api/{controller=Home}/{action=Index}/{id?}");
-
+app.MapControllers();
 
 app.Run();

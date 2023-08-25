@@ -6,15 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Entities\GEN\" />
-    <Folder Include="Entities\BES\" />
-    <Folder Include="Entities\RPT\" />
-    <Folder Include="Enums\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="CSharpFunctionalExtensions" Version="2.40.0" />
-  </ItemGroup>
-
 </Project>

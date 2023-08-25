@@ -1,11 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace WEB.API.Controllers
+namespace SwaggerWebAPI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class HomeController : Controller    //ControllerBase
+    public class HomeController : ControllerBase
     {
+
         private readonly ILogger<HomeController> _logger;
         public HomeController(
             ILogger<HomeController> logger
@@ -13,13 +14,26 @@ namespace WEB.API.Controllers
         {
             _logger = logger;
         }
-        [Route("/")]
-        [Route("Index")]
-        public ActionResult Index()
-        {
-            return View();
-            //return StatusCode(StatusCodes.Status200OK, "Model is valid!");
-        }
 
+        [HttpGet]
+        public IActionResult Get()
+        {
+            return Ok("Read");
+        }
+        [HttpPost]
+        public IActionResult Post()
+        {
+            return Ok("Create");
+        }
+        [HttpPut]
+        public IActionResult Put()
+        {
+            return Ok("Update");
+        }
+        [HttpDelete]
+        public IActionResult Delete()
+        {
+            return Ok("Delete");
+        }
     }
 }

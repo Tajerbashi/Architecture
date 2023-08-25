@@ -1,42 +1,9 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Folder Include="Bases\BaseService\" />
-    <Folder Include="Models\DTOs\BES\" />
-    <Folder Include="Models\DTOs\GEN\" />
-    <Folder Include="Models\DTOs\RPT\" />
-    <Folder Include="Models\Entities\" />
-    <Folder Include="Models\Enums\" />
-    <Folder Include="Services\BES\" />
-    <Folder Include="Services\CNT\" />
-    <Folder Include="Services\GEN\" />
-    <Folder Include="Services\Facad\" />
-    <Folder Include="Services\RPT\" />
-    <Folder Include="Validators\BES\" />
-    <Folder Include="Validators\CNT\" />
-    <Folder Include="Validators\GEN\" />
-    <Folder Include="Validators\RPT\" />
-    <Folder Include="Models\Views\BES\" />
-    <Folder Include="Models\Views\GEN\" />
-    <Folder Include="Models\Views\RPT\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="CSharpFunctionalExtensions" Version="2.40.0" />
-    <PackageReference Include="FluentValidation" Version="11.6.0" />
-    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
-    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.6.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.9" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Domain.Library\Domain.Library.csproj" />
-  </ItemGroup>
 
 </Project>

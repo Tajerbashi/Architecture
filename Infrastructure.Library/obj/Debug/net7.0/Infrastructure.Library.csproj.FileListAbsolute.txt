@@ -10,3 +10,5 @@ C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Infra
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Infrastructure.Library\obj\Debug\net7.0\refint\Infrastructure.Library.dll
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Infrastructure.Library\obj\Debug\net7.0\Infrastructure.Library.pdb
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Infrastructure.Library\obj\Debug\net7.0\ref\Infrastructure.Library.dll
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Infrastructure.Library\bin\Debug\net7.0\Infrastructure.Library.runtimeconfig.json
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Infrastructure.Library\obj\Debug\net7.0\Infrastructure.Library.genruntimeconfig.cache

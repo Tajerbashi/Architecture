@@ -2629,10 +2629,52 @@
           "build/net6.0/xunit.runner.visualstudio.props": {}
         }
       },
+      "Application.Library/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Domain.Library": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.10"
+        },
+        "compile": {
+          "bin/placeholder/Application.Library.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Application.Library.dll": {}
+        }
+      },
+      "Domain.Library/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Domain.Library.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.Library.dll": {}
+        }
+      },
+      "Infrastructure.Library/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Application.Library": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.10",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.10",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.10"
+        },
+        "compile": {
+          "bin/placeholder/Infrastructure.Library.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infrastructure.Library.dll": {}
+        }
+      },
       "Web.API/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Application.Library": "1.0.0",
+          "Infrastructure.Library": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "7.0.10",
           "Microsoft.EntityFrameworkCore": "7.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.10",
@@ -8248,6 +8290,21 @@
         "xunit.runner.visualstudio.2.5.0.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "Application.Library/1.0.0": {
+      "type": "project",
+      "path": "../Application.Library/Application.Library.csproj",
+      "msbuildProject": "../Application.Library/Application.Library.csproj"
+    },
+    "Domain.Library/1.0.0": {
+      "type": "project",
+      "path": "../Domain.Library/Domain.Library.csproj",
+      "msbuildProject": "../Domain.Library/Domain.Library.csproj"
+    },
+    "Infrastructure.Library/1.0.0": {
+      "type": "project",
+      "path": "../Infrastructure.Library/Infrastructure.Library.csproj",
+      "msbuildProject": "../Infrastructure.Library/Infrastructure.Library.csproj"
     },
     "Web.API/1.0.0": {
       "type": "project",

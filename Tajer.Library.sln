@@ -21,7 +21,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web.API", "Web.API\Web.API.csproj", "{08D292E7-B059-4043-BB5E-C4803D2C9B0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.API.Test", "Web.API.Test\Web.API.Test.csproj", "{DDE0195D-66D9-4A49-9FD4-2D5A2FB7149F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web.API.Test", "Web.API.Test\Web.API.Test.csproj", "{DDE0195D-66D9-4A49-9FD4-2D5A2FB7149F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5CB12B5F-CF19-4638-8B77-D5AF79EDE364}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

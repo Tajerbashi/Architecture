@@ -1132,6 +1132,30 @@
             "rid": "win"
           }
         }
+      },
+      "Application.Library/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Domain.Library": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.10"
+        },
+        "compile": {
+          "bin/placeholder/Application.Library.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Application.Library.dll": {}
+        }
+      },
+      "Domain.Library/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Domain.Library.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.Library.dll": {}
+        }
       }
     }
   },
@@ -3452,10 +3476,21 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Application.Library/1.0.0": {
+      "type": "project",
+      "path": "../Application.Library/Application.Library.csproj",
+      "msbuildProject": "../Application.Library/Application.Library.csproj"
+    },
+    "Domain.Library/1.0.0": {
+      "type": "project",
+      "path": "../Domain.Library/Domain.Library.csproj",
+      "msbuildProject": "../Domain.Library/Domain.Library.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "Application.Library >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.10",
       "Microsoft.EntityFrameworkCore.Relational >= 7.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.10",
@@ -3494,7 +3529,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Tajer_Architecture\\Application.Library\\Application.Library.csproj": {
+              "projectPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Tajer_Architecture\\Application.Library\\Application.Library.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

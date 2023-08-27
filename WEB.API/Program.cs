@@ -1,3 +1,7 @@
+using Application.Library.DatabaseContext;
+using Infrastructure.Library.DatabaseContextDb;
+using Infrastructure.Library.Pattern;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,6 +10,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 //  Access To Appsetting.json
 ConfigurationManager configuration = builder.Configuration;
+
+
+builder.Services.AddScoped<IFacadPattern, FacadPattern>();
+builder.Services.AddDbContext<DatabaseContext>(options => options.UseSqlServer(configuration.GetConnectionString("Local")));
+//builder.Services.AddEntityFrameworkSqlServer().AddDbContext<DatabaseContext>(option => option.UseSqlServer(configuration.GetConnectionString("Local")));
+
 // Add services to the container.
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

@@ -24,4 +24,9 @@
     <Folder Include="Models\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Application.Library\Application.Library.csproj" />
+    <ProjectReference Include="..\Infrastructure.Library\Infrastructure.Library.csproj" />
+  </ItemGroup>
+
 </Project>

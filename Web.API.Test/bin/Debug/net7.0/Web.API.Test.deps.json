@@ -1511,8 +1511,35 @@
         }
       },
       "xunit.runner.visualstudio/2.5.0": {},
+      "Application.Library/1.0.0": {
+        "dependencies": {
+          "Domain.Library": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.10"
+        },
+        "runtime": {
+          "Application.Library.dll": {}
+        }
+      },
+      "Domain.Library/1.0.0": {
+        "runtime": {
+          "Domain.Library.dll": {}
+        }
+      },
+      "Infrastructure.Library/1.0.0": {
+        "dependencies": {
+          "Application.Library": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.10",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.10",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.10"
+        },
+        "runtime": {
+          "Infrastructure.Library.dll": {}
+        }
+      },
       "Web.API/1.0.0": {
         "dependencies": {
+          "Application.Library": "1.0.0",
+          "Infrastructure.Library": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "7.0.10",
           "Microsoft.EntityFrameworkCore": "7.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.10",
@@ -2533,6 +2560,21 @@
       "sha512": "sha512-+Gp9vuC2431yPyKB15YrOTxCuEAErBQUTIs6CquumX1F073UaPHGW0VE/XVJLMh9W4sXdz3TBkcHdFWZrRn2Hw==",
       "path": "xunit.runner.visualstudio/2.5.0",
       "hashPath": "xunit.runner.visualstudio.2.5.0.nupkg.sha512"
+    },
+    "Application.Library/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Domain.Library/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Infrastructure.Library/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Web.API/1.0.0": {
       "type": "project",

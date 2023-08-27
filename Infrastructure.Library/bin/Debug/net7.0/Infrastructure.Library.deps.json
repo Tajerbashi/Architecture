@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "Infrastructure.Library/1.0.0": {
         "dependencies": {
+          "Application.Library": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.10",
           "Microsoft.EntityFrameworkCore.Relational": "7.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.10",
@@ -670,6 +671,20 @@
             "fileVersion": "5.0.20.51904"
           }
         }
+      },
+      "Application.Library/1.0.0": {
+        "dependencies": {
+          "Domain.Library": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.10"
+        },
+        "runtime": {
+          "Application.Library.dll": {}
+        }
+      },
+      "Domain.Library/1.0.0": {
+        "runtime": {
+          "Domain.Library.dll": {}
+        }
       }
     }
   },
@@ -1147,6 +1162,16 @@
       "sha512": "sha512-c1ho9WU9ZxMZawML+ssPKZfdnrg/OjR3pe0m9v8230z3acqphwvPJqzAkH54xRYm5ntZHGG1EPP3sux9H3qSPg==",
       "path": "system.windows.extensions/5.0.0",
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
+    },
+    "Application.Library/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Domain.Library/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

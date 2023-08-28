@@ -1,7 +1,7 @@
 ﻿using Domain.Library.Base;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Domain.Library.Entities.SEC
+namespace Domain.Library.Entities
 {
     [Table("Roles", Schema = "SEC")]
     public class Role : BaseEntity

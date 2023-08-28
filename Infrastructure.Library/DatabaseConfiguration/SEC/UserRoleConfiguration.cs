@@ -1,4 +1,4 @@
-﻿using Domain.Library.Entities.SEC;
+﻿using Domain.Library.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

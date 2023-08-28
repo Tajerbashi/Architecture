@@ -22,6 +22,117 @@ namespace Infrastructure.Library.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("Domain.Library.Entities.LOG.SystemLogger", b =>
+                {
+                    b.Property<long>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("ID"));
+
+                    b.Property<long>("CreateByUserRoleID")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<long>("DeleteByUserRoleID")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime>("DeleteDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Error")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Event")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Exception")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("Guid")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsSuccess")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Method")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Model")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Service")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("SystemLogger", "LOG");
+                });
+
+            modelBuilder.Entity("Domain.Library.Entities.RPT.GeneralReport", b =>
+                {
+                    b.Property<long>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("ID"));
+
+                    b.Property<long>("CreateByUserRoleID")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<long>("DeleteByUserRoleID")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime>("DeleteDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("Guid")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("GeneralReports", "RPT");
+                });
+
             modelBuilder.Entity("Domain.Library.Entities.SEC.Role", b =>
                 {
                     b.Property<long>("ID")
@@ -71,9 +182,9 @@ namespace Infrastructure.Library.Migrations
                         {
                             ID = 1L,
                             CreateByUserRoleID = 1L,
-                            CreateDate = new DateTime(2023, 8, 28, 1, 13, 28, 144, DateTimeKind.Local).AddTicks(1889),
+                            CreateDate = new DateTime(2023, 8, 28, 18, 13, 0, 327, DateTimeKind.Local).AddTicks(172),
                             DeleteByUserRoleID = 0L,
-                            DeleteDate = new DateTime(2023, 8, 28, 1, 13, 28, 144, DateTimeKind.Local).AddTicks(1904),
+                            DeleteDate = new DateTime(2023, 8, 28, 18, 13, 0, 327, DateTimeKind.Local).AddTicks(184),
                             Description = "این اطلاعات اولیه است.",
                             Guid = new Guid("00000000-0000-0000-0000-000000000000"),
                             IsActive = true,
@@ -84,9 +195,9 @@ namespace Infrastructure.Library.Migrations
                         {
                             ID = 2L,
                             CreateByUserRoleID = 1L,
-                            CreateDate = new DateTime(2023, 8, 28, 1, 13, 28, 144, DateTimeKind.Local).AddTicks(1942),
+                            CreateDate = new DateTime(2023, 8, 28, 18, 13, 0, 327, DateTimeKind.Local).AddTicks(213),
                             DeleteByUserRoleID = 0L,
-                            DeleteDate = new DateTime(2023, 8, 28, 1, 13, 28, 144, DateTimeKind.Local).AddTicks(1943),
+                            DeleteDate = new DateTime(2023, 8, 28, 18, 13, 0, 327, DateTimeKind.Local).AddTicks(213),
                             Description = "این اطلاعات اولیه است.",
                             Guid = new Guid("00000000-0000-0000-0000-000000000000"),
                             IsActive = true,
@@ -97,9 +208,9 @@ namespace Infrastructure.Library.Migrations
                         {
                             ID = 3L,
                             CreateByUserRoleID = 1L,
-                            CreateDate = new DateTime(2023, 8, 28, 1, 13, 28, 144, DateTimeKind.Local).AddTicks(1962),
+                            CreateDate = new DateTime(2023, 8, 28, 18, 13, 0, 327, DateTimeKind.Local).AddTicks(223),
                             DeleteByUserRoleID = 0L,
-                            DeleteDate = new DateTime(2023, 8, 28, 1, 13, 28, 144, DateTimeKind.Local).AddTicks(1963),
+                            DeleteDate = new DateTime(2023, 8, 28, 18, 13, 0, 327, DateTimeKind.Local).AddTicks(223),
                             Description = "این اطلاعات اولیه است.",
                             Guid = new Guid("00000000-0000-0000-0000-000000000000"),
                             IsActive = true,
@@ -169,9 +280,9 @@ namespace Infrastructure.Library.Migrations
                         {
                             ID = 1L,
                             CreateByUserRoleID = 1L,
-                            CreateDate = new DateTime(2023, 8, 28, 1, 13, 28, 144, DateTimeKind.Local).AddTicks(2061),
+                            CreateDate = new DateTime(2023, 8, 28, 18, 13, 0, 327, DateTimeKind.Local).AddTicks(258),
                             DeleteByUserRoleID = 0L,
-                            DeleteDate = new DateTime(2023, 8, 28, 1, 13, 28, 144, DateTimeKind.Local).AddTicks(2061),
+                            DeleteDate = new DateTime(2023, 8, 28, 18, 13, 0, 327, DateTimeKind.Local).AddTicks(258),
                             Email = "Admin@mail.com",
                             Family = "ادمین",
                             Guid = new Guid("00000000-0000-0000-0000-000000000000"),
@@ -231,9 +342,9 @@ namespace Infrastructure.Library.Migrations
                         {
                             ID = 1L,
                             CreateByUserRoleID = 0L,
-                            CreateDate = new DateTime(2023, 8, 28, 1, 13, 28, 144, DateTimeKind.Local).AddTicks(2031),
+                            CreateDate = new DateTime(2023, 8, 28, 18, 13, 0, 327, DateTimeKind.Local).AddTicks(237),
                             DeleteByUserRoleID = 0L,
-                            DeleteDate = new DateTime(2023, 8, 28, 1, 13, 28, 144, DateTimeKind.Local).AddTicks(2032),
+                            DeleteDate = new DateTime(2023, 8, 28, 18, 13, 0, 327, DateTimeKind.Local).AddTicks(238),
                             Guid = new Guid("00000000-0000-0000-0000-000000000000"),
                             IsActive = true,
                             IsDeleted = false,

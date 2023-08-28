@@ -1,7 +1,7 @@
 ﻿using Domain.Library.Base;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Domain.Library.Entities.SEC
+namespace Domain.Library.Entities
 {
     [Table("Users", Schema = "SEC")]
     public class User : BaseEntity
@@ -12,6 +12,6 @@ namespace Domain.Library.Entities.SEC
         public string Username { get; set; }
         public string Password { get; set; }
 
-        public virtual ICollection<UserRole> UserRoles { get; set;}
+        public virtual ICollection<UserRole> UserRoles { get; set; }
     }
 }

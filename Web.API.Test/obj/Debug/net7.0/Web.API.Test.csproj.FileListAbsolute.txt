@@ -135,8 +135,14 @@ C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.A
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\Application.Library.dll
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\Domain.Library.dll
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\Infrastructure.Library.dll
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\Web.API.dll
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\Web.API.pdb
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\Application.Library.pdb
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\Domain.Library.pdb
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\Infrastructure.Library.pdb
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\obj\Debug\net7.0\Web.API.Test.csproj.AssemblyReference.cache
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\obj\Debug\net7.0\Web.API.Test.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\obj\Debug\net7.0\Web.API.Test.AssemblyInfoInputs.cache
@@ -148,9 +154,3 @@ C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.A
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\obj\Debug\net7.0\Web.API.Test.pdb
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\obj\Debug\net7.0\Web.API.Test.genruntimeconfig.cache
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\obj\Debug\net7.0\ref\Web.API.Test.dll
-C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\Application.Library.dll
-C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\Domain.Library.dll
-C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\Infrastructure.Library.dll
-C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\Application.Library.pdb
-C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\Domain.Library.pdb
-C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\Infrastructure.Library.pdb

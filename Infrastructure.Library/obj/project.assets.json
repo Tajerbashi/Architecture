@@ -3491,6 +3491,7 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "Application.Library >= 1.0.0",
+      "Domain.Library >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.10",
       "Microsoft.EntityFrameworkCore.Relational >= 7.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.10",
@@ -3532,6 +3533,9 @@
           "projectReferences": {
             "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Tajer_Architecture\\Application.Library\\Application.Library.csproj": {
               "projectPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Tajer_Architecture\\Application.Library\\Application.Library.csproj"
+            },
+            "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Tajer_Architecture\\Domain.Library\\Domain.Library.csproj": {
+              "projectPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Tajer_Architecture\\Domain.Library\\Domain.Library.csproj"
             }
           }
         }

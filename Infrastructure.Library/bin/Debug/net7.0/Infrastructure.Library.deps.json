@@ -9,6 +9,7 @@
       "Infrastructure.Library/1.0.0": {
         "dependencies": {
           "Application.Library": "1.0.0",
+          "Domain.Library": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.10",
           "Microsoft.EntityFrameworkCore.Relational": "7.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.10",

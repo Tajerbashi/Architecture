@@ -1,4 +1,4 @@
-﻿using Domain.Library.Entities.SEC;
+﻿using Domain.Library.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace Application.Library.DatabaseContext
@@ -14,9 +14,18 @@ namespace Application.Library.DatabaseContext
 
 
         #region SEC
-        public DbSet<User> Users { get; set; }
-        public DbSet<Role> Roles { get; set; }
-        public DbSet<UserRole> UserRoles { get; set; }
+        DbSet<User> Users { get; set; }
+        DbSet<Role> Roles { get; set; }
+        DbSet<UserRole> UserRoles { get; set; }
+        #endregion
+
+        #region LOG
+        DbSet<SystemLogger> SystemLoggers { get; set; }
+        #endregion
+
+
+        #region RPT
+        DbSet<GeneralReport> GeneralReports { get; set; }
         #endregion
     }
 }

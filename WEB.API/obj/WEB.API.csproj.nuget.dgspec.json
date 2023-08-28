@@ -165,6 +165,9 @@
             "projectReferences": {
               "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Tajer_Architecture\\Application.Library\\Application.Library.csproj": {
                 "projectPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Tajer_Architecture\\Application.Library\\Application.Library.csproj"
+              },
+              "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Tajer_Architecture\\Domain.Library\\Domain.Library.csproj": {
+                "projectPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Tajer_Architecture\\Domain.Library\\Domain.Library.csproj"
               }
             }
           }

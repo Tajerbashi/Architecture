@@ -14,4 +14,10 @@
     <ProjectReference Include="..\Domain.Library\Domain.Library.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Services\LOG\SystemLoggers\" />
+    <Folder Include="Services\RPT\GeneralReports\" />
+    <Folder Include="Services\SEC\Roles\" />
+  </ItemGroup>
+
 </Project>

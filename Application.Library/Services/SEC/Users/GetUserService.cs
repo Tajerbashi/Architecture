@@ -5,14 +5,15 @@ using Domain.Library.Entities.SEC.User.DTOs;
 
 namespace Application.Library.Services.SEC.Users
 {
-    public class AddUserService : IAddUserService
+    public class GetUserService : IGetUserService
     {
         private readonly IUnitOfWork _unitOfWork;
-        public AddUserService(IUnitOfWork unitOfWork)
+        public GetUserService(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
         }
-        ResultDto<UserDTO> IAddUserService.Execute(UserDTO user)
+
+        public ResultDto<UserDTO> Execute(Guid guid)
         {
             throw new NotImplementedException();
         }

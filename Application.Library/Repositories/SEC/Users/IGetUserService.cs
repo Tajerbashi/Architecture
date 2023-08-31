@@ -3,9 +3,8 @@ using Domain.Library.Entities.SEC.User.DTOs;
 
 namespace Application.Library.Repositories.SEC
 {
-    public interface IAddUserService
+    public interface IGetUserService
     {
-        ResultDto<UserDTO> Execute(UserDTO user);
-
+        ResultDto<UserDTO> Execute(Guid guid);
     }
 }

@@ -17,7 +17,6 @@
     <Folder Include="Entities\RPT\GeneralReports\Views\" />
     <Folder Include="Entities\SEC\Role\DTOs\" />
     <Folder Include="Entities\SEC\Role\Views\" />
-    <Folder Include="Entities\SEC\User\DTOs\" />
     <Folder Include="Entities\SEC\User\Views\" />
   </ItemGroup>
 

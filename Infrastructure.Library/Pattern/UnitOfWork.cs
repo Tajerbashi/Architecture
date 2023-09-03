@@ -16,8 +16,8 @@ namespace Infrastructure.Library.Pattern
         {
             _context = context;
         }
-        public IUserRepository UserRepository { get => new UserRepository(); set => throw new NotImplementedException(); }
-        public IRoleRepository RoleRepository { get => new RoleRepository(); set => throw new NotImplementedException(); }
+        public IUserRepository UserRepository { get => new UserRepository(_context); set => throw new NotImplementedException(); }
+        public IRoleRepository RoleRepository { get => new RoleRepository(_context); set => throw new NotImplementedException(); }
         public ISystemLoggerRepository SystemLoggerRepository { get => new SystemLoggerRepository(); set => throw new NotImplementedException(); }
         public IGeneralReportsRepository GeneralReportsRepository { get => new GeneralReportRepository(); set => throw new NotImplementedException(); }
 

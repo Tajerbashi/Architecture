@@ -5,6 +5,6 @@ namespace Application.Library.Repositories.SEC
 {
     public interface IUpdateUserService
     {
-        ResultDto<UserDTO> Execute(UserDTO user, Guid guid);
+        ResultDto<UserDTO> Execute(Guid guid, UserDTO user);
     }
 }

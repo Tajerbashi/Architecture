@@ -15,7 +15,7 @@ namespace Application.Library.Services.SEC.Users
 
         public ResultDto<List<UserDTO>> Execute()
         {
-            throw new NotImplementedException();
+            return _unitOfWork.UserRepository.UserReadRepository.GetAllUserService.Execute();
         }
     }
 }

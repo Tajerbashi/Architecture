@@ -14,7 +14,7 @@ namespace Application.Library.Services.SEC.Users
 
         public ResultDto<string> Execute(Guid guid)
         {
-            throw new NotImplementedException();
+            return _unitOfWork.UserRepository.UserWriteRepository.RemoveUserService.Execute(guid);
         }
     }
 }

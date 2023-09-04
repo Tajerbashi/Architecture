@@ -1,4 +1,5 @@
 ﻿using Application.Library.DatabaseContext;
+using Application.Library.Patterns.CQRS.UserServices;
 using Application.Library.Repositories.SEC;
 
 namespace Infrastructure.Library.Repositories.SEC
@@ -10,11 +11,8 @@ namespace Infrastructure.Library.Repositories.SEC
         {
             _context = context;
         }
-        public IAddUserService AddUserService { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public IRemoveUserService RemoveUserService { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public IUpdateUserService UpdateUserService { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public IGetAllUserService GetAllUserService { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public IGetUserService GetUserService { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public IChangeUserService ChangeUserService { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+        public IUserReadRepository UserReadRepository { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public IUserWriteRepository UserWriteRepository { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
     }
 }

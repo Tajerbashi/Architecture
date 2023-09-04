@@ -13,7 +13,7 @@ namespace Application.Library.Services.SEC.Users
 
         public bool Execute(Guid guid)
         {
-            throw new NotImplementedException();
+            return _unitOfWork.UserRepository.UserWriteRepository.ChangeUserService.Execute(guid);
         }
     }
 }

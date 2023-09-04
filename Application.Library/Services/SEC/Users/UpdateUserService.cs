@@ -12,9 +12,11 @@ namespace Application.Library.Services.SEC.Users
         {
             _unitOfWork = unitOfWork;
         }
-        ResultDto<UserDTO> IUpdateUserService.Execute(UserDTO user, Guid guid)
+
+        public ResultDto<UserDTO> Execute(Guid guid, UserDTO user)
         {
-            throw new NotImplementedException();
+            return _unitOfWork.UserRepository.UserWriteRepository.UpdateUserService.Execute(guid, user);
         }
+
     }
 }

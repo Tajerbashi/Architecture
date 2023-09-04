@@ -1,12 +1,10 @@
-﻿namespace Application.Library.Repositories.SEC
+﻿using Application.Library.Patterns.CQRS.UserServices;
+
+namespace Application.Library.Repositories.SEC
 {
     public interface IUserRepository
     {
-        IAddUserService AddUserService { get; set; }
-        IRemoveUserService RemoveUserService { get; set; }
-        IUpdateUserService UpdateUserService { get; set; }
-        IGetAllUserService GetAllUserService { get; set; }
-        IGetUserService GetUserService { get; set; }
-        IChangeUserService ChangeUserService { get; set; }
+        IUserReadRepository UserReadRepository { get; set; }
+        IUserWriteRepository UserWriteRepository { get; set; }
     }
 }

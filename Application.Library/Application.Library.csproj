@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Patterns\Facad\" />
     <Folder Include="Services\LOG\SystemLoggers\" />
     <Folder Include="Services\RPT\GeneralReports\" />
   </ItemGroup>

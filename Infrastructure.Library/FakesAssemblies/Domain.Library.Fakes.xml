@@ -1,0 +1,1370 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Domain.Library.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Domain.Library.Base.Fakes.ShimBaseEntity">
+            <summary>Shim type of Domain.Library.Base.BaseEntity</summary>
+        </member>
+        <member name="M:Domain.Library.Base.Fakes.ShimBaseEntity.#ctor(Domain.Library.Base.BaseEntity)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Domain.Library.Base.Fakes.ShimBaseEntity.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.ShimBaseEntity.AllInstances.CreateByUserRoleIDGet">
+            <summary>Sets the Shim of BaseEntity.get_CreateByUserRoleID(BaseEntity this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.ShimBaseEntity.AllInstances.CreateByUserRoleIDSetInt64">
+            <summary>Sets the Shim of BaseEntity.set_CreateByUserRoleID(BaseEntity this, Int64 value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.ShimBaseEntity.AllInstances.CreateDateGet">
+            <summary>Sets the Shim of BaseEntity.get_CreateDate(BaseEntity this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.ShimBaseEntity.AllInstances.CreateDateSetDateTime">
+            <summary>Sets the Shim of BaseEntity.set_CreateDate(BaseEntity this, DateTime value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.ShimBaseEntity.AllInstances.DeleteByUserRoleIDGet">
+            <summary>Sets the Shim of BaseEntity.get_DeleteByUserRoleID(BaseEntity this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.ShimBaseEntity.AllInstances.DeleteByUserRoleIDSetInt64">
+            <summary>Sets the Shim of BaseEntity.set_DeleteByUserRoleID(BaseEntity this, Int64 value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.ShimBaseEntity.AllInstances.DeleteDateGet">
+            <summary>Sets the Shim of BaseEntity.get_DeleteDate(BaseEntity this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.ShimBaseEntity.AllInstances.DeleteDateSetDateTime">
+            <summary>Sets the Shim of BaseEntity.set_DeleteDate(BaseEntity this, DateTime value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.ShimBaseEntity.AllInstances.IsActiveGet">
+            <summary>Sets the Shim of BaseEntity.get_IsActive(BaseEntity this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.ShimBaseEntity.AllInstances.IsActiveSetBoolean">
+            <summary>Sets the Shim of BaseEntity.set_IsActive(BaseEntity this, Boolean value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.ShimBaseEntity.AllInstances.IsDeletedGet">
+            <summary>Sets the Shim of BaseEntity.get_IsDeleted(BaseEntity this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.ShimBaseEntity.AllInstances.IsDeletedSetBoolean">
+            <summary>Sets the Shim of BaseEntity.set_IsDeleted(BaseEntity this, Boolean value)</summary>
+        </member>
+        <member name="M:Domain.Library.Base.Fakes.ShimBaseEntity.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Library.Base.Fakes.ShimBaseEntity.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.ShimBaseEntity.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Library.Base.Fakes.ShimBaseEntity.Bind(Domain.Library.Base.IEntity)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.ShimBaseEntity.Constructor">
+            <summary>Sets the Shim of BaseEntity.BaseEntity(BaseEntity this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.ShimBaseEntity.CreateByUserRoleIDGet">
+            <summary>Sets the Shim of BaseEntity.get_CreateByUserRoleID(BaseEntity this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.ShimBaseEntity.CreateByUserRoleIDSetInt64">
+            <summary>Sets the Shim of BaseEntity.set_CreateByUserRoleID(BaseEntity this, Int64 value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.ShimBaseEntity.CreateDateGet">
+            <summary>Sets the Shim of BaseEntity.get_CreateDate(BaseEntity this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.ShimBaseEntity.CreateDateSetDateTime">
+            <summary>Sets the Shim of BaseEntity.set_CreateDate(BaseEntity this, DateTime value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.ShimBaseEntity.DeleteByUserRoleIDGet">
+            <summary>Sets the Shim of BaseEntity.get_DeleteByUserRoleID(BaseEntity this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.ShimBaseEntity.DeleteByUserRoleIDSetInt64">
+            <summary>Sets the Shim of BaseEntity.set_DeleteByUserRoleID(BaseEntity this, Int64 value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.ShimBaseEntity.DeleteDateGet">
+            <summary>Sets the Shim of BaseEntity.get_DeleteDate(BaseEntity this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.ShimBaseEntity.DeleteDateSetDateTime">
+            <summary>Sets the Shim of BaseEntity.set_DeleteDate(BaseEntity this, DateTime value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.ShimBaseEntity.IsActiveGet">
+            <summary>Sets the Shim of BaseEntity.get_IsActive(BaseEntity this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.ShimBaseEntity.IsActiveSetBoolean">
+            <summary>Sets the Shim of BaseEntity.set_IsActive(BaseEntity this, Boolean value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.ShimBaseEntity.IsDeletedGet">
+            <summary>Sets the Shim of BaseEntity.get_IsDeleted(BaseEntity this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.ShimBaseEntity.IsDeletedSetBoolean">
+            <summary>Sets the Shim of BaseEntity.set_IsDeleted(BaseEntity this, Boolean value)</summary>
+        </member>
+        <member name="T:Domain.Library.Base.Fakes.ShimBaseEntity`1">
+            <summary>Shim type of Domain.Library.Base.BaseEntity&lt;T&gt;</summary>
+        </member>
+        <member name="M:Domain.Library.Base.Fakes.ShimBaseEntity`1.#ctor(Domain.Library.Base.BaseEntity{`0})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Domain.Library.Base.Fakes.ShimBaseEntity`1.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.ShimBaseEntity`1.AllInstances.GuidGet">
+            <summary>Sets the Shim of BaseEntity`1.get_Guid(BaseEntity`1 this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.ShimBaseEntity`1.AllInstances.GuidSetGuid">
+            <summary>Sets the Shim of BaseEntity`1.set_Guid(BaseEntity`1 this, Guid value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.ShimBaseEntity`1.AllInstances.IDGet">
+            <summary>Sets the Shim of BaseEntity`1.get_ID(BaseEntity`1 this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.ShimBaseEntity`1.AllInstances.IDSetT0">
+            <summary>Sets the Shim of BaseEntity`1.set_ID(BaseEntity`1 this, !0 value)</summary>
+        </member>
+        <member name="M:Domain.Library.Base.Fakes.ShimBaseEntity`1.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Library.Base.Fakes.ShimBaseEntity`1.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.ShimBaseEntity`1.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Library.Base.Fakes.ShimBaseEntity`1.Bind(Domain.Library.Base.IEntity)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.ShimBaseEntity`1.Constructor">
+            <summary>Sets the Shim of BaseEntity`1.BaseEntity`1(BaseEntity`1 this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.ShimBaseEntity`1.GuidGet">
+            <summary>Sets the Shim of BaseEntity`1.get_Guid(BaseEntity`1 this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.ShimBaseEntity`1.GuidSetGuid">
+            <summary>Sets the Shim of BaseEntity`1.set_Guid(BaseEntity`1 this, Guid value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.ShimBaseEntity`1.IDGet">
+            <summary>Sets the Shim of BaseEntity`1.get_ID(BaseEntity`1 this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.ShimBaseEntity`1.IDSetT0">
+            <summary>Sets the Shim of BaseEntity`1.set_ID(BaseEntity`1 this, !0 value)</summary>
+        </member>
+        <member name="T:Domain.Library.Base.Fakes.StubBaseEntity">
+            <summary>Stub type of Domain.Library.Base.BaseEntity</summary>
+        </member>
+        <member name="M:Domain.Library.Base.Fakes.StubBaseEntity.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.StubBaseEntity.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Domain.Library.Base.Fakes.StubBaseEntity.InitializeStub">
+            <summary>Initializes a new instance of type StubBaseEntity</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.StubBaseEntity.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.StubBaseEntity.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Domain.Library.Base.Fakes.StubBaseEntity`1">
+            <summary>Stub type of Domain.Library.Base.BaseEntity&lt;T&gt;</summary>
+        </member>
+        <member name="M:Domain.Library.Base.Fakes.StubBaseEntity`1.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.StubBaseEntity`1.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Domain.Library.Base.Fakes.StubBaseEntity`1.InitializeStub">
+            <summary>Initializes a new instance of type StubBaseEntity</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.StubBaseEntity`1.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Domain.Library.Base.Fakes.StubBaseEntity`1.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Domain.Library.Base.Fakes.StubIEntity">
+            <summary>Stub type of Domain.Library.Base.IEntity</summary>
+        </member>
+        <member name="M:Domain.Library.Base.Fakes.StubIEntity.#ctor">
+            <summary>Initializes a new instance of type StubIEntity</summary>
+        </member>
+        <member name="T:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO">
+            <summary>Shim type of Domain.Library.Base.IDTOs.BaseDTO</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO.#ctor(Domain.Library.Base.IDTOs.BaseDTO)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO.AllInstances.CreateDateGet">
+            <summary>Sets the Shim of BaseDTO.get_CreateDate(BaseDTO this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO.AllInstances.CreateDateSetDateTime">
+            <summary>Sets the Shim of BaseDTO.set_CreateDate(BaseDTO this, DateTime value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO.AllInstances.CreateUserRoleGuidGet">
+            <summary>Sets the Shim of BaseDTO.get_CreateUserRoleGuid(BaseDTO this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO.AllInstances.CreateUserRoleGuidSetGuid">
+            <summary>Sets the Shim of BaseDTO.set_CreateUserRoleGuid(BaseDTO this, Guid value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO.AllInstances.UpdateDateGet">
+            <summary>Sets the Shim of BaseDTO.get_UpdateDate(BaseDTO this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO.AllInstances.UpdateDateSetDateTime">
+            <summary>Sets the Shim of BaseDTO.set_UpdateDate(BaseDTO this, DateTime value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO.AllInstances.UpdateUserRoleGuidGet">
+            <summary>Sets the Shim of BaseDTO.get_UpdateUserRoleGuid(BaseDTO this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO.AllInstances.UpdateUserRoleGuidSetGuid">
+            <summary>Sets the Shim of BaseDTO.set_UpdateUserRoleGuid(BaseDTO this, Guid value)</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO.Bind(Domain.Library.Base.IDTOs.IBaseDTO)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO.Constructor">
+            <summary>Sets the Shim of BaseDTO.BaseDTO(BaseDTO this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO.CreateDateGet">
+            <summary>Sets the Shim of BaseDTO.get_CreateDate(BaseDTO this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO.CreateDateSetDateTime">
+            <summary>Sets the Shim of BaseDTO.set_CreateDate(BaseDTO this, DateTime value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO.CreateUserRoleGuidGet">
+            <summary>Sets the Shim of BaseDTO.get_CreateUserRoleGuid(BaseDTO this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO.CreateUserRoleGuidSetGuid">
+            <summary>Sets the Shim of BaseDTO.set_CreateUserRoleGuid(BaseDTO this, Guid value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO.UpdateDateGet">
+            <summary>Sets the Shim of BaseDTO.get_UpdateDate(BaseDTO this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO.UpdateDateSetDateTime">
+            <summary>Sets the Shim of BaseDTO.set_UpdateDate(BaseDTO this, DateTime value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO.UpdateUserRoleGuidGet">
+            <summary>Sets the Shim of BaseDTO.get_UpdateUserRoleGuid(BaseDTO this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO.UpdateUserRoleGuidSetGuid">
+            <summary>Sets the Shim of BaseDTO.set_UpdateUserRoleGuid(BaseDTO this, Guid value)</summary>
+        </member>
+        <member name="T:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO`1">
+            <summary>Shim type of Domain.Library.Base.IDTOs.BaseDTO&lt;T&gt;</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO`1.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO`1.#ctor(Domain.Library.Base.IDTOs.BaseDTO{`0})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO`1.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO`1.AllInstances.GuidGet">
+            <summary>Sets the Shim of BaseDTO`1.get_Guid(BaseDTO`1 this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO`1.AllInstances.GuidSetGuid">
+            <summary>Sets the Shim of BaseDTO`1.set_Guid(BaseDTO`1 this, Guid value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO`1.AllInstances.IDGet">
+            <summary>Sets the Shim of BaseDTO`1.get_ID(BaseDTO`1 this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO`1.AllInstances.IDSetT0">
+            <summary>Sets the Shim of BaseDTO`1.set_ID(BaseDTO`1 this, !0 value)</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO`1.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO`1.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO`1.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO`1.Bind(Domain.Library.Base.IDTOs.IBaseDTO)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO`1.Constructor">
+            <summary>Sets the Shim of BaseDTO`1.BaseDTO`1(BaseDTO`1 this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO`1.GuidGet">
+            <summary>Sets the Shim of BaseDTO`1.get_Guid(BaseDTO`1 this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO`1.GuidSetGuid">
+            <summary>Sets the Shim of BaseDTO`1.set_Guid(BaseDTO`1 this, Guid value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO`1.IDGet">
+            <summary>Sets the Shim of BaseDTO`1.get_ID(BaseDTO`1 this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimBaseDTO`1.IDSetT0">
+            <summary>Sets the Shim of BaseDTO`1.set_ID(BaseDTO`1 this, !0 value)</summary>
+        </member>
+        <member name="T:Domain.Library.Base.IDTOs.Fakes.ShimResultDto`1">
+            <summary>Shim type of Domain.Library.Base.IDTOs.ResultDto&lt;T&gt;</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IDTOs.Fakes.ShimResultDto`1.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IDTOs.Fakes.ShimResultDto`1.#ctor(Domain.Library.Base.IDTOs.ResultDto{`0})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Domain.Library.Base.IDTOs.Fakes.ShimResultDto`1.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimResultDto`1.AllInstances.DataGet">
+            <summary>Sets the Shim of ResultDto`1.get_Data(ResultDto`1 this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimResultDto`1.AllInstances.DataSetT0">
+            <summary>Sets the Shim of ResultDto`1.set_Data(ResultDto`1 this, !0 value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimResultDto`1.AllInstances.IsSuccessGet">
+            <summary>Sets the Shim of ResultDto`1.get_IsSuccess(ResultDto`1 this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimResultDto`1.AllInstances.IsSuccessSetBoolean">
+            <summary>Sets the Shim of ResultDto`1.set_IsSuccess(ResultDto`1 this, Boolean value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimResultDto`1.AllInstances.MessageGet">
+            <summary>Sets the Shim of ResultDto`1.get_Message(ResultDto`1 this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimResultDto`1.AllInstances.MessageSetString">
+            <summary>Sets the Shim of ResultDto`1.set_Message(ResultDto`1 this, String value)</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IDTOs.Fakes.ShimResultDto`1.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IDTOs.Fakes.ShimResultDto`1.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimResultDto`1.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimResultDto`1.Constructor">
+            <summary>Sets the Shim of ResultDto`1.ResultDto`1(ResultDto`1 this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimResultDto`1.DataGet">
+            <summary>Sets the Shim of ResultDto`1.get_Data(ResultDto`1 this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimResultDto`1.DataSetT0">
+            <summary>Sets the Shim of ResultDto`1.set_Data(ResultDto`1 this, !0 value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimResultDto`1.IsSuccessGet">
+            <summary>Sets the Shim of ResultDto`1.get_IsSuccess(ResultDto`1 this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimResultDto`1.IsSuccessSetBoolean">
+            <summary>Sets the Shim of ResultDto`1.set_IsSuccess(ResultDto`1 this, Boolean value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimResultDto`1.MessageGet">
+            <summary>Sets the Shim of ResultDto`1.get_Message(ResultDto`1 this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.ShimResultDto`1.MessageSetString">
+            <summary>Sets the Shim of ResultDto`1.set_Message(ResultDto`1 this, String value)</summary>
+        </member>
+        <member name="T:Domain.Library.Base.IDTOs.Fakes.StubBaseDTO">
+            <summary>Stub type of Domain.Library.Base.IDTOs.BaseDTO</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IDTOs.Fakes.StubBaseDTO.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.StubBaseDTO.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IDTOs.Fakes.StubBaseDTO.InitializeStub">
+            <summary>Initializes a new instance of type StubBaseDTO</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.StubBaseDTO.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.StubBaseDTO.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Domain.Library.Base.IDTOs.Fakes.StubBaseDTO`1">
+            <summary>Stub type of Domain.Library.Base.IDTOs.BaseDTO&lt;T&gt;</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IDTOs.Fakes.StubBaseDTO`1.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.StubBaseDTO`1.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IDTOs.Fakes.StubBaseDTO`1.InitializeStub">
+            <summary>Initializes a new instance of type StubBaseDTO</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.StubBaseDTO`1.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.StubBaseDTO`1.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Domain.Library.Base.IDTOs.Fakes.StubIBaseDTO">
+            <summary>Stub type of Domain.Library.Base.IDTOs.IBaseDTO</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IDTOs.Fakes.StubIBaseDTO.#ctor">
+            <summary>Initializes a new instance of type StubIBaseDTO</summary>
+        </member>
+        <member name="T:Domain.Library.Base.IDTOs.Fakes.StubResultDto`1">
+            <summary>Stub type of Domain.Library.Base.IDTOs.ResultDto&lt;T&gt;</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IDTOs.Fakes.StubResultDto`1.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.StubResultDto`1.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IDTOs.Fakes.StubResultDto`1.InitializeStub">
+            <summary>Initializes a new instance of type StubResultDto</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.StubResultDto`1.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IDTOs.Fakes.StubResultDto`1.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Domain.Library.Base.IEntities.Fakes.ShimGeneralEntity">
+            <summary>Shim type of Domain.Library.Base.IEntities.GeneralEntity</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IEntities.Fakes.ShimGeneralEntity.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IEntities.Fakes.ShimGeneralEntity.#ctor(Domain.Library.Base.IEntities.GeneralEntity)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Domain.Library.Base.IEntities.Fakes.ShimGeneralEntity.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IEntities.Fakes.ShimGeneralEntity.AllInstances.DescriptionGet">
+            <summary>Sets the Shim of GeneralEntity.get_Description(GeneralEntity this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IEntities.Fakes.ShimGeneralEntity.AllInstances.DescriptionSetString">
+            <summary>Sets the Shim of GeneralEntity.set_Description(GeneralEntity this, String value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IEntities.Fakes.ShimGeneralEntity.AllInstances.TitleGet">
+            <summary>Sets the Shim of GeneralEntity.get_Title(GeneralEntity this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IEntities.Fakes.ShimGeneralEntity.AllInstances.TitleSetString">
+            <summary>Sets the Shim of GeneralEntity.set_Title(GeneralEntity this, String value)</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IEntities.Fakes.ShimGeneralEntity.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IEntities.Fakes.ShimGeneralEntity.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IEntities.Fakes.ShimGeneralEntity.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IEntities.Fakes.ShimGeneralEntity.Bind(Domain.Library.Base.IEntity)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IEntities.Fakes.ShimGeneralEntity.Constructor">
+            <summary>Sets the Shim of GeneralEntity.GeneralEntity(GeneralEntity this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IEntities.Fakes.ShimGeneralEntity.DescriptionGet">
+            <summary>Sets the Shim of GeneralEntity.get_Description(GeneralEntity this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IEntities.Fakes.ShimGeneralEntity.DescriptionSetString">
+            <summary>Sets the Shim of GeneralEntity.set_Description(GeneralEntity this, String value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IEntities.Fakes.ShimGeneralEntity.TitleGet">
+            <summary>Sets the Shim of GeneralEntity.get_Title(GeneralEntity this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IEntities.Fakes.ShimGeneralEntity.TitleSetString">
+            <summary>Sets the Shim of GeneralEntity.set_Title(GeneralEntity this, String value)</summary>
+        </member>
+        <member name="T:Domain.Library.Base.IEntities.Fakes.StubGeneralEntity">
+            <summary>Stub type of Domain.Library.Base.IEntities.GeneralEntity</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IEntities.Fakes.StubGeneralEntity.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IEntities.Fakes.StubGeneralEntity.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IEntities.Fakes.StubGeneralEntity.InitializeStub">
+            <summary>Initializes a new instance of type StubGeneralEntity</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IEntities.Fakes.StubGeneralEntity.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IEntities.Fakes.StubGeneralEntity.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Domain.Library.Base.IViews.Fakes.ShimBaseView">
+            <summary>Shim type of Domain.Library.Base.IViews.BaseView</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IViews.Fakes.ShimBaseView.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IViews.Fakes.ShimBaseView.#ctor(Domain.Library.Base.IViews.BaseView)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Domain.Library.Base.IViews.Fakes.ShimBaseView.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimBaseView.AllInstances.CreateDateGet">
+            <summary>Sets the Shim of BaseView.get_CreateDate(BaseView this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimBaseView.AllInstances.CreateDateSetDateTime">
+            <summary>Sets the Shim of BaseView.set_CreateDate(BaseView this, DateTime value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimBaseView.AllInstances.CreateUserRoleGuidGet">
+            <summary>Sets the Shim of BaseView.get_CreateUserRoleGuid(BaseView this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimBaseView.AllInstances.CreateUserRoleGuidSetGuid">
+            <summary>Sets the Shim of BaseView.set_CreateUserRoleGuid(BaseView this, Guid value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimBaseView.AllInstances.UpdateDateGet">
+            <summary>Sets the Shim of BaseView.get_UpdateDate(BaseView this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimBaseView.AllInstances.UpdateDateSetDateTime">
+            <summary>Sets the Shim of BaseView.set_UpdateDate(BaseView this, DateTime value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimBaseView.AllInstances.UpdateUserRoleGuidGet">
+            <summary>Sets the Shim of BaseView.get_UpdateUserRoleGuid(BaseView this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimBaseView.AllInstances.UpdateUserRoleGuidSetGuid">
+            <summary>Sets the Shim of BaseView.set_UpdateUserRoleGuid(BaseView this, Guid value)</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IViews.Fakes.ShimBaseView.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IViews.Fakes.ShimBaseView.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimBaseView.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IViews.Fakes.ShimBaseView.Bind(Domain.Library.Base.IViews.IBaseView)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimBaseView.Constructor">
+            <summary>Sets the Shim of BaseView.BaseView(BaseView this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimBaseView.CreateDateGet">
+            <summary>Sets the Shim of BaseView.get_CreateDate(BaseView this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimBaseView.CreateDateSetDateTime">
+            <summary>Sets the Shim of BaseView.set_CreateDate(BaseView this, DateTime value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimBaseView.CreateUserRoleGuidGet">
+            <summary>Sets the Shim of BaseView.get_CreateUserRoleGuid(BaseView this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimBaseView.CreateUserRoleGuidSetGuid">
+            <summary>Sets the Shim of BaseView.set_CreateUserRoleGuid(BaseView this, Guid value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimBaseView.UpdateDateGet">
+            <summary>Sets the Shim of BaseView.get_UpdateDate(BaseView this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimBaseView.UpdateDateSetDateTime">
+            <summary>Sets the Shim of BaseView.set_UpdateDate(BaseView this, DateTime value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimBaseView.UpdateUserRoleGuidGet">
+            <summary>Sets the Shim of BaseView.get_UpdateUserRoleGuid(BaseView this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimBaseView.UpdateUserRoleGuidSetGuid">
+            <summary>Sets the Shim of BaseView.set_UpdateUserRoleGuid(BaseView this, Guid value)</summary>
+        </member>
+        <member name="T:Domain.Library.Base.IViews.Fakes.ShimBaseView`1">
+            <summary>Shim type of Domain.Library.Base.IViews.BaseView&lt;T&gt;</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IViews.Fakes.ShimBaseView`1.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IViews.Fakes.ShimBaseView`1.#ctor(Domain.Library.Base.IViews.BaseView{`0})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Domain.Library.Base.IViews.Fakes.ShimBaseView`1.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimBaseView`1.AllInstances.GuidGet">
+            <summary>Sets the Shim of BaseView`1.get_Guid(BaseView`1 this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimBaseView`1.AllInstances.GuidSetGuid">
+            <summary>Sets the Shim of BaseView`1.set_Guid(BaseView`1 this, Guid value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimBaseView`1.AllInstances.IDGet">
+            <summary>Sets the Shim of BaseView`1.get_ID(BaseView`1 this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimBaseView`1.AllInstances.IDSetT0">
+            <summary>Sets the Shim of BaseView`1.set_ID(BaseView`1 this, !0 value)</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IViews.Fakes.ShimBaseView`1.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IViews.Fakes.ShimBaseView`1.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimBaseView`1.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IViews.Fakes.ShimBaseView`1.Bind(Domain.Library.Base.IViews.IBaseView)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimBaseView`1.Constructor">
+            <summary>Sets the Shim of BaseView`1.BaseView`1(BaseView`1 this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimBaseView`1.GuidGet">
+            <summary>Sets the Shim of BaseView`1.get_Guid(BaseView`1 this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimBaseView`1.GuidSetGuid">
+            <summary>Sets the Shim of BaseView`1.set_Guid(BaseView`1 this, Guid value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimBaseView`1.IDGet">
+            <summary>Sets the Shim of BaseView`1.get_ID(BaseView`1 this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimBaseView`1.IDSetT0">
+            <summary>Sets the Shim of BaseView`1.set_ID(BaseView`1 this, !0 value)</summary>
+        </member>
+        <member name="T:Domain.Library.Base.IViews.Fakes.ShimResultView`1">
+            <summary>Shim type of Domain.Library.Base.IViews.ResultView&lt;T&gt;</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IViews.Fakes.ShimResultView`1.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IViews.Fakes.ShimResultView`1.#ctor(Domain.Library.Base.IViews.ResultView{`0})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Domain.Library.Base.IViews.Fakes.ShimResultView`1.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimResultView`1.AllInstances.DataGet">
+            <summary>Sets the Shim of ResultView`1.get_Data(ResultView`1 this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimResultView`1.AllInstances.DataSetT0">
+            <summary>Sets the Shim of ResultView`1.set_Data(ResultView`1 this, !0 value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimResultView`1.AllInstances.IsSuccessGet">
+            <summary>Sets the Shim of ResultView`1.get_IsSuccess(ResultView`1 this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimResultView`1.AllInstances.IsSuccessSetBoolean">
+            <summary>Sets the Shim of ResultView`1.set_IsSuccess(ResultView`1 this, Boolean value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimResultView`1.AllInstances.MessageGet">
+            <summary>Sets the Shim of ResultView`1.get_Message(ResultView`1 this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimResultView`1.AllInstances.MessageSetString">
+            <summary>Sets the Shim of ResultView`1.set_Message(ResultView`1 this, String value)</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IViews.Fakes.ShimResultView`1.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IViews.Fakes.ShimResultView`1.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimResultView`1.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimResultView`1.Constructor">
+            <summary>Sets the Shim of ResultView`1.ResultView`1(ResultView`1 this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimResultView`1.DataGet">
+            <summary>Sets the Shim of ResultView`1.get_Data(ResultView`1 this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimResultView`1.DataSetT0">
+            <summary>Sets the Shim of ResultView`1.set_Data(ResultView`1 this, !0 value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimResultView`1.IsSuccessGet">
+            <summary>Sets the Shim of ResultView`1.get_IsSuccess(ResultView`1 this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimResultView`1.IsSuccessSetBoolean">
+            <summary>Sets the Shim of ResultView`1.set_IsSuccess(ResultView`1 this, Boolean value)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimResultView`1.MessageGet">
+            <summary>Sets the Shim of ResultView`1.get_Message(ResultView`1 this)</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.ShimResultView`1.MessageSetString">
+            <summary>Sets the Shim of ResultView`1.set_Message(ResultView`1 this, String value)</summary>
+        </member>
+        <member name="T:Domain.Library.Base.IViews.Fakes.StubBaseView">
+            <summary>Stub type of Domain.Library.Base.IViews.BaseView</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IViews.Fakes.StubBaseView.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.StubBaseView.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IViews.Fakes.StubBaseView.InitializeStub">
+            <summary>Initializes a new instance of type StubBaseView</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.StubBaseView.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.StubBaseView.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Domain.Library.Base.IViews.Fakes.StubBaseView`1">
+            <summary>Stub type of Domain.Library.Base.IViews.BaseView&lt;T&gt;</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IViews.Fakes.StubBaseView`1.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.StubBaseView`1.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IViews.Fakes.StubBaseView`1.InitializeStub">
+            <summary>Initializes a new instance of type StubBaseView</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.StubBaseView`1.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.StubBaseView`1.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Domain.Library.Base.IViews.Fakes.StubIBaseView">
+            <summary>Stub type of Domain.Library.Base.IViews.IBaseView</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IViews.Fakes.StubIBaseView.#ctor">
+            <summary>Initializes a new instance of type StubIBaseView</summary>
+        </member>
+        <member name="T:Domain.Library.Base.IViews.Fakes.StubResultView`1">
+            <summary>Stub type of Domain.Library.Base.IViews.ResultView&lt;T&gt;</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IViews.Fakes.StubResultView`1.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.StubResultView`1.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Domain.Library.Base.IViews.Fakes.StubResultView`1.InitializeStub">
+            <summary>Initializes a new instance of type StubResultView</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.StubResultView`1.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Domain.Library.Base.IViews.Fakes.StubResultView`1.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Domain.Library.Entities.Fakes.ShimGeneralReport">
+            <summary>Shim type of Domain.Library.Entities.GeneralReport</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.ShimGeneralReport.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.ShimGeneralReport.#ctor(Domain.Library.Entities.GeneralReport)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Domain.Library.Entities.Fakes.ShimGeneralReport.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.ShimGeneralReport.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.ShimGeneralReport.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimGeneralReport.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.ShimGeneralReport.Bind(Domain.Library.Base.IEntity)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimGeneralReport.Constructor">
+            <summary>Sets the Shim of GeneralReport.GeneralReport(GeneralReport this)</summary>
+        </member>
+        <member name="T:Domain.Library.Entities.Fakes.ShimRole">
+            <summary>Shim type of Domain.Library.Entities.Role</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.ShimRole.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.ShimRole.#ctor(Domain.Library.Entities.Role)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Domain.Library.Entities.Fakes.ShimRole.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimRole.AllInstances.DescriptionGet">
+            <summary>Sets the Shim of Role.get_Description(Role this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimRole.AllInstances.DescriptionSetString">
+            <summary>Sets the Shim of Role.set_Description(Role this, String value)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimRole.AllInstances.TitleGet">
+            <summary>Sets the Shim of Role.get_Title(Role this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimRole.AllInstances.TitleSetString">
+            <summary>Sets the Shim of Role.set_Title(Role this, String value)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimRole.AllInstances.UserRolesGet">
+            <summary>Sets the Shim of Role.get_UserRoles(Role this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimRole.AllInstances.UserRolesSetICollectionOfUserRole">
+            <summary>Sets the Shim of Role.set_UserRoles(Role this, ICollection`1 value)</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.ShimRole.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.ShimRole.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimRole.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.ShimRole.Bind(Domain.Library.Base.IEntity)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimRole.Constructor">
+            <summary>Sets the Shim of Role.Role(Role this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimRole.DescriptionGet">
+            <summary>Sets the Shim of Role.get_Description(Role this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimRole.DescriptionSetString">
+            <summary>Sets the Shim of Role.set_Description(Role this, String value)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimRole.TitleGet">
+            <summary>Sets the Shim of Role.get_Title(Role this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimRole.TitleSetString">
+            <summary>Sets the Shim of Role.set_Title(Role this, String value)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimRole.UserRolesGet">
+            <summary>Sets the Shim of Role.get_UserRoles(Role this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimRole.UserRolesSetICollectionOfUserRole">
+            <summary>Sets the Shim of Role.set_UserRoles(Role this, ICollection`1 value)</summary>
+        </member>
+        <member name="T:Domain.Library.Entities.Fakes.ShimSystemLogger">
+            <summary>Shim type of Domain.Library.Entities.SystemLogger</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.ShimSystemLogger.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.ShimSystemLogger.#ctor(Domain.Library.Entities.SystemLogger)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Domain.Library.Entities.Fakes.ShimSystemLogger.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimSystemLogger.AllInstances.ErrorGet">
+            <summary>Sets the Shim of SystemLogger.get_Error(SystemLogger this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimSystemLogger.AllInstances.ErrorSetString">
+            <summary>Sets the Shim of SystemLogger.set_Error(SystemLogger this, String value)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimSystemLogger.AllInstances.EventGet">
+            <summary>Sets the Shim of SystemLogger.get_Event(SystemLogger this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimSystemLogger.AllInstances.EventSetString">
+            <summary>Sets the Shim of SystemLogger.set_Event(SystemLogger this, String value)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimSystemLogger.AllInstances.ExceptionGet">
+            <summary>Sets the Shim of SystemLogger.get_Exception(SystemLogger this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimSystemLogger.AllInstances.ExceptionSetString">
+            <summary>Sets the Shim of SystemLogger.set_Exception(SystemLogger this, String value)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimSystemLogger.AllInstances.IsSuccessGet">
+            <summary>Sets the Shim of SystemLogger.get_IsSuccess(SystemLogger this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimSystemLogger.AllInstances.IsSuccessSetBoolean">
+            <summary>Sets the Shim of SystemLogger.set_IsSuccess(SystemLogger this, Boolean value)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimSystemLogger.AllInstances.MethodGet">
+            <summary>Sets the Shim of SystemLogger.get_Method(SystemLogger this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimSystemLogger.AllInstances.MethodSetString">
+            <summary>Sets the Shim of SystemLogger.set_Method(SystemLogger this, String value)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimSystemLogger.AllInstances.ModelGet">
+            <summary>Sets the Shim of SystemLogger.get_Model(SystemLogger this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimSystemLogger.AllInstances.ModelSetString">
+            <summary>Sets the Shim of SystemLogger.set_Model(SystemLogger this, String value)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimSystemLogger.AllInstances.ServiceGet">
+            <summary>Sets the Shim of SystemLogger.get_Service(SystemLogger this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimSystemLogger.AllInstances.ServiceSetString">
+            <summary>Sets the Shim of SystemLogger.set_Service(SystemLogger this, String value)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimSystemLogger.AllInstances.ToString01">
+            <summary>Sets the Shim of SystemLogger.ToString(SystemLogger this)</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.ShimSystemLogger.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.ShimSystemLogger.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimSystemLogger.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.ShimSystemLogger.Bind(Domain.Library.Base.IEntity)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimSystemLogger.Constructor">
+            <summary>Sets the Shim of SystemLogger.SystemLogger(SystemLogger this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimSystemLogger.ErrorGet">
+            <summary>Sets the Shim of SystemLogger.get_Error(SystemLogger this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimSystemLogger.ErrorSetString">
+            <summary>Sets the Shim of SystemLogger.set_Error(SystemLogger this, String value)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimSystemLogger.EventGet">
+            <summary>Sets the Shim of SystemLogger.get_Event(SystemLogger this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimSystemLogger.EventSetString">
+            <summary>Sets the Shim of SystemLogger.set_Event(SystemLogger this, String value)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimSystemLogger.ExceptionGet">
+            <summary>Sets the Shim of SystemLogger.get_Exception(SystemLogger this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimSystemLogger.ExceptionSetString">
+            <summary>Sets the Shim of SystemLogger.set_Exception(SystemLogger this, String value)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimSystemLogger.IsSuccessGet">
+            <summary>Sets the Shim of SystemLogger.get_IsSuccess(SystemLogger this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimSystemLogger.IsSuccessSetBoolean">
+            <summary>Sets the Shim of SystemLogger.set_IsSuccess(SystemLogger this, Boolean value)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimSystemLogger.MethodGet">
+            <summary>Sets the Shim of SystemLogger.get_Method(SystemLogger this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimSystemLogger.MethodSetString">
+            <summary>Sets the Shim of SystemLogger.set_Method(SystemLogger this, String value)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimSystemLogger.ModelGet">
+            <summary>Sets the Shim of SystemLogger.get_Model(SystemLogger this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimSystemLogger.ModelSetString">
+            <summary>Sets the Shim of SystemLogger.set_Model(SystemLogger this, String value)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimSystemLogger.ServiceGet">
+            <summary>Sets the Shim of SystemLogger.get_Service(SystemLogger this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimSystemLogger.ServiceSetString">
+            <summary>Sets the Shim of SystemLogger.set_Service(SystemLogger this, String value)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimSystemLogger.ToString">
+            <summary>Sets the Shim of SystemLogger.ToString(SystemLogger this)</summary>
+        </member>
+        <member name="T:Domain.Library.Entities.Fakes.ShimUser">
+            <summary>Shim type of Domain.Library.Entities.User</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.ShimUser.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.ShimUser.#ctor(Domain.Library.Entities.User)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Domain.Library.Entities.Fakes.ShimUser.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUser.AllInstances.EmailGet">
+            <summary>Sets the Shim of User.get_Email(User this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUser.AllInstances.EmailSetString">
+            <summary>Sets the Shim of User.set_Email(User this, String value)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUser.AllInstances.FamilyGet">
+            <summary>Sets the Shim of User.get_Family(User this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUser.AllInstances.FamilySetString">
+            <summary>Sets the Shim of User.set_Family(User this, String value)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUser.AllInstances.NameGet">
+            <summary>Sets the Shim of User.get_Name(User this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUser.AllInstances.NameSetString">
+            <summary>Sets the Shim of User.set_Name(User this, String value)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUser.AllInstances.PasswordGet">
+            <summary>Sets the Shim of User.get_Password(User this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUser.AllInstances.PasswordSetString">
+            <summary>Sets the Shim of User.set_Password(User this, String value)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUser.AllInstances.UserRolesGet">
+            <summary>Sets the Shim of User.get_UserRoles(User this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUser.AllInstances.UserRolesSetICollectionOfUserRole">
+            <summary>Sets the Shim of User.set_UserRoles(User this, ICollection`1 value)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUser.AllInstances.UsernameGet">
+            <summary>Sets the Shim of User.get_Username(User this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUser.AllInstances.UsernameSetString">
+            <summary>Sets the Shim of User.set_Username(User this, String value)</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.ShimUser.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.ShimUser.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUser.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.ShimUser.Bind(Domain.Library.Base.IEntity)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUser.Constructor">
+            <summary>Sets the Shim of User.User(User this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUser.EmailGet">
+            <summary>Sets the Shim of User.get_Email(User this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUser.EmailSetString">
+            <summary>Sets the Shim of User.set_Email(User this, String value)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUser.FamilyGet">
+            <summary>Sets the Shim of User.get_Family(User this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUser.FamilySetString">
+            <summary>Sets the Shim of User.set_Family(User this, String value)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUser.NameGet">
+            <summary>Sets the Shim of User.get_Name(User this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUser.NameSetString">
+            <summary>Sets the Shim of User.set_Name(User this, String value)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUser.PasswordGet">
+            <summary>Sets the Shim of User.get_Password(User this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUser.PasswordSetString">
+            <summary>Sets the Shim of User.set_Password(User this, String value)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUser.UserRolesGet">
+            <summary>Sets the Shim of User.get_UserRoles(User this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUser.UserRolesSetICollectionOfUserRole">
+            <summary>Sets the Shim of User.set_UserRoles(User this, ICollection`1 value)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUser.UsernameGet">
+            <summary>Sets the Shim of User.get_Username(User this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUser.UsernameSetString">
+            <summary>Sets the Shim of User.set_Username(User this, String value)</summary>
+        </member>
+        <member name="T:Domain.Library.Entities.Fakes.ShimUserRole">
+            <summary>Shim type of Domain.Library.Entities.UserRole</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.ShimUserRole.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.ShimUserRole.#ctor(Domain.Library.Entities.UserRole)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Domain.Library.Entities.Fakes.ShimUserRole.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUserRole.AllInstances.RoleGet">
+            <summary>Sets the Shim of UserRole.get_Role(UserRole this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUserRole.AllInstances.RoleIdGet">
+            <summary>Sets the Shim of UserRole.get_RoleId(UserRole this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUserRole.AllInstances.RoleIdSetInt64">
+            <summary>Sets the Shim of UserRole.set_RoleId(UserRole this, Int64 value)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUserRole.AllInstances.RoleSetRole">
+            <summary>Sets the Shim of UserRole.set_Role(UserRole this, Role value)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUserRole.AllInstances.UserGet">
+            <summary>Sets the Shim of UserRole.get_User(UserRole this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUserRole.AllInstances.UserIdGet">
+            <summary>Sets the Shim of UserRole.get_UserId(UserRole this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUserRole.AllInstances.UserIdSetInt64">
+            <summary>Sets the Shim of UserRole.set_UserId(UserRole this, Int64 value)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUserRole.AllInstances.UserSetUser">
+            <summary>Sets the Shim of UserRole.set_User(UserRole this, User value)</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.ShimUserRole.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.ShimUserRole.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUserRole.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.ShimUserRole.Bind(Domain.Library.Base.IEntity)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUserRole.Constructor">
+            <summary>Sets the Shim of UserRole.UserRole(UserRole this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUserRole.RoleGet">
+            <summary>Sets the Shim of UserRole.get_Role(UserRole this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUserRole.RoleIdGet">
+            <summary>Sets the Shim of UserRole.get_RoleId(UserRole this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUserRole.RoleIdSetInt64">
+            <summary>Sets the Shim of UserRole.set_RoleId(UserRole this, Int64 value)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUserRole.RoleSetRole">
+            <summary>Sets the Shim of UserRole.set_Role(UserRole this, Role value)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUserRole.UserGet">
+            <summary>Sets the Shim of UserRole.get_User(UserRole this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUserRole.UserIdGet">
+            <summary>Sets the Shim of UserRole.get_UserId(UserRole this)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUserRole.UserIdSetInt64">
+            <summary>Sets the Shim of UserRole.set_UserId(UserRole this, Int64 value)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.ShimUserRole.UserSetUser">
+            <summary>Sets the Shim of UserRole.set_User(UserRole this, User value)</summary>
+        </member>
+        <member name="T:Domain.Library.Entities.Fakes.StubGeneralReport">
+            <summary>Stub type of Domain.Library.Entities.GeneralReport</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.StubGeneralReport.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.StubGeneralReport.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.StubGeneralReport.InitializeStub">
+            <summary>Initializes a new instance of type StubGeneralReport</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.StubGeneralReport.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.StubGeneralReport.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Domain.Library.Entities.Fakes.StubRole">
+            <summary>Stub type of Domain.Library.Entities.Role</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.StubRole.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.StubRole.AttachBackingFieldToUserRoles">
+            <summary>Attaches delegates to emulate StubRole.UserRoles as a property with a backing field.</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.StubRole.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.StubRole.InitializeStub">
+            <summary>Initializes a new instance of type StubRole</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.StubRole.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.StubRole.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.StubRole.UserRoles">
+            <summary>Sets the stub of Role.get_UserRoles(Role this)</summary>
+        </member>
+        <member name="F:Domain.Library.Entities.Fakes.StubRole.UserRolesGet">
+            <summary>Sets the stub of Role.get_UserRoles(Role this)</summary>
+        </member>
+        <member name="F:Domain.Library.Entities.Fakes.StubRole.UserRolesSetICollectionOfUserRole">
+            <summary>Sets the stub of Role.set_UserRoles(Role this, ICollection`1 value)</summary>
+        </member>
+        <member name="T:Domain.Library.Entities.Fakes.StubSystemLogger">
+            <summary>Stub type of Domain.Library.Entities.SystemLogger</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.StubSystemLogger.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.StubSystemLogger.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.StubSystemLogger.InitializeStub">
+            <summary>Initializes a new instance of type StubSystemLogger</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.StubSystemLogger.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.StubSystemLogger.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.StubSystemLogger.ToString">
+            <summary>Sets the Stub of SystemLogger.ToString(SystemLogger this)</summary>
+        </member>
+        <member name="F:Domain.Library.Entities.Fakes.StubSystemLogger.ToString01">
+            <summary>Sets the stub of SystemLogger.ToString(SystemLogger this)</summary>
+        </member>
+        <member name="T:Domain.Library.Entities.Fakes.StubUser">
+            <summary>Stub type of Domain.Library.Entities.User</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.StubUser.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.StubUser.AttachBackingFieldToUserRoles">
+            <summary>Attaches delegates to emulate StubUser.UserRoles as a property with a backing field.</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.StubUser.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.StubUser.InitializeStub">
+            <summary>Initializes a new instance of type StubUser</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.StubUser.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.StubUser.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.StubUser.UserRoles">
+            <summary>Sets the stub of User.get_UserRoles(User this)</summary>
+        </member>
+        <member name="F:Domain.Library.Entities.Fakes.StubUser.UserRolesGet">
+            <summary>Sets the stub of User.get_UserRoles(User this)</summary>
+        </member>
+        <member name="F:Domain.Library.Entities.Fakes.StubUser.UserRolesSetICollectionOfUserRole">
+            <summary>Sets the stub of User.set_UserRoles(User this, ICollection`1 value)</summary>
+        </member>
+        <member name="T:Domain.Library.Entities.Fakes.StubUserRole">
+            <summary>Stub type of Domain.Library.Entities.UserRole</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.StubUserRole.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.StubUserRole.AttachBackingFieldToRole">
+            <summary>Attaches delegates to emulate StubUserRole.Role as a property with a backing field.</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.StubUserRole.AttachBackingFieldToUser">
+            <summary>Attaches delegates to emulate StubUserRole.User as a property with a backing field.</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.StubUserRole.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.Fakes.StubUserRole.InitializeStub">
+            <summary>Initializes a new instance of type StubUserRole</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.StubUserRole.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.StubUserRole.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.StubUserRole.Role">
+            <summary>Sets the stub of UserRole.get_Role(UserRole this)</summary>
+        </member>
+        <member name="F:Domain.Library.Entities.Fakes.StubUserRole.RoleGet">
+            <summary>Sets the stub of UserRole.get_Role(UserRole this)</summary>
+        </member>
+        <member name="F:Domain.Library.Entities.Fakes.StubUserRole.RoleSetRole">
+            <summary>Sets the stub of UserRole.set_Role(UserRole this, Role value)</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.Fakes.StubUserRole.User">
+            <summary>Sets the stub of UserRole.get_User(UserRole this)</summary>
+        </member>
+        <member name="F:Domain.Library.Entities.Fakes.StubUserRole.UserGet">
+            <summary>Sets the stub of UserRole.get_User(UserRole this)</summary>
+        </member>
+        <member name="F:Domain.Library.Entities.Fakes.StubUserRole.UserSetUser">
+            <summary>Sets the stub of UserRole.set_User(UserRole this, User value)</summary>
+        </member>
+        <member name="T:Domain.Library.Entities.SEC.Role.DTOs.Fakes.ShimRoleDTO">
+            <summary>Shim type of Domain.Library.Entities.SEC.Role.DTOs.RoleDTO</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.SEC.Role.DTOs.Fakes.ShimRoleDTO.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.SEC.Role.DTOs.Fakes.ShimRoleDTO.#ctor(Domain.Library.Entities.SEC.Role.DTOs.RoleDTO)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Domain.Library.Entities.SEC.Role.DTOs.Fakes.ShimRoleDTO.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.SEC.Role.DTOs.Fakes.ShimRoleDTO.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.SEC.Role.DTOs.Fakes.ShimRoleDTO.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.SEC.Role.DTOs.Fakes.ShimRoleDTO.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.SEC.Role.DTOs.Fakes.ShimRoleDTO.Bind(Domain.Library.Base.IEntity)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.SEC.Role.DTOs.Fakes.ShimRoleDTO.Constructor">
+            <summary>Sets the Shim of RoleDTO.RoleDTO(RoleDTO this)</summary>
+        </member>
+        <member name="T:Domain.Library.Entities.SEC.Role.DTOs.Fakes.StubRoleDTO">
+            <summary>Stub type of Domain.Library.Entities.SEC.Role.DTOs.RoleDTO</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.SEC.Role.DTOs.Fakes.StubRoleDTO.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.SEC.Role.DTOs.Fakes.StubRoleDTO.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.SEC.Role.DTOs.Fakes.StubRoleDTO.InitializeStub">
+            <summary>Initializes a new instance of type StubRoleDTO</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.SEC.Role.DTOs.Fakes.StubRoleDTO.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.SEC.Role.DTOs.Fakes.StubRoleDTO.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:Domain.Library.Entities.SEC.User.DTOs.Fakes.ShimUserDTO">
+            <summary>Shim type of Domain.Library.Entities.SEC.User.DTOs.UserDTO</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.SEC.User.DTOs.Fakes.ShimUserDTO.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.SEC.User.DTOs.Fakes.ShimUserDTO.#ctor(Domain.Library.Entities.SEC.User.DTOs.UserDTO)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:Domain.Library.Entities.SEC.User.DTOs.Fakes.ShimUserDTO.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.SEC.User.DTOs.Fakes.ShimUserDTO.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.SEC.User.DTOs.Fakes.ShimUserDTO.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.SEC.User.DTOs.Fakes.ShimUserDTO.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.SEC.User.DTOs.Fakes.ShimUserDTO.Bind(Domain.Library.Base.IDTOs.IBaseDTO)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.SEC.User.DTOs.Fakes.ShimUserDTO.Constructor">
+            <summary>Sets the Shim of UserDTO.UserDTO(UserDTO this)</summary>
+        </member>
+        <member name="T:Domain.Library.Entities.SEC.User.DTOs.Fakes.StubUserDTO">
+            <summary>Stub type of Domain.Library.Entities.SEC.User.DTOs.UserDTO</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.SEC.User.DTOs.Fakes.StubUserDTO.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.SEC.User.DTOs.Fakes.StubUserDTO.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:Domain.Library.Entities.SEC.User.DTOs.Fakes.StubUserDTO.InitializeStub">
+            <summary>Initializes a new instance of type StubUserDTO</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.SEC.User.DTOs.Fakes.StubUserDTO.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:Domain.Library.Entities.SEC.User.DTOs.Fakes.StubUserDTO.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

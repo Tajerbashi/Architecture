@@ -8,6 +8,5 @@ namespace Application.Library.Patterns.CQRS.UserServices
         IRemoveUserService RemoveUserService { get; set; }
         IUpdateUserService UpdateUserService { get; set; }
         IChangeUserService ChangeUserService { get; set; }
-
     }
 }

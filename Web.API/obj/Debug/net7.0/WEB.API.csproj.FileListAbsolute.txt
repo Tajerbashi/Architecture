@@ -1,0 +1,6 @@
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API\obj\Debug\net7.0\Web.API.csproj.AssemblyReference.cache
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API\obj\Debug\net7.0\Web.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API\obj\Debug\net7.0\Web.API.AssemblyInfoInputs.cache
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API\obj\Debug\net7.0\Web.API.AssemblyInfo.cs
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API\obj\Debug\net7.0\Web.API.csproj.CoreCompileInputs.cache
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API\obj\Debug\net7.0\Web.API.MvcApplicationPartsAssemblyInfo.cache

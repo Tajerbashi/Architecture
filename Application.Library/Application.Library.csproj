@@ -15,9 +15,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Repositories\LOG\" />
+    <Folder Include="Repositories\RPT\" />
     <Folder Include="Patterns\Facad\" />
-    <Folder Include="Services\LOG\SystemLoggers\" />
-    <Folder Include="Services\RPT\GeneralReports\" />
+    <Folder Include="Services\LOG\" />
+    <Folder Include="Services\RPT\" />
+    <Folder Include="Services\SEC\" />
   </ItemGroup>
 
 </Project>

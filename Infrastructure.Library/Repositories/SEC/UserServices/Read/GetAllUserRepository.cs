@@ -3,7 +3,7 @@ using Domain.Library.Base.IDTOs;
 using Domain.Library.Entities.SEC.User.DTOs;
 using Infrastructure.Library.DatabaseContextDb;
 
-namespace Infrastructure.Library.Repositories.SEC.User
+namespace Infrastructure.Library.Repositories.SEC.UserServices.Read
 {
     public class GetAllUserRepository : IGetAllUserRepository
     {

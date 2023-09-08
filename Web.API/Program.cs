@@ -1,4 +1,5 @@
 using Application.Library.DatabaseContext;
+using Application.Library.Patterns.UnitOfWork;
 using Infrastructure.Library.DatabaseContextDb;
 using Infrastructure.Library.Pattern;
 using Microsoft.EntityFrameworkCore;
@@ -18,6 +19,10 @@ builder.Services.AddDbContext<DatabaseContext>(options => options.UseSqlServer(c
 
 // Add services to the container.
 builder.Services.AddControllers();
+
+//  Injection
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork > ();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>

@@ -1,7 +1,7 @@
 ﻿using Application.Library.Patterns.UnitOfWork;
 using Application.Library.Repositories.SEC.User.UnitOfWork;
 using Infrastructure.Library.DatabaseContextDb;
-using Infrastructure.Library.Repositories.SEC.User;
+using Infrastructure.Library.Repositories.SEC.UserServices.UnitOfWork;
 
 namespace Infrastructure.Library.Pattern
 {
@@ -15,11 +15,12 @@ namespace Infrastructure.Library.Pattern
             _contextWrite = contextWrite;
         }
 
-        public IUserRepository UserRepository { get => new UserRepository(_contextRead,_contextWrite); set => new UserRepository(_contextRead,_contextWrite); }
+        public IUserRepository UserRepository { get => new UserRepository(_contextRead, _contextWrite); set => new UserRepository(_contextRead, _contextWrite); }
 
         public void Save()
         {
-            throw new NotImplementedException();
+            _contextRead.SaveChanges();
+            _contextWrite.SaveChanges();
         }
     }
 }

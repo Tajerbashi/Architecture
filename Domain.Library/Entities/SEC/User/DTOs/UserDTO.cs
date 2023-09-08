@@ -11,10 +11,8 @@ namespace Domain.Library.Entities.SEC.User.DTOs
         public string Password { get; set; }
         public bool IsDeleted { get; set; } = false;
         public bool IsActive { get; set; } = true;
-
         public long CreateByUserRoleID { get; set; }
         public long DeleteByUserRoleID { get; set; }
-
         public DateTime DeleteDate { get; set; } = DateTime.Now;
     }
 }

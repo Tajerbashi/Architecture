@@ -5,7 +5,7 @@ namespace Application.Library.Repositories.SEC.User.Write
 {
     public interface IAddUserRepository
     {
-        ResultDto<UserDTO> Execute(UserDTO userDTO);
+        ResultDto<long> Execute(UserDTO userDTO);
     }
 
 }

@@ -1,14 +1,15 @@
 ﻿using Application.Library.Repositories.SEC.User.CQRS;
 using Application.Library.Repositories.SEC.User.UnitOfWork;
 using Infrastructure.Library.DatabaseContextDb;
+using Infrastructure.Library.Repositories.SEC.UserServices.CQRS;
 
-namespace Infrastructure.Library.Repositories.SEC.User
+namespace Infrastructure.Library.Repositories.SEC.UserServices.UnitOfWork
 {
     public class UserRepository : IUserRepository
     {
         private readonly DatabaseContext _contextRead;
         private readonly DatabaseContext _contextWrite;
-        public UserRepository(DatabaseContext contextRead,DatabaseContext contextWrite)
+        public UserRepository(DatabaseContext contextRead, DatabaseContext contextWrite)
         {
             _contextRead = contextRead;
             _contextWrite = contextWrite;

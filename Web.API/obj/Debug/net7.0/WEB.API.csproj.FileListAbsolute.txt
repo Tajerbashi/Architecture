@@ -1,4 +1,3 @@
-C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API\bin\Debug\net7.0\Domain.Library.Fakes.dll
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API\bin\Debug\net7.0\appsettings.json
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API\bin\Debug\net7.0\Web.API.exe
@@ -95,3 +94,4 @@ C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.A
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API\obj\Debug\net7.0\Web.API.pdb
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API\obj\Debug\net7.0\Web.API.genruntimeconfig.cache
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API\obj\Debug\net7.0\ref\Web.API.dll
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API\bin\Debug\net7.0\Domain.Library.Fakes.dll

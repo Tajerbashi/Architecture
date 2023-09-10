@@ -11,6 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Entities\CNT\Menu\DTOs\" />
+    <Folder Include="Entities\CNT\Menu\Views\" />
     <Folder Include="Entities\LOG\SystemLogger\DTOs\" />
     <Folder Include="Entities\LOG\SystemLogger\Views\" />
     <Folder Include="Entities\RPT\GeneralReports\DTOs\" />

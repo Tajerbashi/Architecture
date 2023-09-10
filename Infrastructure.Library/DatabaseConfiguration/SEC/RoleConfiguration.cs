@@ -12,6 +12,10 @@ namespace Infrastructure.Library.DatabaseConfiguration.SEC
             builder.HasMany(x => x.UserRoles)
                 .WithOne(x => x.Role)
                 .HasForeignKey(x => x.RoleId);
+
+            builder.HasMany(x => x.MenuPrivileges)
+                .WithOne(x => x.Role)
+                .HasForeignKey(x => x.RoleId);
         }
     }
 }

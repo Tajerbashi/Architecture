@@ -1,14 +1,14 @@
 ﻿using Domain.Library.Base;
+using Domain.Library.Base.IEntities;
+using Domain.Library.Entities.CNT.Menu.Entities;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Domain.Library.Entities
 {
     [Table("Roles", Schema = "SEC")]
-    public class Role : BaseEntity
+    public class Role : GeneralEntity
     {
-        public string Title { get; set; }
-        public string Description { get; set; }
-
-        public virtual ICollection<UserRole> UserRoles { get; set; }
+        public ICollection<UserRole> UserRoles { get; set; }
+        public ICollection<MenuPrivilege> MenuPrivileges { get; set; }
     }
 }

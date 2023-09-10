@@ -2,6 +2,7 @@ C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.A
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\testhost.dll
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\Web.API.deps.json
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\Web.API.runtimeconfig.json
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\Domain.Library.Fakes.dll
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\appsettings.json
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\Web.API.exe
@@ -32,6 +33,7 @@ C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.A
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\Microsoft.QualityTools.Testing.Fakes.dll
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\Microsoft.TestPlatform.CoreUtilities.dll
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\Microsoft.TestPlatform.PlatformAbstractions.dll
@@ -58,6 +60,19 @@ C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.A
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\xunit.assert.dll
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\xunit.core.dll
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\xunit.execution.dotnet.dll
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\cs\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\de\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\es\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\fr\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\it\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\ja\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\ko\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\pl\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\pt-BR\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\ru\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\tr\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\zh-Hans\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\zh-Hant\Microsoft.QualityTools.Testing.Fakes.resources.dll
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\cs\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\de\Microsoft.TestPlatform.CoreUtilities.resources.dll

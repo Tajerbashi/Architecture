@@ -1,5 +1,6 @@
 ﻿using Application.Library.DatabaseContext;
 using Domain.Library.Entities;
+using Domain.Library.Entities.CNT.Menu.Entities;
 using Infrastructure.Library.Pattern;
 using Microsoft.EntityFrameworkCore;
 
@@ -26,9 +27,13 @@ namespace Infrastructure.Library.DatabaseContextDb
         public DbSet<SystemLogger> SystemLoggers { get; set; }
         #endregion
 
-
         #region RPT
         public DbSet<GeneralReport> GeneralReports { get; set; }
+        #endregion
+
+        #region CNT
+        public DbSet<Menu> Menus { get; set; }
+        public DbSet<MenuPrivilege> MenuPrivileges { get; set; }
         #endregion
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -37,6 +42,9 @@ namespace Infrastructure.Library.DatabaseContextDb
 
 
             _pattern._configuration.SEC_Configuration(modelBuilder);
+            _pattern._configuration.CNT_Configuration(modelBuilder);
+            _pattern._configuration.RPT_Configuration(modelBuilder);
+            _pattern._configuration.LOG_Configuration(modelBuilder);
 
 
 

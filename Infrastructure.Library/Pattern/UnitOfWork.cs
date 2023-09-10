@@ -1,29 +1,26 @@
 ﻿using Application.Library.Patterns.UnitOfWork;
-using Application.Library.Repositories.LOG;
-using Application.Library.Repositories.RPT;
-using Application.Library.Repositories.SEC;
+using Application.Library.Repositories.SEC.User.UnitOfWork;
 using Infrastructure.Library.DatabaseContextDb;
-using Infrastructure.Library.Repositories.LOG;
-using Infrastructure.Library.Repositories.RPT;
-using Infrastructure.Library.Repositories.SEC;
+using Infrastructure.Library.Repositories.SEC.UserServices.UnitOfWork;
 
 namespace Infrastructure.Library.Pattern
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly DatabaseContext _context;
-        public UnitOfWork(DatabaseContext context)
+        private readonly DatabaseContext _contextRead;
+        private readonly DatabaseContext _contextWrite;
+        public UnitOfWork(DatabaseContext context, DatabaseContext contextWrite)
         {
-            _context = context;
+            _contextRead = context;
+            _contextWrite = contextWrite;
         }
-        public IUserRepository UserRepository { get => new UserRepository(_context); set => throw new NotImplementedException(); }
-        public IRoleRepository RoleRepository { get => new RoleRepository(_context); set => throw new NotImplementedException(); }
-        public ISystemLoggerRepository SystemLoggerRepository { get => new SystemLoggerRepository(); set => throw new NotImplementedException(); }
-        public IGeneralReportsRepository GeneralReportsRepository { get => new GeneralReportRepository(); set => throw new NotImplementedException(); }
+
+        public IUserRepository UserRepository { get => new UserRepository(_contextRead, _contextWrite); set => new UserRepository(_contextRead, _contextWrite); }
 
         public void Save()
         {
-            _context.SaveChanges();
+            _contextRead.SaveChanges();
+            _contextWrite.SaveChanges();
         }
     }
 }

@@ -2,7 +2,7 @@
 {
     public abstract class BaseEntity<T> : IEntity
     {
-        public Guid Guid { get; set; }
+        public Guid Guid { get; set; } = new Guid();
         public T ID { get; set; }
     }
     public abstract class BaseEntity : BaseEntity<long>

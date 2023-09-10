@@ -1,6 +1,6 @@
 ﻿namespace Infrastructure.Library.Repositories.RPT.UserReportServices.CQRS
 {
-    public class UserReportWriteRepository
+    public class SystemTransactionWriteRepository
     {
     }
 }

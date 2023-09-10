@@ -78,7 +78,6 @@ C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.A
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API\obj\Debug\net7.0\Web.API.AssemblyInfoInputs.cache
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API\obj\Debug\net7.0\Web.API.AssemblyInfo.cs
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API\obj\Debug\net7.0\Web.API.csproj.CoreCompileInputs.cache
-C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API\obj\Debug\net7.0\Web.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API\obj\Debug\net7.0\Web.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API\obj\Debug\net7.0\staticwebassets\msbuild.Web.API.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API\obj\Debug\net7.0\staticwebassets\msbuild.build.Web.API.props
@@ -95,3 +94,4 @@ C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.A
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API\obj\Debug\net7.0\Web.API.genruntimeconfig.cache
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API\obj\Debug\net7.0\ref\Web.API.dll
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API\bin\Debug\net7.0\Domain.Library.Fakes.dll
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API\bin\Debug\net7.0\FluentValidation.dll

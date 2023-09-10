@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.Library.Repositories.RPT.UserReportServices.UnitOfWork
 {
-    internal class UserReportRepository
+    internal class SystemTransactionRepository
     {
     }
 }

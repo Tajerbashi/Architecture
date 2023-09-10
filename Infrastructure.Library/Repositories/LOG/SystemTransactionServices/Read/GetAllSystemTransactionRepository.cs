@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.Library.Repositories.RPT.UserReportServices.Read
 {
-    public class GetAllUserReportRepository
+    public class GetAllSystemTransactionRepository
     {
     }
 }

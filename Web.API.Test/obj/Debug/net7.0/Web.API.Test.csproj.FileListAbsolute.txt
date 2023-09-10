@@ -169,3 +169,4 @@ C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.A
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\obj\Debug\net7.0\Web.API.Test.pdb
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\obj\Debug\net7.0\Web.API.Test.genruntimeconfig.cache
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\obj\Debug\net7.0\ref\Web.API.Test.dll
+C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajer_Architecture\Web.API.Test\bin\Debug\net7.0\FluentValidation.dll

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.Library.Repositories.RPT.UserReportServices.CQRS
 {
-    public class UserReportReadRepository
+    public class SystemTransactionReadRepository
     {
     }
 }

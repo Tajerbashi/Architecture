@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.Library.Repositories.RPT.UserReportServices.Write
 {
-    internal class AddUserReportRepository
+    internal class AddSystemTransactionRepository
     {
     }
 }

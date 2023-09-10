@@ -32,10 +32,4 @@
     <AdditionalDesignTimeBuildInput Remove="FakesAssemblies\**" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Repositories\LOG\" />
-    <Folder Include="Repositories\CNT\" />
-    <Folder Include="Repositories\RPT\" />
-  </ItemGroup>
-
 </Project>

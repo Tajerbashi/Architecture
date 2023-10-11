@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\.editorconfig" Link=".editorconfig" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Folder Include="Entities\CNT\Menu\DTOs\" />
     <Folder Include="Entities\CNT\Menu\Views\" />
     <Folder Include="Entities\LOG\SystemLogger\DTOs\" />

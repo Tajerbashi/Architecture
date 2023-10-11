@@ -4156,11 +4156,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Tajer_Architecture\\Web.API\\Web.API.csproj",
+      "projectUniqueName": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Tajerbashi_Architecture\\Web.API\\Web.API.csproj",
       "projectName": "Web.API",
-      "projectPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Tajer_Architecture\\Web.API\\Web.API.csproj",
+      "projectPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Tajerbashi_Architecture\\Web.API\\Web.API.csproj",
       "packagesPath": "C:\\Users\\Tajer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Tajer_Architecture\\Web.API\\obj\\",
+      "outputPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Tajerbashi_Architecture\\Web.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4183,11 +4183,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Tajer_Architecture\\Application.Library\\Application.Library.csproj": {
-              "projectPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Tajer_Architecture\\Application.Library\\Application.Library.csproj"
+            "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Tajerbashi_Architecture\\Application.Library\\Application.Library.csproj": {
+              "projectPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Tajerbashi_Architecture\\Application.Library\\Application.Library.csproj"
             },
-            "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Tajer_Architecture\\Infrastructure.Library\\Infrastructure.Library.csproj": {
-              "projectPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Tajer_Architecture\\Infrastructure.Library\\Infrastructure.Library.csproj"
+            "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Tajerbashi_Architecture\\Infrastructure.Library\\Infrastructure.Library.csproj": {
+              "projectPath": "C:\\Users\\Tajer\\Desktop\\Visual Studio\\Repository Project\\Tajerbashi_Architecture\\Infrastructure.Library\\Infrastructure.Library.csproj"
             }
           }
         }

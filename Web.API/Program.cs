@@ -4,6 +4,7 @@ using Infrastructure.Library.DatabaseContextDb;
 using Infrastructure.Library.Pattern;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using Web.API.Configuration.Cache;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,6 +23,7 @@ builder.Services.AddControllers();
 
 //  Injection
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork > ();
+builder.Services.AddScoped<ICacheRepositories, CacheServices> ();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -49,6 +51,15 @@ builder.Services.AddSwaggerGen(c =>
     //var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
     ////var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
     //c.IncludeXmlComments(xmlPath);
+});
+//  Caching
+builder.Services.AddMemoryCache(c =>
+{
+    c.SizeLimit = 1000;
+});
+
+builder.Services.AddDistributedMemoryCache(s =>
+{
 });
 
 var app = builder.Build();

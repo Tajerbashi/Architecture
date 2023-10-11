@@ -341,4 +341,3 @@ C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajerbashi_Architecture\
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajerbashi_Architecture\Web.API.Test\obj\Debug\net7.0\Web.API.Test.pdb
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajerbashi_Architecture\Web.API.Test\obj\Debug\net7.0\Web.API.Test.genruntimeconfig.cache
 C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajerbashi_Architecture\Web.API.Test\obj\Debug\net7.0\ref\Web.API.Test.dll
-C:\Users\Tajer\Desktop\Visual Studio\Repository Project\Tajerbashi_Architecture\Web.API.Test\bin\Debug\net7.0\Domain.Library.Fakes.dll

@@ -1,6 +1,8 @@
-﻿namespace Web.API.Authentication
+﻿using Microsoft.AspNetCore.Identity;
+
+namespace Web.API.Authentication
 {
-    public sealed class AppUser
+    public sealed class AppUser : IdentityUser
     {
     }
 }

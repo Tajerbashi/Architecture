@@ -2,8 +2,10 @@ using Application.Library.DatabaseContext;
 using Application.Library.Patterns.UnitOfWork;
 using Infrastructure.Library.DatabaseContextDb;
 using Infrastructure.Library.Pattern;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using Web.API.Authentication;
 using Web.API.Configuration.Cache;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,17 +15,30 @@ var builder = WebApplication.CreateBuilder(args);
 //  Access To Appsetting.json
 ConfigurationManager configuration = builder.Configuration;
 
-
+//  Database Context
 builder.Services.AddScoped<IFacadPattern, FacadPattern>();
-builder.Services.AddDbContext<DatabaseContext>(options => options.UseSqlServer(configuration.GetConnectionString("Local")));
+builder.Services.AddDbContext<DatabaseContext>(options => options.UseSqlServer(configuration.GetConnectionString("Default")));
 //builder.Services.AddEntityFrameworkSqlServer().AddDbContext<DatabaseContext>(option => option.UseSqlServer(configuration.GetConnectionString("Local")));
 
+//  Identity Services Authorization Authentication Accounting
+builder.Services.AddIdentity<AppUser, IdentityRole>(x =>
+{
+    x.Password.RequiredLength = 8;
+})
+.AddEntityFrameworkStores<ApplicationDatabase>()
+.AddDefaultTokenProviders();
+
+builder.Services.ConfigureApplicationCookie(x =>
+{
+    x.LoginPath = "";
+    x.LogoutPath = "";
+});
 // Add services to the container.
 builder.Services.AddControllers();
 
 //  Injection
-builder.Services.AddScoped<IUnitOfWork, UnitOfWork > ();
-builder.Services.AddScoped<ICacheRepositories, CacheServices> ();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped<ICacheRepositories, CacheServices>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -47,10 +62,6 @@ builder.Services.AddSwaggerGen(c =>
             Url = new Uri("https://github.com/Tajerbashi"),
         }
     });
-    // Set the comments path for the Swagger JSON and UI.
-    //var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-    ////var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-    //c.IncludeXmlComments(xmlPath);
 });
 //  Caching
 builder.Services.AddMemoryCache(c =>
@@ -73,6 +84,7 @@ if (app.Environment.IsDevelopment())
 }
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

@@ -18,3 +18,6 @@ WebApi.EndPoint/obj
 
 WebApi.EndPoint.Test/bin
 WebApi.EndPoint.Test/obj
+
+OpenId.Identity.Server/bin
+OpenId.Identity.Server/obj

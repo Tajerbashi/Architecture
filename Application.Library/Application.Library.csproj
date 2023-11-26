@@ -10,4 +10,8 @@
     <ProjectReference Include="..\Domain.Library\Domain.Library.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Repositories\SEC\" />
+  </ItemGroup>
+
 </Project>

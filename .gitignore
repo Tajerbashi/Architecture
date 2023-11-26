@@ -21,3 +21,6 @@ WebApi.EndPoint.Test/obj
 
 OpenId.Identity.Server/bin
 OpenId.Identity.Server/obj
+
+Documentation.Library/bin
+Documentation.Library/obj

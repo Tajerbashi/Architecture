@@ -15,15 +15,25 @@ namespace Infrastructure.Library.BaseService
         where TDTO : BaseDTO
         where TView : BaseView
     {
+       
         private readonly IUnitOfWork<ApplicationContext> _unitOfWork;
+       
         public ApplicationContext Context { get; set; }
+       
         private DbSet<TEntity> _entities;
+       
         private string _errorMessage = string.Empty;
+       
         private bool _isDisposed;
+       
         protected long UserID { get; set; }
+       
         protected long UserRoleID { get; set; }
+       
         protected long UserName { get; set; }
+       
         protected long Display { get; set; }
+       
         protected virtual DbSet<TEntity> Entities
         {
             get { return _entities ?? (_entities = Context.Set<TEntity>()); }
@@ -38,11 +48,13 @@ namespace Infrastructure.Library.BaseService
         }
         //While Creating an Instance of GenericRepository, we need to pass the UnitOfWork instance
         //That UnitOfWork instance contains the Context Object that our GenericRepository is going to use
+        
         public BaseRepository(IUnitOfWork<ApplicationContext> unitOfWork)
             : this(unitOfWork.Context)
         {
             _unitOfWork = unitOfWork;
         }
+        
         private void HandleUnitOfWorkException(DbEntityValidationException dbEx)
         {
             foreach (var validationErrors in dbEx.EntityValidationErrors)
@@ -53,6 +65,7 @@ namespace Infrastructure.Library.BaseService
                 }
             }
         }
+        
         private void Delete(TEntity entity)
         {
             try
@@ -76,6 +89,7 @@ namespace Infrastructure.Library.BaseService
                 throw new Exception(_errorMessage, dbEx);
             }
         }
+        
         private void Update(TEntity entity)
         {
             try
@@ -99,6 +113,7 @@ namespace Infrastructure.Library.BaseService
                 throw new Exception(_errorMessage, dbEx);
             }
         }
+        
         private void Insert(TEntity entity)
         {
             try
@@ -123,29 +138,29 @@ namespace Infrastructure.Library.BaseService
                 throw new Exception(_errorMessage, dbEx);
             }
         }
-
+        
         public object Create(TEntity model)
         {
             Insert(model);
             return model;
         }
-
+        
         public void CreateList(IEnumerable<TEntity> models)
         {
             Context.Set<TEntity>().AddRange(models);
             Context.SaveChanges();
         }
-
+        
         public void Dispose()
         {
             this.Dispose();
         }
-
+        
         public TEntity Read(object Id)
         {
             return Entities.Find(Id);
         }
-
+        
         public TEntity Read(Guid guid)
         {
             return Entities.Single(x => x.Guid.Equals(guid) && !x.IsDeleted && x.IsActive);
@@ -164,6 +179,7 @@ namespace Infrastructure.Library.BaseService
             Context.Set<TEntity>().Remove(model);
             return Context.SaveChanges();
         }
+       
         public object Remove(TEntity entity)
         {
             Context.Set<TEntity>().Remove(entity);

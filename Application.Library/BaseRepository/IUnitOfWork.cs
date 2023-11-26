@@ -1,14 +1,12 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
 
 namespace Application.Library.BaseRepository
 {
-    public interface IUnitOfWork<out TContext> 
-        where TContext : IdentityDbContext
-        ,new()
+    public interface IUnitOfWork<TContext> 
+        where TContext : class
     {
         //The following Property is going to hold the context object
-        TContext Context { get; }
+        TContext Context { get;}
 
         //Start the database Transaction
         void CreateTransaction();

@@ -4,6 +4,7 @@ using Domain.Library.Bases;
 namespace Application.Library.BaseRepository
 {
     public interface IBaseRepository<T>
+        :IDisposable
         where T : BaseEntity
     {
         object Create(T model);

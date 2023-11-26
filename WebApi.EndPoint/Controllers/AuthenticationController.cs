@@ -4,14 +4,15 @@ using WebApi.EndPoint.Models;
 
 namespace WebApi.EndPoint.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("app/[controller]")]
     [ApiController]
     public class AuthenticationController : ControllerBase
     {
-        public AuthenticationController() { }
-
+        // GET: api/<AuthenticationController>
+        [HttpGet]
         public ResponseModel<bool> Login()
         {
+            HttpClient client = new HttpClient();
             return new ResponseModel<bool>
             {
                 Model = true,

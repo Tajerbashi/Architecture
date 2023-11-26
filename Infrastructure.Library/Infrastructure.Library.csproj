@@ -23,5 +23,9 @@
     <ProjectReference Include="..\Application.Library\Application.Library.csproj" />
     <ProjectReference Include="..\Domain.Library\Domain.Library.csproj" />
   </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="Services\" />
+  </ItemGroup>
 
 </Project>

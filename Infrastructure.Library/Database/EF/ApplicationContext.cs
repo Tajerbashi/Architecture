@@ -5,7 +5,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Library.Database.EF
 {
-    public class ApplicationContext : IdentityDbContext<User, Role, long, UserClaim, UserRole, UserLogin, RoleClaim, UserToken>
+    public class ApplicationContext :
+        IdentityDbContext<User, Role, long, UserClaim, UserRole, UserLogin, RoleClaim, UserToken>
     {
         public ApplicationContext(DbContextOptions options) : base(options)
         {

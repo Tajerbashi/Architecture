@@ -1,6 +1,7 @@
 ﻿using Application.Library.BaseRepository;
 using Application.Library.ModelBase.BaseDTOModel;
 using Application.Library.ModelBase.BaseViewModel;
+using AutoMapper;
 using Domain.Library.Bases;
 using Infrastructure.Library.Database.EF;
 using Infrastructure.Library.Exceptions;
@@ -10,14 +11,17 @@ using System;
 namespace Infrastructure.Library.BaseService
 {
     public abstract class BaseRepository<TEntity, TDTO, TView> 
-        : IBaseRepository<TEntity>, IDisposable
-        where TEntity : BaseEntity
+        : IBaseRepository<TDTO>, IDisposable
+        where TEntity : BaseEntity,IBaseEntity
         where TDTO : BaseDTO
         where TView : BaseView
     {
-       
+        private readonly IMapper _mapper;
         private readonly IUnitOfWork<ApplicationContext> _unitOfWork;
-       
+        public BaseRepository(IMapper mapper)
+        {
+            _mapper = mapper;
+        }
         public ApplicationContext Context { get; set; }
        
         private DbSet<TEntity> _entities;
@@ -26,13 +30,6 @@ namespace Infrastructure.Library.BaseService
        
         private bool _isDisposed;
        
-        protected long UserID { get; set; }
-       
-        protected long UserRoleID { get; set; }
-       
-        protected long UserName { get; set; }
-       
-        protected long Display { get; set; }
        
         protected virtual DbSet<TEntity> Entities
         {
@@ -65,172 +62,75 @@ namespace Infrastructure.Library.BaseService
                 }
             }
         }
-        
-        private void Delete(TEntity entity)
-        {
-            try
-            {
-                if (entity == null)
-                {
-                    throw new ArgumentNullException("Entity");
-                }
-                if (Context == null || _isDisposed)
-                {
-                    Context = new ApplicationContext(new DbContextOptions<ApplicationContext>());
-                }
-
-                Entities.Remove(entity);
-                //commented out call to SaveChanges as Context save changes will be called with Unit of work
-                //Context.SaveChanges(); 
-            }
-            catch (DbEntityValidationException dbEx)
-            {
-                HandleUnitOfWorkException(dbEx);
-                throw new Exception(_errorMessage, dbEx);
-            }
-        }
-        
-        private void Update(TEntity entity)
-        {
-            try
-            {
-                if (entity == null)
-                {
-                    throw new ArgumentNullException("Entity");
-                }
-
-                if (Context == null || _isDisposed)
-                {
-                    Context = new ApplicationContext(new DbContextOptions<ApplicationContext>());
-                }
-                Context.Entry(entity).State = EntityState.Modified;
-                //commented out call to SaveChanges as Context save changes will be called with Unit of work
-                //Context.SaveChanges(); 
-            }
-            catch (DbEntityValidationException dbEx)
-            {
-                HandleUnitOfWorkException(dbEx);
-                throw new Exception(_errorMessage, dbEx);
-            }
-        }
-        
-        private void Insert(TEntity entity)
-        {
-            try
-            {
-                if (entity == null)
-                {
-                    throw new ArgumentNullException("Entity");
-                }
-
-                if (Context == null || _isDisposed)
-                {
-                    Context = new ApplicationContext(new DbContextOptions<ApplicationContext>());
-                }
-                Entities.Add(entity);
-                //commented out call to SaveChanges as Context save changes will be
-                //called with Unit of work
-                //Context.SaveChanges(); 
-            }
-            catch (DbEntityValidationException dbEx)
-            {
-                HandleUnitOfWorkException(dbEx);
-                throw new Exception(_errorMessage, dbEx);
-            }
-        }
-        
-        public object Create(TEntity model)
-        {
-            Insert(model);
-            return model;
-        }
-        
-        public void CreateList(IEnumerable<TEntity> models)
-        {
-            Context.Set<TEntity>().AddRange(models);
-            Context.SaveChanges();
-        }
-        
+       
         public void Dispose()
         {
             this.Dispose();
         }
-        
-        public TEntity Read(object Id)
+
+        public object Create(TDTO model)
         {
-            return Entities.Find(Id);
-        }
-        
-        public TEntity Read(Guid guid)
-        {
-            return Entities.Single(x => x.Guid.Equals(guid) && !x.IsDeleted && x.IsActive);
+            throw new NotImplementedException();
         }
 
-        public List<TEntity> ReadAll()
+        public void CreateList(IEnumerable<TDTO> models)
         {
-            return Entities.ToList();
+            throw new NotImplementedException();
+        }
+
+        public object Update(TDTO model, object ID)
+        {
+            throw new NotImplementedException();
+        }
+
+        public object Update(TDTO model, Guid guid)
+        {
+            throw new NotImplementedException();
+        }
+
+        public object Update(IEnumerable<TDTO> models)
+        {
+            throw new NotImplementedException();
+        }
+
+        public TDTO Read(object Id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public TDTO Read(Guid guid)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<TDTO> ReadAll()
+        {
+            throw new NotImplementedException();
         }
 
         public object Remove(Guid guid)
         {
-            var model = Read(guid);
-            model.IsDeleted = true;
-            model.IsActive = false;
-            Context.Set<TEntity>().Remove(model);
-            return Context.SaveChanges();
+            throw new NotImplementedException();
         }
-       
-        public object Remove(TEntity entity)
-        {
-            Context.Set<TEntity>().Remove(entity);
-            return Context.SaveChanges();
-        }
-
-        public object Remove(object ID)
-        {
-            var model = Read(ID);
-            Context.Set<TEntity>().Remove(model);
-            return Context.SaveChanges();
-        }
-
-        public object Update(TEntity model, object ID)
-        {
-            var record = Read(ID); 
-            Update(record);
-            return record;
-        }
-
-        public object Update(TEntity model, Guid guid)
-        {
-            var record = Read(guid);
-            Update(record);
-            return record;
-        }
-
-        public object Update(IEnumerable<TEntity> models)
-        {
-            Context.UpdateRange(models);
-            return Context.SaveChanges();
-        }   
 
         public bool ChangeActive(Guid guid)
         {
-            var model = Read(guid);
-            model.IsDeleted = true;
-            model.IsActive = false;
-            Context.Entry<TEntity>(model).State = EntityState.Modified;
-            Context.SaveChanges();
-            return true;
+            throw new NotImplementedException();
         }
 
         public bool ChangeActive(object ID)
         {
-            var model = Read(ID);
-            model.IsDeleted = true;
-            model.IsActive = false;
-            Context.Entry<TEntity>(model).State = EntityState.Modified;
-            Context.SaveChanges();
-            return true;
+            throw new NotImplementedException();
+        }
+
+        public object Remove(TDTO model)
+        {
+            throw new NotImplementedException();
+        }
+
+        public object Remove(object ID)
+        {
+            throw new NotImplementedException();
         }
     }
 }

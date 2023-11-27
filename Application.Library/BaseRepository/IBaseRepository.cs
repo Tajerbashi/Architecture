@@ -1,11 +1,12 @@
-﻿using Application.Library.ModelBase.BaseViewModel;
+﻿using Application.Library.ModelBase.BaseDTOModel;
+using Application.Library.ModelBase.BaseViewModel;
 using Domain.Library.Bases;
 
 namespace Application.Library.BaseRepository
 {
     public interface IBaseRepository<T>
         :IDisposable
-        where T : BaseEntity
+        where T : BaseDTO
     {
         object Create(T model);
         void CreateList(IEnumerable<T> models);

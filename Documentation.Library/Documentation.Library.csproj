@@ -9,4 +9,8 @@
     <InvariantGlobalization>true</InvariantGlobalization>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Client\Assets\Fonts\" />
+  </ItemGroup>
+
 </Project>

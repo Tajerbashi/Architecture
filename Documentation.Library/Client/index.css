@@ -1,5 +1,12 @@
-﻿body {
-    background: linear-gradient(90deg,#007be4,#00a1ff,#007be4)
+﻿@font-face {
+    font-family: iransansWeb;
+    src: url(./Assets/Fonts/IRANSansWeb.ttf);
+}
+
+body {
+    background: linear-gradient(90deg, #007be4, #00a1ff, #007be4);
+    font-family: iransansWeb;
+    font-size: 14px;
 }
 
 * {
@@ -42,7 +49,7 @@ ul {
     align-content: center;
 }
 
-.list-group-item  a {
+.list-group-item a {
     color: wheat;
     display: block;
     color: white;
@@ -63,7 +70,7 @@ ul {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    height:100vh; 
+    height: 100vh;
 }
 
 .content {
@@ -93,17 +100,17 @@ ul {
 
 .btn-default {
     border-radius: 0.5rem;
-    box-shadow: 0 0 10px 1px #4b4b4b;
+    box-shadow: 0 0 10px 1px #000000a4;
     padding: 0.5rem 2rem;
     border: 1px solid #eee0;
     cursor: pointer;
 }
 
-    .btn-default:hover {
-        background: #4b4b4b;
-        color: aliceblue;
-        animation: myAnim 500ms ease 0s 1 reverse backwards;
-    }
+.btn-default:hover {
+    background: #272626;
+    color: aliceblue;
+    animation: myAnim 500ms ease 0s 1 reverse backwards;
+}
 
 .btn-success {
     background: #0ca900;
@@ -115,7 +122,6 @@ ul {
 
 .btn-warning {
     background: #ff9400;
-    background: #4b4b4b;
 }
 
 @keyframes myAnim {

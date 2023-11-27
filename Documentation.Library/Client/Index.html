@@ -1,8 +1,9 @@
 ﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css" />
     <title>Document</title>
 </head>
@@ -14,18 +15,22 @@
             </div>
             <div class="title-bar">
                 <ul class="list-group">
-                    <li class="list-group-item"><a href="#home">Home</a></li>
-                    <li class="list-group-item"><a href="#news">News</a></li>
-                    <li class="list-group-item"><a href="#contact">Contact</a></li>
-                    <li class="list-group-item"><a href="#about">About</a></li>
+                    <li id="architecture" class="list-group-item"><a href="#architecture">معماری</a></li>
+                    <li id="layer" class="list-group-item"><a href="#layer">لایه بندی</a></li>
+                    <li id="identity" class="list-group-item"><a href="#identity">احراز هویت</a></li>
+                    <li id="report" class="list-group-item"><a href="#report">گزارش</a></li>
+                    <li id="logic" class="list-group-item"><a href="#logic">منطق</a></li>
+                    <li id="infrastructure" class="list-group-item"><a href="#infrastructure">زیر ساخت</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer">
-            <button class="btn-default" id="next" onclick="Next()">Next</button>
-            <button class="btn-default" id="prev" onclick="Prev()">Prev</button>
+            <button class="btn-default" id="next" onclick="Next()">صفحه بعدی</button>
+            <button class="btn-default" id="prev" onclick="Prev()">صفحه قبلی</button>
         </div>
     </div>
-    <script src="./index.js"></script>
+    <script src="./module.js" type="module"></script>
+    <script src="./index.js" ></script>
 </body>
 </html>
+

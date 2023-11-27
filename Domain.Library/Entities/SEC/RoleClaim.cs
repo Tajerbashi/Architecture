@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Domain.Library.Bases;
+using Microsoft.AspNetCore.Identity;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -8,7 +9,7 @@ namespace Domain.Library.Entities.SEC
     /// مدعی نقش
     /// </summary>
     [Table("RoleClaim", Schema = "SEC"), Description("مدعی نقش")]
-    public class RoleClaim : IdentityRoleClaim<long>
+    public class RoleClaim : IdentityRoleClaim<long>, IBaseEntity
     {
 
         [Description("کلید")]

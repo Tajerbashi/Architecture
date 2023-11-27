@@ -1,11 +1,12 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Domain.Library.Bases;
+using Microsoft.AspNetCore.Identity;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Domain.Library.Entities.SEC
 {
     [Table("UserRoles", Schema = "SEC"), Description("نقش کاربران")]
-    public class UserRole : IdentityUserRole<long>
+    public class UserRole : IdentityUserRole<long>, IBaseEntity
     {
         [Description("کلید")]
         public Guid Guid { get; set; }

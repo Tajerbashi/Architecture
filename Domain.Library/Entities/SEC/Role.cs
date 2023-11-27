@@ -1,16 +1,16 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Domain.Library.Bases;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
-using System.Reflection.Emit;
 
 namespace Domain.Library.Entities.SEC
 {
     [Table("Roles", Schema = "SEC"), Description("نقش ها")]
-    public class Role : IdentityRole<long>
+    public class Role : IdentityRole<long>, IBaseEntity
     {
         [Description("کلید")]
         public Guid Guid { get; set; }

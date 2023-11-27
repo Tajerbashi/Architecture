@@ -1,4 +1,5 @@
-﻿using Domain.Library.Enums;
+﻿using Domain.Library.Bases;
+using Domain.Library.Enums;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
@@ -9,7 +10,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Domain.Library.Entities.SEC
 {
     [Table("Users", Schema = "SEC"), Description("کاربران")]
-    public class User : IdentityUser<long>
+    public class User : IdentityUser<long>, IBaseEntity
     {
 
         [Description("کلید")]

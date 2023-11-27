@@ -3,4 +3,4 @@ using Documentation.Library.Extentions;
 
 Console.WriteLine("StartProject");
 FileHandler handler = new FileHandler();
-handler.StartFile("");
+handler.StartFile("index.html");

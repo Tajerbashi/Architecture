@@ -3,12 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebApi.EndPoint.Models
 {
-    public class ResponseModel<T> : IActionResult
+    public class ResponseModel<T> : ActionResult
     {
-        public Task ExecuteResultAsync(ActionContext context)
-        {
-            return Task.CompletedTask;
-        }
         public T Model { get; set; }
     }
 }

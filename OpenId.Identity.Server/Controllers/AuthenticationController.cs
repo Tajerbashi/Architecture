@@ -11,11 +11,19 @@ namespace OpenId.Identity.Server.Controllers
     {
         // GET: api/<AuthenticationController>
         [HttpGet]
-        public ActionResponse<string> Get()
+        public ActionResponse<UserModel> Get()
         {
-            return new ActionResponse<string>()
+            var model = new UserModel
             {
-                Result = "",
+                Email = "tajerbashi@mail.com",
+                Guid = Guid.NewGuid(),
+                Id = 1,
+                Name = "Kamran",
+                Username="Tajerbashi"
+            };
+            return new ActionResponse<UserModel>()
+            {
+                Result = model,
             };
         }
 

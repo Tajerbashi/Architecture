@@ -1,3 +1,5 @@
+using AutoMapper;
+using Infrastructure.Library.AutoMapper;
 using Infrastructure.Library.Database.EF;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
@@ -6,6 +8,13 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 ConfigurationManager configuration = builder.Configuration;
 // Add services to the container.
+var mapperConfig = new MapperConfiguration(mc =>
+{
+    mc.AddProfile(new MappingProfile());
+});
+
+IMapper mapper = mapperConfig.CreateMapper();
+builder.Services.AddSingleton(mapper);
 
 builder.Services.AddControllers();
 //builder.Services.AddDbContext<ApplicationContext>(sql => sql.UseSqlServer(configuration.GetConnectionString("ConnectionString")));

@@ -9,7 +9,8 @@
         public DateTime CreateDate { get; set; }
         public T UpdateBy { get; set; }
         public DateTime UpdateDate { get; set; }
-
+        public bool IsDeleted { set; get; }
+        public bool IsActive { set; get; }
     }
     public abstract class BaseDTO : BaseDTO<long>
     {

@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using IdentityServer4.Services;
+using Microsoft.AspNetCore.Mvc;
+using OpenId.Identity.Server.ContextData;
 using OpenId.Identity.Server.Models;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -9,22 +11,36 @@ namespace OpenId.Identity.Server.Controllers
     [ApiController]
     public class AuthenticationController : ControllerBase
     {
+        private readonly IIdentityServerInteractionService _interaction;
+        private readonly IWebHostEnvironment _webHostEnvironment;
+        private readonly ILogger<AuthenticationController> _logger;
+
+        public AuthenticationController(
+            IIdentityServerInteractionService interaction,
+            IWebHostEnvironment webHostEnvironment,
+            ILogger<AuthenticationController> logger
+            )
+        {
+            _interaction = interaction;
+            _webHostEnvironment = webHostEnvironment;
+            _logger = logger;   
+        }
+
+
         // GET: api/<AuthenticationController>
         [HttpGet]
-        public ActionResponse<UserModel> Get()
+        public async Task<ActionResult<List<UserModel>>> Get()
         {
-            var model = new UserModel
+            try
             {
-                Email = "tajerbashi@mail.com",
-                Guid = Guid.NewGuid(),
-                Id = 1,
-                Name = "Kamran",
-                Username="Tajerbashi"
-            };
-            return new ActionResponse<UserModel>()
+                var model = DatabaseContext.Users;
+                await Task.Delay(1);
+                return model;
+            }
+            catch (Exception ex)
             {
-                Result = model,
-            };
+                throw ex;
+            }
         }
 
         // GET api/<AuthenticationController>/5

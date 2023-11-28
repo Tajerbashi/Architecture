@@ -26,5 +26,9 @@
     <ProjectReference Include="..\Application.Library\Application.Library.csproj" />
     <ProjectReference Include="..\Infrastructure.Library\Infrastructure.Library.csproj" />
   </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
 
 </Project>

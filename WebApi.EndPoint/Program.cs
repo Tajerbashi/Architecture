@@ -1,6 +1,8 @@
+using Application.Library.Repositories.SEC;
 using AutoMapper;
 using Infrastructure.Library.AutoMapper;
 using Infrastructure.Library.Database.EF;
+using Infrastructure.Library.Services.SEC.UserServices;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 
@@ -35,7 +37,7 @@ builder.Services.AddAuthentication(option =>
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
+//  Service Injection
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

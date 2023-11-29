@@ -26,14 +26,12 @@ Documentation.Library/obj
 
 External Kernel
 
-WebApi.EndPoint/bin
-WebApi.EndPoint/obj
 
-WebApi.EndPoint.Test/bin
-WebApi.EndPoint.Test/obj
+OpenId.IdentityServer/bin
+OpenId.IdentityServer/obj
 
-Client_UI/bin
-Client_UI/obj
+ExternalKernel/External.Provider/bin
+ExternalKernel/External.Provider/obj
 
-OpenId.Identity.Server/bin
-OpenId.Identity.Server/obj
+ExternalKernel/External.Provider.Client/bin
+ExternalKernel/External.Provider.Client/obj

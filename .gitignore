@@ -3,6 +3,10 @@
 .editorconfig
 *.pdb
 *.cache
+*.svg
+
+
+
 
 Domain.Library/bin
 Domain.Library/obj
@@ -13,14 +17,23 @@ Application.Library/obj
 Infrastructure.Library/bin
 Infrastructure.Library/obj
 
+
+WebApi/bin
+WebApi/obj
+
+Documentation.Library/bin
+Documentation.Library/obj
+
+External Kernel
+
 WebApi.EndPoint/bin
 WebApi.EndPoint/obj
 
 WebApi.EndPoint.Test/bin
 WebApi.EndPoint.Test/obj
 
+Client_UI/bin
+Client_UI/obj
+
 OpenId.Identity.Server/bin
 OpenId.Identity.Server/obj
-
-Documentation.Library/bin
-Documentation.Library/obj

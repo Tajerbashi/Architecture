@@ -4,50 +4,19 @@ using AutoMapper;
 using Domain.Library.Entities.SEC;
 using Infrastructure.Library.Database.EF;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-using System;
-using System.Security.Cryptography.X509Certificates;
 
 namespace Infrastructure.Library.Services.SEC.UserServices
 {
-    public class UserService : UserManager<User>
+    public class UserService : IUserRepository
+        //: UserManager<User>
     {
         private readonly UserManager<User> _userManager;
         private readonly ApplicationContext _context;
         private readonly IMapper _mapper;
-        public UserService(
-            IUserStore<User> store,
-            IOptions<IdentityOptions> optionsAccessor,
-            IPasswordHasher<User> passwordHasher,
-            IEnumerable<IUserValidator<User>> userValidators,
-            IEnumerable<IPasswordValidator<User>> passwordValidators,
-            ILookupNormalizer keyNormalizer,
-            IdentityErrorDescriber errors,
-            IServiceProvider services,
-            ILogger<UserManager<User>> logger,
-            UserManager<User> userManager,
-            ApplicationContext context,
-            IMapper mapper
-            )
-            :
-            base(
-                store,
-                optionsAccessor,
-                passwordHasher,
-                userValidators,
-                passwordValidators,
-                keyNormalizer,
-                errors,
-                services,
-                logger
-                )
-        {
-            _userManager = userManager;
-            _context = context;
-            _mapper = mapper;
-        }
 
+        public UserService()
+        {
+        }
         public bool ChangeActive(Guid guid)
         {
             try
@@ -101,6 +70,10 @@ namespace Infrastructure.Library.Services.SEC.UserServices
             {
                 throw;
             }
+        }
+
+        public void Dispose()
+        {
         }
 
         public UserDTO Read(object Id)

@@ -27,7 +27,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenId.IdentityServer", "Op
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "External.Provider", "ExternalKernel\External.Provider\External.Provider.csproj", "{D9711E75-3044-49EB-91BF-EF7C20466778}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "External.Provider.Client", "ExternalKernel\External.Provider.Client\External.Provider.Client.csproj", "{C3C0CB2C-45B7-4A87-8C67-488D86918585}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "External.Provider.Client", "ExternalKernel\External.Provider.Client\External.Provider.Client.csproj", "{8339349B-9AA5-40B3-8148-9819D27990AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,10 +67,10 @@ Global
 		{D9711E75-3044-49EB-91BF-EF7C20466778}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9711E75-3044-49EB-91BF-EF7C20466778}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9711E75-3044-49EB-91BF-EF7C20466778}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C3C0CB2C-45B7-4A87-8C67-488D86918585}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C3C0CB2C-45B7-4A87-8C67-488D86918585}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C3C0CB2C-45B7-4A87-8C67-488D86918585}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C3C0CB2C-45B7-4A87-8C67-488D86918585}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8339349B-9AA5-40B3-8148-9819D27990AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8339349B-9AA5-40B3-8148-9819D27990AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8339349B-9AA5-40B3-8148-9819D27990AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8339349B-9AA5-40B3-8148-9819D27990AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -84,7 +84,7 @@ Global
 		{FAB55ACA-D6C3-4E1E-AAF9-F289E8126CCA} = {75428483-7D37-4CEB-9CC1-134773974795}
 		{607B8D4B-8484-4F7B-BEB4-8E0A915C6618} = {33E53200-DAC8-45E7-8920-FD12733BAE8D}
 		{D9711E75-3044-49EB-91BF-EF7C20466778} = {33E53200-DAC8-45E7-8920-FD12733BAE8D}
-		{C3C0CB2C-45B7-4A87-8C67-488D86918585} = {33E53200-DAC8-45E7-8920-FD12733BAE8D}
+		{8339349B-9AA5-40B3-8148-9819D27990AE} = {33E53200-DAC8-45E7-8920-FD12733BAE8D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FAF885AA-A2F0-4234-9489-643C61CFC37A}

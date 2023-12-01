@@ -1,0 +1,14 @@
+﻿using System.ComponentModel;
+
+namespace External.Provider.Client.Models.Enums
+{
+    public enum HttpMode:byte
+    {
+        [Description("درون برنامه یی")]
+        None = 0,
+        [Description("درخواست")]
+        Request = 1,
+        [Description("پاسخ")]
+        Response = 2,
+    }
+}

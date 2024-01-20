@@ -9,6 +9,20 @@
     {
       "library": "bootstrap-icons@1.11.2",
       "destination": "wwwroot/bootstrap-icons/"
+    },
+    {
+      "provider": "cdnjs",
+      "library": "microsoft-signalr@8.0.0",
+      "destination": "wwwroot/lib/microsoft-signalr/"
+    },
+    {
+      "provider": "unpkg",
+      "library": "@microsoft/signalr@8.0.0",
+      "destination": "wwwroot/js/microsoft/signalr/",
+      "files": [
+        "dist/browser/signalr.js",
+        "dist/browser/signalr.min.js"
+      ]
     }
   ]
 }

@@ -29,6 +29,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "External.Provider", "Extern
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "External.Provider.Client", "ExternalKernel\External.Provider.Client\External.Provider.Client.csproj", "{8339349B-9AA5-40B3-8148-9819D27990AE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Provider", "Provider", "{8552B182-6B38-43ED-B7D1-E6038C086FC8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -85,6 +87,7 @@ Global
 		{607B8D4B-8484-4F7B-BEB4-8E0A915C6618} = {33E53200-DAC8-45E7-8920-FD12733BAE8D}
 		{D9711E75-3044-49EB-91BF-EF7C20466778} = {33E53200-DAC8-45E7-8920-FD12733BAE8D}
 		{8339349B-9AA5-40B3-8148-9819D27990AE} = {33E53200-DAC8-45E7-8920-FD12733BAE8D}
+		{8552B182-6B38-43ED-B7D1-E6038C086FC8} = {75428483-7D37-4CEB-9CC1-134773974795}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FAF885AA-A2F0-4234-9489-643C61CFC37A}

@@ -3,13 +3,15 @@ using AutoMapper;
 using Infrastructure.Library.AutoMapper;
 using Infrastructure.Library.Database.EF;
 using Infrastructure.Library.Services.SEC.UserServices;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using WebApi.Hubs;
+using IoC.ServiceInjectors;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddServiceExtentions();
 ConfigurationManager configuration = builder.Configuration;
-// Add services to the container.
+
+
 var mapperConfig = new MapperConfiguration(mc =>
 {
     mc.AddProfile(new MappingProfile());

@@ -11,6 +11,9 @@
 Domain.Library/bin
 Domain.Library/obj
 
+IoC/bin
+IoC/obj
+
 Application.Library/bin
 Application.Library/obj
 

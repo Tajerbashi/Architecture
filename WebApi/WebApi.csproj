@@ -13,6 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Application.Library\Application.Library.csproj" />
     <ProjectReference Include="..\Infrastructure.Library\Infrastructure.Library.csproj" />
+    <ProjectReference Include="..\IoC\IoC.csproj" />
   </ItemGroup>
 
 </Project>
